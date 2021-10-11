@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.Alarm</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+		<ProjectReference Include="..\SnAbp.Alarm.Domain.Shared\SnAbp.Alarm.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Domain\SnAbp.Resource.Domain.csproj" />
+		<ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+		<ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain\SnAbp.StdBasic.Domain.csproj" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Servies\" />
+	</ItemGroup>
+
+</Project>

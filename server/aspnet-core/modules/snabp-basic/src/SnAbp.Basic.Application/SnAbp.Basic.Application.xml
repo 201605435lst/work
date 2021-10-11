@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.Basic.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.GetCascaderList">
+            <summary>
+            获取机房级联选择框初始化数据  线-站-机房
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.GetRootCascaderList">
+            <summary>
+            获取机房级联选择框根级数据  线-站-机房
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.GetCascaderListByParent(System.Guid,System.Int32)">
+            <summary>
+            获取机房级联选择框指定结点的下级数据  线-站-机房
+            </summary>
+            <param name="id">结点id</param>
+            <param name="type">结点类型（线0 站1 机房3 其他4）</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.GetCascaderListWithOrg(System.Nullable{System.Guid})">
+            <summary>
+            获取机房级联选择框初始化数据  组织机构-机房
+            </summary>
+            <param name="orgId">组织机构id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.Upload(SnAbp.Basic.Dtos.Import.ImportData)">
+            <summary>
+            上传导入文件
+            </summary>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.recursionGetOrganization(System.Nullable{System.Guid},SnAbp.Basic.Template.InstallationSiteImportTemplate,System.Collections.Generic.List{SnAbp.Identity.Organization})">
+            <summary>
+            拼接使用单位Organization
+            </summary>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.GetListWithOrg(SnAbp.Basic.Dtos.GetListByScopeInputDto)">
+            <summary>
+            查找组织机构的子级、组织机构下的线路、组织机构下非沿线的安装位置
+            </summary>
+            <param name="input">传入的数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.ReturnListWithInstallationSites(System.String,System.String,System.String)">
+            <summary>
+            查询站点下的安装位置包括兄弟节点
+            </summary>
+            <param name="orgId">组织机构id</param>
+            <param name="railwayId">线路id</param>
+            <param name="stationId">站点id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.GetParentIsNullByInstallationSite(System.Linq.IQueryable{SnAbp.Basic.Entities.InstallationSite})">
+            <summary>
+            组装安装位置的子级
+            </summary>
+            <param name="installation">安装位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.GetType(SnAbp.Basic.Enums.ScopeType)">
+            <summary>
+            转化ScopeType
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.GetParents(System.String,System.String,System.Collections.Generic.List{SnAbp.Identity.Organization})">
+            <summary>
+            获取用户所在组织机构和区域的组织机构之间的组织机构及兄弟节点
+            </summary>
+            <param name="id">传入的区域的组织机构id</param>
+            <param name="parentId">用户所在的组织机构id</param>
+            <param name="organizations">返回的list</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.ReturnScopesOrganizations(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            返回组织机构子级、组织机构下的非沿线的安装位置、组织机构下的线路及兄弟节点、线路下的站点及兄弟节点
+            </summary>
+            <param name="organizationsList">组织机构集合</param>
+            <param name="orgList">组织机构id集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.ReturnScopesByOrgList(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            查找该组织机构集合下的组织机构子级、组织机构下的非沿线的安装位置、组织机构下的线路
+            </summary>
+            <param name="orgList">组织机构集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicInstallationSiteAppService.ReturnCurrentOrganization">
+            <summary>
+            返回用户登陆的组织机构
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.Get(System.Guid)">
+            <summary>
+            根据ID获取线路
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.GetList(SnAbp.Basic.Dtos.RailwaySearchDto)">
+            <summary>
+            根据条件查询线路
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.Create(SnAbp.Basic.Dtos.RailwayCreateDto)">
+            <summary>
+            添加线路
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.UpdateStations(SnAbp.Basic.Dtos.RelateSta_RaInputDto)">
+            <summary>
+            给线路关联站点
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.Update(SnAbp.Basic.Dtos.RailwayUpdateDto)">
+            <summary>
+            修改线路信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.Delete(System.Guid)">
+            <summary>
+            根据ID删除线路
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.Upload(SnAbp.Basic.Dtos.Import.ImportData)">
+             <summary>
+             导入
+             </summary>
+             <param name="input"></param>
+             <param name="belongOrgCode">所属段编码</param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.Export(SnAbp.Basic.Dtos.Export.RailwayExportData)">
+             <summary>
+             导出
+             </summary>
+             <param name="input"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.CheckRailwayIsExist(System.String)">
+            <summary>
+            检测站点信息是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.SetStationInfos``1(System.Collections.Generic.List{``0})">
+            <summary>
+            设置线路信息中的包含站点信息
+            </summary>
+            <param name="railways">需要设置的站点信息集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicRailwayAppService.SetBelongOrgStr``1(SnAbp.Basic.Entities.Railway,``0)">
+            <summary>
+            设置所属单位的显示str
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="item">ent类型对象</param>
+            <param name="dto">dto类型对象</param>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.Get(System.Guid)">
+            <summary>
+            获得实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.GetList(SnAbp.Basic.Dtos.StationSearchDto)">
+            <summary>
+            根据条件获取站点
+            </summary>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.GetSimpleList(SnAbp.Basic.Dtos.StationSimpleSearchDto)">
+            <summary>
+            获取极简数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.GetCascaderListWithOrg(SnAbp.Basic.Dtos.StationCascaderDto)">
+            <summary>
+            根据组织机构（维护车间）获取 线路-站点级联数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.GetListByOrg(System.Guid)">
+            <summary>
+            根据组织机构获取车站
+            </summary>
+            <param name="orgId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.GetListByRailwayId(System.Guid)">
+            <summary>
+            根据线路主键获取站点列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.Create(SnAbp.Basic.Dtos.StationInputDto)">
+            <summary>
+            添加站点
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.Update(SnAbp.Basic.Dtos.StationUpdateDto)">
+            <summary>
+            编辑站点
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.Delete(System.Guid)">
+            <summary>
+            删除站点
+            </summary>
+            <param name="id">站点Guid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.Export(SnAbp.Basic.Dtos.Export.StationExportData)">
+            <summary>
+            导出线路-站点excel
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Basic.Services.BasicStationAppService.ReBuildStaSec_RailRelation(SnAbp.Basic.Dtos.StationInputDto,SnAbp.Basic.Entities.Station)">
+            <summary>
+            重新生成所属线路下的站/区间-线路关联数据  弃用：此关系在线路中设置
+            </summary>
+            <param name="input">站点所属信息</param>
+            <param name="sta">新站点信息</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

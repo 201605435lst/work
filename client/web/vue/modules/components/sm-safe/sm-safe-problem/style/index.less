@@ -1,0 +1,168 @@
+.sm-safe-problem {
+  .sm-safe-problem-action {
+    .sm-safe-problem-search {
+      display: flex;
+      .sm-safe-problem-primary {
+        margin-right: 20px;
+      }
+      .ant-row {
+        margin-right: 20px;
+      }
+      .ant-row.ant-form-item {
+        display: flex;
+      }
+      .sm-safe-problem-date {
+        .ant-row.ant-form-item {
+          display: flex;
+          .ant-form-item-control-wrapper .ant-calendar-picker {
+            display: flex;
+            align-items: center;
+          }
+        }
+        .ant-form-item-children {
+          display: flex;
+          .month-picker_ {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+      button.ant-btn.ant-btn-primary {
+        margin-top: 4px;
+      }
+      .sm-quality-problem-type {
+        width: 25%;
+        .ant-form-item-control-wrapper {
+          flex: 1;
+        }
+      }
+    }
+  }
+  .system-member-select {
+    margin-top: 2px;
+  }
+  .position_ {
+    display: flex;
+    flex-wrap: wrap;
+    .position_a {
+      margin-left: 2px;
+    }
+  }
+}
+.sm-safe-problem-modal {
+  .member-multiple-selectr {
+    display: flex;
+    align-items: center;
+  }
+  .sm-system-member-select,
+  .shouIconSelect,
+  .bordered {
+    height: revert !important;
+    padding-bottom: 0;
+    max-height: none;
+  }
+  .ant-dropdown.ant-dropdown-placement-topLeft,
+  .ant-dropdown.ant-dropdown-placement-bottomLeft {
+    width: 100%;
+    overflow: auto;
+    min-height: 0px;
+    max-height: 260px;
+    top: 30px !important;
+    border-radius: 10px;
+    .ant-dropdown-menu {
+      border: 1px solid #ececec;
+    }
+  }
+  .safe-problem-menu-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.sm-safe-problem-report-modal {
+  width: 90%;
+  margin: auto;
+  .body-code {
+    text-align: right;
+    padding: 5px 10px;
+  }
+  .body-title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .rows {
+    border-top: 1px solid #390808;
+    border-right: 1px solid #390808;
+    .ant-col {
+      height: 100%;
+      line-height: 32px;
+    }
+
+    .descriptions-item-media {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .media {
+        margin-left: 10px;
+      }
+    }
+    .text {
+      margin-left: 10px;
+    }
+
+    .title-matreial {
+      border-left: 1px solid #390808;
+    }
+    .center {
+      text-align: center;
+    }
+    .title {
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-right: 1px solid #390808;
+      border-left: 1px solid #390808;
+    }
+    .longText {
+      padding: 2px 10px;
+    }
+  }
+  .file-row {
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #390808;
+    .file {
+      height: 50%;
+      .picture {
+        height: 100%;
+      }
+    }
+  }
+  .row-bottom {
+    border-bottom: 1px solid #390808;
+  }
+  .sm-schedule-action-button {
+    text-align: right;
+    margin-top: 10px;
+    .print {
+      color: white;
+      background-color: #f0cb12;
+    }
+    .close {
+      margin-right: 15px;
+      color: white;
+      background-color: #a4a1a1;
+    }
+  }
+}
+
+//全局修改<a-range-picker>时间组件里的弹出时'~'错误
+// .ant-calendar-picker-container-placement-bottomLeft
+//   .ant-calendar-date-panel
+//   .ant-calendar-range-middle {
+//   left: 62%;
+// }

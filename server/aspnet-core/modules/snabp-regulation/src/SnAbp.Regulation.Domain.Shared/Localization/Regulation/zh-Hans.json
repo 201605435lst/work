@@ -1,0 +1,16 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpRegulation": "制度管理",
+    "Permission:Institutions": "制度管理",
+    "Permission:Labels": "标签管理",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Import": "导入",
+    "Permission:Export": "导出",
+    "Permission:Detail": "查看",
+    "Permission:Authority": "权限",
+    "Permission:Audit": "审核"
+  }
+}

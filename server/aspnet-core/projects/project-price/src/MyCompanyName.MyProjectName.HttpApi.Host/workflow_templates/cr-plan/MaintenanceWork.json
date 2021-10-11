@@ -1,0 +1,138 @@
+{
+  "name": "维修作业审核表单",
+  "webHookUrl": "/api/app/crPlanMaintenanceWork/FirstFinshProcrss",
+  "version": 1,
+  "formItems": [
+    {
+      "type": "input",
+      "label": "车间",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "请输入",
+        "clearable": false,
+        "maxLength": null,
+        "disabled": true
+      },
+      "model": "oranization",
+      "key": "oranization",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "执行时间",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "请输入",
+        "clearable": false,
+        "maxLength": null,
+        "disabled": true
+      },
+      "model": "workTime",
+      "key": "workTime",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "维修等级",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "请输入",
+        "clearable": false,
+        "maxLength": null,
+        "disabled": true
+      },
+      "model": "repaireLevel",
+      "key": "repaireLevel",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "uploadFile",
+      "label": "计划方案",
+      "options": {
+        "defaultValue": "",
+        "multiple": false,
+        "disabled": false,
+        "drag": false,
+        "width": "100%",
+        "limit": 3,
+        "data": {},
+        "action": "",
+        "placeholder": "上传"
+      },
+
+      "model": "files",
+      "key": "files",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "label": "维修计划下载",
+      "options": {
+        "type": "primary",
+        "handle": "dynamic",
+        "dynamicFun": "/api/app/crPlanMaintenanceWork/ExportMaintenanceWorkPlan",
+        "disabled": false
+      },
+      "key": "button_1608788486510"
+    },
+    {
+      "type": "button",
+      "label": "工作票下载",
+      "options": {
+        "type": "primary",
+        "handle": "dynamic",
+        "dynamicFun": "/api/app/crPlanMaintenanceWork/ExportWorkTicket",
+        "disabled": false
+      },
+      "key": "button_1608788486589"
+    }
+    //{
+    //  "type": "button",
+    //  "label": "计划方案下载",
+    //  "options": {
+    //    "type": "primary",
+    //    "handle": "dynamic",
+    //    "dynamicFun": "",
+    //    "disabled": false
+    //  },
+    //  "key": "button_1608788484062"
+    //}
+  ],
+  "formConfig": {
+    "layout": "horizontal",
+    "labelCol": {
+      "span": 4
+    },
+    "wrapperCol": {
+      "span": 18
+    },
+    "hideRequiredMark": false,
+    "customStyle": ""
+  }
+}

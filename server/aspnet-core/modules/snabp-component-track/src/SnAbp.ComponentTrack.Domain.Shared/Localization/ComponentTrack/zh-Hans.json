@@ -1,0 +1,8 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpComponentTrack": "二维码管理",
+    "Permission:ComponentRltQRCodes": "二维码生成管理",
+    "Permission:Export": "生成二维码"
+  }
+}

@@ -1,0 +1,47 @@
+@backgroud: #f5f5f5f0;
+@lineColor: #d0d0d0;
+@activeColor: #1794fb;
+
+.camera-fly {
+  .box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    top: 64px;
+    display: flex;
+    align-items: center;
+    pointer-events: all;
+    .ant-slider {
+      flex: 1;
+      margin: 0 15px;
+
+      .ant-slider-mark-text {
+        color: white !important;
+        text-shadow: 1px 1px 2px black;
+        display: none;
+      }
+    }
+    .btn {
+      min-width: 20px;
+      margin: 0 2px;
+      padding: 0 2px;
+      height: 20px;
+      background: #ffffff;
+      border: 1px solid #d0d0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+      color: #595959;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        color: @activeColor;
+      }
+      &.speed{
+        width: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--通知类型的消息模板定义-->
+<config>
+	<!--基础信息配置,为固定格式-->
+	<base>
+		<item key="type"  value="notice"/>
+		<item key="url"  value="{ddd}/name/basic/int123"/>
+	</base>
+	<!--消息模板定义,模板关键字格式固定，双括号为主要标记，支持param1->param10 的参数扩展-->
+	<message>
+		测试模板：您有新的消息提示：{{Title}},请前往{{Param1}}模块查看。<a href="{{Url}}">点击查看</a>,通知时间：{{Time}}
+	</message>
+</config>

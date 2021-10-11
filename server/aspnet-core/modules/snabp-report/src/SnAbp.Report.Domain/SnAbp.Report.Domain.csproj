@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Report</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Report.Domain.Shared\SnAbp.Report.Domain.Shared.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-project\src\SnAbp.Project.Domain\SnAbp.Project.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.Domain\SnAbp.File.Domain.csproj" />
+	  <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.MultiProject\SnAbp.MultiProject.csproj" />
+  </ItemGroup>
+
+</Project>

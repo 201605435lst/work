@@ -1,0 +1,21 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpProject": "项目管理",
+    "Permissions": "权限",
+    "ManageYourProfile": "管理个人资料",
+    "Permission:Projects": "项目台账",
+    "Permission:ArchivesCategory": "档案分类管理",
+    "Permission:Dossier": "文件管理",
+    "Permission:Archives": "案卷管理",
+    "Permission:Create": "创建",
+    "Permission:Delete": "删除",
+    "Permission:Update": "编辑",
+    "Permission:Detail": "详情",
+    "Permission:Export": "导出",
+    "Permission:Apply": "权限",
+    "Permission:Download": "附件下载",
+    "Permission:Encrypt": "加密",
+    "Permission:Import": "导入"
+  }
+}

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>SnAbp.Account.HttpApi</AssemblyName>
+    <PackageId>SnAbp.Account.HttpApi</PackageId>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AspNetCore.Mvc\Volo.Abp.AspNetCore.Mvc.csproj" />-->
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Account.Application.Contracts\SnAbp.Account.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.HttpApi\SnAbp.Identity.HttpApi.csproj" />
+  </ItemGroup>
+
+</Project>

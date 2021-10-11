@@ -1,0 +1,113 @@
+.sm-file-upload {
+  .container {
+    .tag-panel.flex-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .default {
+    background-color: whitesmoke;
+    min-height: 40px;
+    border: 1px dashed;
+    border-color: #c0c2c7;
+    border-radius: 3px;
+    // padding: 9px;
+    text-align: center;
+    transition-delay: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #3aa8ea;
+      transition-delay: 0.2s;
+    }
+
+    .anticon-cloud-upload {
+      font-size: 20px;
+      color: #1d94e8;
+      margin-right: 10px;
+    }
+
+    .title {
+      // display: flex;
+      // justify-content: center;
+    }
+  }
+
+  .tag-panel {
+    display: flex;
+    .tag {
+      width: max-content;
+      border: 1px solid #85cef3;
+      padding: 0px 5px;
+      border-radius: 4px;
+      background-color: #eaf8ff;
+      color: #27a1de;
+      display: flex;
+      justify-content: center;
+      margin: 2px;
+      .title {
+        font-size: 10px;
+        line-height: 20px;
+        max-width: 80px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .close,
+      .down {
+        margin-left: 6px;
+        cursor: pointer;
+        line-height: 20px;
+      }
+    }
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .justify-content-left {
+    justify-content: left;
+    padding: 6px 0px;
+  }
+
+  .single {
+    width: 130px;
+    height: 130px;
+
+    .pic-content {
+      border-radius: 3px;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background-color: whitesmoke;
+      border: 1px dashed;
+      border-color: #c0c2c7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        border-color: #3aa8ea;
+        transition-delay: 0.2s;
+      }
+    }
+    .plus {
+      font-size: 40px;
+      color: #a29797;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .drag {
+  }
+}

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.CrPlan</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Organization.cs" />
+    <Compile Remove="Repositories\IOrganizationRespository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.CrPlan.Domain.Shared\SnAbp.CrPlan.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.Domain\SnAbp.Basic.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain\SnAbp.StdBasic.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SnAbp.Common.Domain">
+      <HintPath>..\..\..\snabp-common\src\SnAbp.Common.Domain\bin\Debug\netstandard2.0\SnAbp.Common.Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

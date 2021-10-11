@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.CrPlan</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\SnAbp.CrPlan.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>.\SnAbp.CrPlan.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SnAbp.CrPlan.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SnAbp.CrPlan.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.2" />
+    <PackageReference Include="FreeSpire.Doc" Version="7.11.0" />
+    <PackageReference Include="FreeSpire.PDF" Version="7.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0-preview.3.20214.6" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.BackgroundWorkers.Quartz" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.CrPlan.Application.Contracts\SnAbp.CrPlan.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.CrPlan.Domain\SnAbp.CrPlan.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Application.Contracts\SnAbp.Identity.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Application\SnAbp.Identity.Application.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+
+    <ProjectReference Include="..\..\..\snabp-File\src\SnAbp.File.Domain\SnAbp.File.Domain.csproj" />
+
+    <ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.Application.Contracts\SnAbp.Basic.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.Domain\SnAbp.Basic.Domain.csproj" />
+
+    <ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Application.Contracts\SnAbp.StdBasic.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain\SnAbp.StdBasic.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain.Shared\SnAbp.StdBasic.Domain.Shared.csproj" />
+
+    <ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Application.Contracts\SnAbp.Resource.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Domain\SnAbp.Resource.Domain.csproj" />
+
+    <ProjectReference Include="..\..\..\snabp-bpm\src\SnAbp.Bpm.Domain\SnAbp.Bpm.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-message-notice\src\SnAbp.Message.Notice\SnAbp.Message.Notice.csproj" />
+
+
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,322 @@
+@transition: all 0.3s cubic-bezier(0.645, 0.045, 0.365, 1);
+
+@backgroud: #f5f5f5f0;
+@lineColor: #d0d0d0;
+@activeColor: #1794fb;
+
+.sm-d3-terminal-link {
+  .header-btn {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    &:hover {
+      opacity: 0.8;
+      background-color: #cacaca;
+    }
+  }
+
+  .sc-panel-body {
+    padding: 0;
+  }
+  .sc-panel {
+    background: none;
+  }
+
+  .cable-link {
+    position: relative !important;
+    border-right: 1px solid @lineColor;
+
+    .nodes {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      padding: 10px;
+      position: relative;
+      .nodes-item {
+        display: flex;
+        flex-direction: row;
+        min-height: 50px;
+        width: 100%;
+
+        .terminal-index {
+          width: 20px;
+          text-align: center;
+        }
+
+        .icon-col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 4px;
+          .nodes-icon {
+            font-size: 20px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .nodes-line {
+            width: 2px;
+            height: 100%;
+            background: @lineColor;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            .index {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+            }
+
+            &.cable {
+              background: linear-gradient(90deg, #a5a5a5, #212121, #a5a5a5);
+              width: 4px;
+              position: relative;
+              // min-height: 30px;
+              cursor: pointer;
+              &.cable-type-electric {
+                background: rgb(253, 161, 23);
+              }
+              &.cable-type-optical {
+                background: rgb(23, 218, 253);
+              }
+              .cable-name {
+                position: absolute;
+                color: #888;
+                font-size: 12px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-left: 24px;
+                bottom: 4px;
+              }
+            }
+          }
+        }
+
+        .terminal {
+          width: 100%;
+          .terminal-title {
+            width: 100%;
+            cursor: pointer;
+            position: relative;
+            .btns {
+              display: none;
+              position: absolute;
+              right: 6px;
+              top: 0;
+              .btn {
+                margin-left: 6px;
+              }
+            }
+            &:hover {
+              color: @activeColor;
+              .btns {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .terminals {
+    .terminals-header {
+      border-bottom: 1px solid #d0d0d0;
+      height: 36px;
+      display: flex;
+      padding: 0;
+
+      & > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:first-child {
+          flex: 1;
+        }
+        &:last-child {
+          flex: 3;
+        }
+      }
+    }
+
+    .terminals-body {
+      flex: 1;
+      overflow: auto;
+      padding: 10px 0;
+    }
+
+    .terminal-row {
+      display: flex;
+      padding: 10px;
+      border-bottom: 1px solid #d0d0d096;
+      & > * {
+        flex: 1;
+      }
+
+      .terminal-item {
+        min-height: 36px;
+        max-height: 36px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        border: 1px solid #d0d0d0;
+        border-bottom: none;
+        padding: 0 4px;
+        cursor: pointer;
+
+        &:last-child {
+          border-bottom: 1px solid #d0d0d0;
+        }
+        &:hover {
+          opacity: 0.8;
+          background: rgb(134, 217, 255);
+        }
+        &.current {
+          justify-content: flex-end;
+          border-bottom: 1px solid #d0d0d0;
+          .terminal-name {
+            flex: 1;
+            // text-align: center;
+            padding-left: 10px;
+          }
+        }
+
+        .terminal-icon {
+          font-size: 20px;
+          margin: 0 6px;
+        }
+
+        .equipment-name {
+          flex: 1;
+        }
+
+        &.actived {
+          background: rgb(134, 217, 255);
+        }
+      }
+
+      .terminal-line {
+        min-height: 36px;
+        max-height: 36px;
+        max-width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0px 10px;
+        .line {
+          width: 100%;
+          height: 2px;
+          background: @lineColor;
+        }
+      }
+      .targets {
+        flex: 3;
+        .target-box {
+          display: flex;
+          align-items: center;
+
+          .business {
+            border-bottom: 2px dashed red;
+            height: 6px !important;
+          }
+
+          .nodes-line {
+            width: 80px;
+            height: 2px;
+            background: @lineColor;
+
+            margin-right: 8px;
+
+            &:hover {
+              opacity: 0.8;
+              cursor: pointer;
+            }
+
+            &.cable {
+              background: linear-gradient(#a5a5a5, #212121, #a5a5a5);
+              height: 6px;
+              position: relative;
+              &.cable-type-electric {
+                background: rgb(253, 161, 23);
+              }
+
+              &.cable-type-optical {
+                background: rgb(23, 218, 253);
+              }
+
+              .cable-name {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: 4px;
+                font-size: 12px;
+              }
+              .cable-core-name {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                top: 4px;
+                font-size: 12px;
+              }
+            }
+          }
+
+          .terminal-item {
+            justify-content: space-between;
+            .btns {
+              .btn {
+                padding: 2px;
+                margin: 2px;
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nodes-last {
+    color: #ab2525;
+    .nodes-line {
+      background: #ab2525;
+    }
+  }
+  .nodes-last-prev {
+    color: #d08a00;
+    .nodes-line {
+      background: #d08a00;
+    }
+  }
+
+  .terminal-info {
+    position: relative !important;
+    border-left: 1px solid @lineColor;
+
+    .sc-panel-body {
+      padding: 10px;
+    }
+
+    .item {
+      display: flex;
+      margin: 4px 0;
+      .label {
+        flex: 1;
+        font-weight: 700;
+      }
+      .value {
+        flex: 3;
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+  }
+}

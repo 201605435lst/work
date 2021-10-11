@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SnAbp.File2</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--<PackageReference Include="Volo.Abp.Http.Client" Version="3.0.5" />-->
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Http.Client\Volo.Abp.Http.Client.csproj" />-->
+
+    <ProjectReference Include="..\SnAbp.File.Application.Contracts\SnAbp.File.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

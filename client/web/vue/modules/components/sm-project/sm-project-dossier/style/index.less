@@ -1,0 +1,97 @@
+.sm-project-dossier {
+  display: flex;
+  height: 100%;
+
+  .sm-project-dossier-manage {
+    .ant-card {
+      // height: 100%;
+    }
+    .ant-card-body {
+      height: 670px;
+      .code-style {
+        color: #0bbaf4;
+        font-weight: 400;
+      }
+    }
+    .dossier-manage-button-input {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .dossier-manage-button {
+        display: flex;
+        .ant-btn {
+          margin-right: 8px;
+          height: 30px;
+        }
+      }
+      .dossier-manage-input {
+        width: 300px;
+        .ant-input-group {
+          display: flex;
+          width: 370px;
+        }
+      }
+    }
+  }
+}
+.sm-project-card-tree {
+  margin-right: 20px;
+  .card-tree {
+    width: 320px;
+    // height: 100%;
+    // .tree-node {
+    // li span{
+    //    display: flex;
+    //  }
+    //   .ant-tree-node-content-wrapper {
+    //     display: flex;
+    //   }
+    // }
+    .ant-card-head {
+      height: 60px;
+    }
+    .ant-card-body {
+      height: 600px;
+      overflow: auto;
+      margin-bottom: 10px;
+    }
+    .category-item {
+      .item-icon {
+        margin-right: 10px;
+      }
+      .title {
+        margin-right: 30px;
+      }
+      .icon {
+        font-size: 22px;
+      }
+      .icons {
+        visibility: visible;
+        margin-left: 16px;
+      }
+      &:hover {
+        .icons {
+          visibility: visible;
+          flex: 1;
+        }
+      }
+    }
+  }
+  .card-tree-select {
+    .project-dossier-button {
+      margin-bottom: 10px;
+      width: 100%;
+      height: 30px;
+    }
+  }
+}
+.sm-project-empty-manage {
+  width: 100%;
+  .ant-card {
+    height: 100%;
+    .ant-empty-description {
+      font-size: 20px;
+      color: cadetblue;
+    }
+  }
+}

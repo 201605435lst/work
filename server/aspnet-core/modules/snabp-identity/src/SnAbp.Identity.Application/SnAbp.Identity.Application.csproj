@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SnAbp.Identity.Application</AssemblyName>
+    <PackageId>SnAbp.Identity.Application</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnAbp.Identity.Application.Contracts\SnAbp.Identity.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-permission-management\src\SnAbp.PermissionManagement.Application\SnAbp.PermissionManagement.Application.csproj" />
+    <ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+	<ProjectReference Include="..\..\..\snabp-common\src\SnAbp.Common.Application.Contracts\SnAbp.Common.Application.Contracts.csproj" />
+	<ProjectReference Include="..\..\..\snabp-common\src\SnAbp.Common.Domain\SnAbp.Common.Domain.csproj" />
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AutoMapper\Volo.Abp.AutoMapper.csproj" />-->
+  
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpEmerg": "应急指挥",
+    "Permission:Faults": "故障案例",
+    "Permission:Plans": "应急预案",
+    "Permission:Create": "新建",
+    "Permission:Delete": "删除",
+    "Permission:Update": "修改",
+    "Permission:Detail": "详情",
+    "Permission:Apply": "调用"
+  }
+}

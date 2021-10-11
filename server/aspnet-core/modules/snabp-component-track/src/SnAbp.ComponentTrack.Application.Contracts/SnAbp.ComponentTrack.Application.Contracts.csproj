@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.ComponentTrack</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.ComponentTrack.Domain.Shared\SnAbp.ComponentTrack.Domain.Shared.csproj" />
+    <ProjectReference Include="..\SnAbp.ComponentTrack.Domain\SnAbp.ComponentTrack.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Application.Contracts\SnAbp.Resource.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="IServices\" />
+  </ItemGroup>
+
+</Project>

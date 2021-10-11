@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.Bpm.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.Get(System.Guid)">
+            <summary>
+            详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.GetWorkflow(System.Guid)">
+            <summary>
+            获取当前工作流的信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.GetList(SnAbp.Bpm.Dtos.WorkflowSearchInputDto)">
+            <summary>
+            查询列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.GetSimpleFlowState(SnAbp.Bpm.Entities.Workflow)">
+            <summary>
+            获取状态
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.GetCheckLevelWorkflow(System.Collections.Generic.List{SnAbp.Identity.Organization},System.Linq.IQueryable{SnAbp.Bpm.Entities.Workflow},System.Boolean)">
+            <summary>
+            获取待我审批的数据
+            </summary>
+            <param name="currentUserOrganizations"></param>
+            <param name="workflows"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SnAbp.Bpm.Services.BpmWorkflowAppService.GetWorkflowTemplateId(System.Guid)" -->
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.GetWorkflowData(System.Guid)">
+            <summary>
+            获取流程简报数据
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.CheckMembers(SnAbp.Bpm.Entities.Workflow,System.Collections.Generic.List{System.Guid})">
+            <summary>
+            判断当前用户所在的节4点
+            </summary>
+            <param name="workflow"></param>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.Create(SnAbp.Bpm.Dtos.WorkflowCreateDto)">
+            <summary>
+            发起工作流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.Process(SnAbp.Bpm.Dtos.WorkflowProcessDto)">
+            <summary>
+            处理流程
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.CanReturnStep(SnAbp.Bpm.Dtos.WorkflowProcessDto)">
+            <summary>
+            判断当前节点是否有回退的权限
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowAppService.GetTotal(SnAbp.Bpm.Dtos.WorkflowSearchInputDto)">
+            <summary>
+            统计全部数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.Get(System.Guid)">
+            <summary>
+                查询
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.GetWorkflowForInitial(System.Guid)">
+            <summary>
+                获取首次发起表单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.GetList(SnAbp.Bpm.Dtos.WorkflowTemplateSearchInputDto)">
+            <summary>
+                查询列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.Create(SnAbp.Bpm.Dtos.WorkflowTemplateCreateDto)">
+            <summary>
+                创建
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.Update(SnAbp.Bpm.Dtos.WorkflowTemplateUpdateDto)">
+            <summary>
+                更新
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.UpdateFlowTemplate(SnAbp.Bpm.Dtos.WorkflowTemplateUpdateFlowTemplateInputDto)">
+            <summary>
+                编辑流程模板
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.UpdateFormTemplateAndFlowTemplate(SnAbp.Bpm.Dtos.WorkflowTemplateUpdateFormTemplateAndFlowTemplateInputDto)">
+            <summary>
+                编辑表单模板和流程模板
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.UpdateMembers(SnAbp.Bpm.Dtos.WorkflowTemplateUpdateMembersDto)">
+            <summary>
+                更新发布对象
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.UpdatePublishState(SnAbp.Bpm.Dtos.WorkflowTemplateChangePublishStateInputDto)">
+            <summary>
+                更改发布状态
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.Delete(System.Guid)">
+            <summary>
+                删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.GetGroupList">
+            <summary>
+            获取工作流模板分组信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.CreateGroup(SnAbp.Bpm.Dtos.WorkflowTemplateGroupCreateDto)">
+            <summary>
+            创建一个分组
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.UpdateGroup(SnAbp.Bpm.Dtos.WorkflowTemplateGroupCreateDto)">
+            <summary>
+            更新分组
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.BpmWorkflowTemplateAppService.DeleteGroup(System.Guid)">
+            <summary>
+            删除分组
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SnAbp.Bpm.Services.SingleFlowProcessService">
+            <summary>
+            单一流程接口实现
+            </summary>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.CreateSingleWorkFlow(System.Guid)">
+            <summary>
+            创建工作流
+            </summary>
+            <param name="templateId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.GetNodeTree(System.Collections.Generic.List{SnAbp.Bpm.Dtos.SingleFlowNodeDto})">
+            <summary>
+            获取node树结构
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.GetWorkFlowNodes(System.Guid)">
+            <summary>
+            获取流程的节点信息
+            </summary>
+            <param name="workflowId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.GetUsers(System.Collections.Generic.IReadOnlyList{System.Guid})">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.Approved(System.Guid,System.String,System.Nullable{System.Guid})">
+            <summary>
+            通过审批
+            </summary>
+            <param name="workflowId"></param>
+            <param name="userId"></param>
+            <param name="comments"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.Rejected(System.Guid,System.String,System.Nullable{System.Guid})">
+            <summary>
+            决绝审批
+            </summary>
+            <param name="workflowId"></param>
+            <param name="userId"></param>
+            <param name="comments"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.Stopped(System.Guid,System.String,System.Nullable{System.Guid})">
+            <summary>
+            终止审批
+            </summary>
+            <param name="workflowId"></param>
+            <param name="userId"></param>
+            <param name="comments"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.Process(System.Guid,System.Nullable{System.Guid},SnAbp.Bpm.WorkflowStepState,System.String)">
+            <summary>
+            处理工作流
+            </summary>
+            <param name="workflowId"></param>
+            <param name="userId"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.IsWaitingMyApproval(System.Guid)">
+            <summary>
+            判断指定的流程是不是待我审批的流程，返回一个bool
+            </summary>
+            <param name="workflowId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Bpm.Services.SingleFlowProcessService.GetMyApprovaledWorkflow">
+            <summary>
+            获取我审批的工作流信息
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

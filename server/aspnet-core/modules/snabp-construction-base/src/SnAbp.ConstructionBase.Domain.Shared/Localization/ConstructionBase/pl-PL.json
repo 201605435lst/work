@@ -1,0 +1,11 @@
+{
+  "culture": "pl-PL",
+  "texts": {
+    "Permission:Worker": "Permission:Worker",
+    "Permission:EquipmentTeam": "Permission:EquipmentTeam",
+    "Permission:Material": "Permission:Material",
+    "Permission:Procedure": "Permission:Procedure",
+    "Permission:SubItem": "Permission:SubItem",
+    "Permission:SubItemContent": "Permission:SubItemContent"
+  }
+}

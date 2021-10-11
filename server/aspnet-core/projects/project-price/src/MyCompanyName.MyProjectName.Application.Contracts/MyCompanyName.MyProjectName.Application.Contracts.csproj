@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyCompanyName.MyProjectName.Domain.Shared\MyCompanyName.MyProjectName.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\..\..\..\..\framework\src\Volo.Abp.ObjectExtending\Volo.Abp.ObjectExtending.csproj" />-->
+    <PackageReference Include="Volo.Abp.ObjectExtending" Version="3.0.5" />
+
+    <ProjectReference Include="..\..\..\..\modules\snabp-account\src\SnAbp.Account.Application.Contracts\SnAbp.Account.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-identity\src\SnAbp.Identity.Application.Contracts\SnAbp.Identity.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-permission-management\src\SnAbp.PermissionManagement.Application.Contracts\SnAbp.PermissionManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-tenant-management\src\SnAbp.TenantManagement.Application.Contracts\SnAbp.TenantManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-feature-management\src\SnAbp.FeatureManagement.Application.Contracts\SnAbp.FeatureManagement.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

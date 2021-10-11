@@ -1,0 +1,16 @@
+{
+    "culture": "zh-Hans",
+  "texts": {
+    "Permission:AbpBasic": "基础数据管理",
+    "Permission:Railways": "线路管理",
+    "Permission:Stations": "站点管理",
+    "Permission:InstallationSites": "机房管理",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Detail": "详情",
+    "Permission:Import": "导入",
+    "Permission:Relate": "关联站点",
+    "Permission:Export": "导出"
+  }
+  }

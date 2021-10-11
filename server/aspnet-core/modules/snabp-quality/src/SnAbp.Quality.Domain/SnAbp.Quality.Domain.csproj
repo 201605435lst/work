@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Quality</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.Domain\SnAbp.File.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Domain\SnAbp.Resource.Domain.csproj" />
+    <ProjectReference Include="..\SnAbp.Quality.Domain.Shared\SnAbp.Quality.Domain.Shared.csproj" />
+    <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.MultiProject\SnAbp.MultiProject.csproj" />
+  </ItemGroup>
+
+</Project>

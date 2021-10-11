@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Message.Notice</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+     <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.EntityFrameworkCore\SnAbp.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\SnAbp.Message.Notice.Domain\SnAbp.Message.Notice.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.EntityFrameworkCore\SnAbp.Identity.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

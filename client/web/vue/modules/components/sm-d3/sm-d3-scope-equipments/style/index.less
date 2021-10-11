@@ -1,0 +1,126 @@
+@transition: all 0.3s cubic-bezier(0.645, 0.045, 0.365, 1);
+
+@backgroud: #f5f5f5f0;
+@lineColor: #d0d0d0;
+
+.sm-d3-scope-equipments {
+  background: none;
+
+  // .ant-tree-checkbox-inner {
+  //   background: #efefef;
+  // }
+  // .equipment-tree-node {
+  //   .ant-tree-checkbox-inner {
+  //     background: white;
+  //   }
+  // }
+
+  .ant-tree-node-content-wrapper {
+    &:hover {
+      background: none !important;
+    }
+    position: relative;
+    padding: 0;
+    display: inline-flex !important;
+
+    .ant-tree-title {
+      flex: 1;
+      display: inline-flex;
+      padding: 0 6px;
+      margin-left: -2px;
+      border-radius: 4px;
+      &:hover {
+        background-color: #b9e8ff;
+      }
+      .icon {
+        margin-right: 5px;
+      }
+      .title {
+        user-select: none;
+        flex: 1;
+        display: inline-flex;
+        // justify-content: space-between;
+        .btns {
+          margin-right: 6px;
+          margin-left: -2px;
+          .btn {
+            margin: 0 3px;
+            &:hover {
+              color: #1890ff;
+            }
+          }
+          .btn-visible {
+            &.hidden {
+              opacity: 0.3;
+            }
+          }
+          .btn-fly {
+            // display: none;
+            &.blink {
+              color: red;
+              animation: keyframes-blink 1s infinite;
+            }
+          }
+          &:hover {
+            .btns {
+              .btn-fly {
+                // display: inline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sc-panel-body {
+    padding: 12px !important;
+  }
+}
+
+@keyframes keyframes-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes keyframes-blink /* Firefox */ {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes keyframes-blink /* Safari and Chrome */ {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes keyframes-blink /* Opera */ {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

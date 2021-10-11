@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Message.Email</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+     <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.EntityFrameworkCore\SnAbp.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\SnAbp.Message.Email.Domain\SnAbp.Message.Email.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

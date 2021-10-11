@@ -1,0 +1,13 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "ManageYourProfile": "管理个人资料",
+    "Tasks": "任务",
+    "Permission:Tasks": "任务管理",
+    "Permission:Create": "创建任务",
+    "Permission:Delete": "删除任务",
+    "Permission:Update": "任务反馈",
+    "Permission:Detail": "任务详情",
+    "Permission:Export": "导出"
+  }
+}

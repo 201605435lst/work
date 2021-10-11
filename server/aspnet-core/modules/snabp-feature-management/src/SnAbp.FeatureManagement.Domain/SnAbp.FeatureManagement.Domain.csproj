@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Features" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Caching" Version="3.0.5" />
+    <!--<projectreference include="..\..\..\..\framework\src\volo.abp.ddd.domain\volo.abp.ddd.domain.csproj" />
+    <projectreference include="..\..\..\..\framework\src\volo.abp.features\volo.abp.features.csproj" />
+    <projectreference include="..\..\..\..\framework\src\volo.abp.caching\volo.abp.caching.csproj" />-->
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnAbp.FeatureManagement.Domain.Shared\SnAbp.FeatureManagement.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

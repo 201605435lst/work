@@ -1,0 +1,20 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpSafe": "安全管理",
+    "Permission:Problems": "安全问题管理",
+    "Permission:ProblemLibrarys": "安全问题库",
+    "Permission:Reform": "整改",
+    "Permission:Create": "添加",
+    "Permission:Sign": "标记",
+    "Permission:Update": "编辑",
+    "Permission:Detail": "详情",
+    "Permission:Export": "导出",
+    "Permission:Import": "导入",
+    "Permission:Verify": "验证",
+    "Permission:Delete": "删除",
+    "Permission:Position": "定位"
+
+  }
+} 
+

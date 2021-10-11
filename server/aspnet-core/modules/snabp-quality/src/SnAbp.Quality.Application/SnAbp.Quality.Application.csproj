@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.Quality</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+		<ProjectReference Include="..\SnAbp.Quality.Application.Contracts\SnAbp.Quality.Application.Contracts.csproj" />
+		<ProjectReference Include="..\SnAbp.Quality.Domain\SnAbp.Quality.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Application\SnAbp.Identity.Application.csproj" />
+		<ProjectReference Include="..\..\..\snabp-message-notice\src\SnAbp.Message.Notice\SnAbp.Message.Notice.csproj" />
+	</ItemGroup>
+
+</Project>

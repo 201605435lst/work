@@ -1,0 +1,37 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpStdBasic": "基础标准模块",
+    "Permission:ComponentCategories": "构件分类",
+    "Permission:ProductCategories": "产品分类",
+    "Permission:Manufactures": "厂家管理",
+    "Permission:RepairItems": "维修项管理",
+    "Permission:StandardEquipments": "产品管理",
+    "Permission:Terminals": "端子维护",
+    "Permission:WorkAttention": "作业注意事项管理",
+    "Permission:RepairTestItems": "维修测试项管理",
+    "Permission:RepairGroup": "维修分组",
+    "Permission:InfluenceRanges": "影响范围管理",
+    "Permission:MVDCategory": "信息交换模板分类",
+    "Permission:MVDProperty": "信息交换模板属性",
+    "Permission:QuotaCategorys": "定额分类",
+    "Permission:Quotas": "定额清单管理",
+    "Permission:ProjectItems": "工程工项管理",
+    "Permission:ProcessTemplates": "工序模板管理",
+    "Permission:IndividualProjects": "单位工程管理",
+    "Permission:QuotaItems": "定额清单",
+    "Permission:BasePrices": "基价",
+    "Permission:ComputerCodes": "电算代号",
+
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Detail": "查看",
+    "Permission:Import": "导入",
+    "Permission:Export": "导出",
+    "Permission:UpdateOrder": "排序",
+    "Permission:CreateTagMigration": "标签迁移",
+    "Permission:Upgrade": "更新",
+    "Permission:CreateType": "类别维护"
+  }
+}

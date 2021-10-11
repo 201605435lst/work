@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Resource</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Organization.cs" />
+    <Compile Remove="Repositories\IOrganizationRespository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Resource.Domain.Shared\SnAbp.Resource.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.Domain\SnAbp.Basic.Domain.csproj" />
+	  <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+	  <ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.Domain\SnAbp.File.Domain.csproj" />
+	  <ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain\SnAbp.StdBasic.Domain.csproj" />
+	  <ProjectReference Include="..\..\..\snabp-common\src\SnAbp.Common.Domain\SnAbp.Common.Domain.csproj" />
+	  <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.MultiProject\SnAbp.MultiProject.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,77 @@
+.sm-d3-cable-location {
+  .add-icon {
+    float: right;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+        background-color: rgb(202, 202, 202);
+      }
+    }
+  }
+  .info-box {
+    .info-item {
+      display: flex;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      .item-title {
+        flex: 3;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #1890ff;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .item-icon {
+        flex: 1;
+        margin: 0 5px;
+      }
+      .item-value {
+        flex: 3;
+        margin-right: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .item-operator {
+        flex: 2;
+        display: flex;
+        justify-content: flex-end;
+        .icons {
+          display: none;
+        }
+      }
+
+      &:hover {
+        .item-operator {
+          .icons {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            & > * {
+              cursor: pointer;
+              width: 20px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:hover {
+                opacity: 0.8;
+                background-color: rgb(202, 202, 202);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

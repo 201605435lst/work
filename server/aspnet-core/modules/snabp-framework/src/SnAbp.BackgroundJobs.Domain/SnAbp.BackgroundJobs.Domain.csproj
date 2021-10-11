@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.BackgroundJobs.Domain</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+	  <PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+	  <PackageReference Include="Volo.Abp.BackgroundJobs" Version="3.0.5" />
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AutoMapper\Volo.Abp.AutoMapper.csproj" />
+    <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Ddd.Domain\Volo.Abp.Ddd.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.BackgroundJobs\Volo.Abp.BackgroundJobs.csproj" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnAbp.BackgroundJobs.Domain.Shared\SnAbp.BackgroundJobs.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

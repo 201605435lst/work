@@ -1,0 +1,13 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "Permission:Bpm": "工作流程管理",
+    "Permission:WorkflowTemplates": "工作流模板管理",
+    "Permission:Create": "创建",
+    "Permission:Delete": "删除",
+    "Permission:Update": "编辑",
+    "Permission:Detail": "详情",
+    "Permission:PublishState": "发布状态",
+    "Permission:DataStatistic": "数据统计"
+  }
+}

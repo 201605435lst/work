@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Quality</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Http.Client" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Quality.Application.Contracts\SnAbp.Quality.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

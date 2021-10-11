@@ -1,0 +1,46 @@
+.tree-select-content {
+  cursor: pointer;
+  .tree-select-action {
+    padding: 8px;
+    .tree-select-add-edit {
+      border-radius: 4px;
+      display: flex;
+      .add-edit-input {
+        margin-right: 20px;
+        flex: 11;
+      }
+      .add-edit-button {
+        .add-edit-button-save {
+          margin-right: 10px;
+        }
+      }
+    }
+    .tree-select-icon {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+  .items-title {
+    display: flex;
+    justify-content: space-between;
+    .item-edit {
+      font-size: 16px;
+      color: limegreen;
+      margin-right: 10px;
+      display: none;
+    }
+    &:hover {
+      .item-edit{
+        display: block;
+
+      }
+      
+    }
+  }
+
+}
+.sm-project-action-tree-select{
+  .item-edit{
+    display: none;
+  }
+}

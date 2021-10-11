@@ -1,0 +1,11 @@
+{
+  "culture": "en",
+  "texts": {
+    "Resource": "Resource Module",
+
+    "Resource.Equipment": "Equipment Manage",
+    "Resource.Equipment.Create": "Create",
+    "Resource.Equipment.Update": "Update",
+    "Resource.Equipment.Delete": "Delete"
+  }
+}

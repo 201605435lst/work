@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SnAbp.Identity.Application.Contracts</AssemblyName>
+    <PackageId>SnAbp.Identity.Application.Contracts</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+    <ProjectReference Include="..\SnAbp.Identity.Domain.Shared\SnAbp.Identity.Domain.Shared.csproj" />
+    <ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+    <ProjectReference Include="..\..\..\snabp-permission-management\src\SnAbp.PermissionManagement.Application.Contracts\SnAbp.PermissionManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-users\src\SnAbp.Users.Abstractions\SnAbp.Users.Abstractions.csproj" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Authorization\Volo.Abp.Authorization.csproj" />
+    <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Ddd.Application\Volo.Abp.Ddd.Application.csproj" />-->
+
+  </ItemGroup>
+
+</Project>

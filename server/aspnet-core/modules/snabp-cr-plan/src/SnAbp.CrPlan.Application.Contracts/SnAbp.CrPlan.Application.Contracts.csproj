@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.CrPlan</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+		<PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.Authorization" Version="3.0.5" />
+		<ProjectReference Include="..\SnAbp.CrPlan.Domain.Shared\SnAbp.CrPlan.Domain.Shared.csproj" />
+		<ProjectReference Include="..\SnAbp.CrPlan.Domain\SnAbp.CrPlan.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Application.Contracts\SnAbp.Identity.Application.Contracts.csproj" />
+
+		<ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.Application.Contracts\SnAbp.Basic.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.Domain\SnAbp.Basic.Domain.csproj" />
+
+		<ProjectReference Include="..\..\..\snabp-bpm\src\SnAbp.Bpm.Domain\SnAbp.Bpm.Domain.csproj" />
+		<ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain\SnAbp.StdBasic.Domain.csproj" />
+
+		<ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Application.Contracts\SnAbp.StdBasic.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.Application.Contracts\SnAbp.File.Application.Contracts.csproj" />
+	</ItemGroup>
+</Project>

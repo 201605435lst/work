@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SnAbp.Message</RootNamespace>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.AspNetCore.SignalR" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Message.Domain\SnAbp.Message.Domain.csproj" />  
+  </ItemGroup>
+
+</Project>

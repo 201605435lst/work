@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SnAbp.Account.Application</AssemblyName>
+    <PackageId>SnAbp.Account.Application</PackageId>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Encodings.Web" Version="4.7.1" />
+    <PackageReference Include="Volo.Abp.UI.Navigation" Version="3.0.5" />
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.UI.Navigation\Volo.Abp.UI.Navigation.csproj" />-->
+    <ProjectReference Include="..\SnAbp.Account.Application.Contracts\SnAbp.Account.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Application\SnAbp.Identity.Application.csproj" />
+  </ItemGroup>
+
+</Project>

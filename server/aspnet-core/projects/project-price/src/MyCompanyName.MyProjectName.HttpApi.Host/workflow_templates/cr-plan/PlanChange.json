@@ -1,0 +1,128 @@
+{
+  "name": "计划变更审核表单",
+  "webHookUrl": "/api/app/crPlanAlterRecord/approvePlanAlter",
+  "version": 1,
+  "formItems": [
+    {
+      "type": "textarea",
+      "label": "变更原因",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "",
+        "clearable": false,
+        "maxLength": 500,
+        "disabled": false,
+        "minRows": 4,
+        "maxRows": 6
+      },
+      "model": "input_reason",
+      "key": "input_reason",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "原计划日期",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "",
+        "clearable": false,
+        "maxLength": null,
+        "disabled": false
+      },
+      "model": "input_forePlanTime",
+      "key": "input_forePlanTime",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "申请变更时间",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "",
+        "clearable": false,
+        "maxLength": null,
+        "disabled": false
+      },
+      "model": "input_changePlanTime",
+      "key": "input_changePlanTime",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "变更类型",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "",
+        "clearable": false,
+        "maxLength": null,
+        "disabled": false
+      },
+      "model": "input_changeType",
+      "key": "input_changeType",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "uploadFile",
+      "label": "计划变更审核文件",
+      "options": {
+        "defaultValue": "",
+        "multiple": false,
+        "disabled": false,
+        "drag": false,
+        "width": "100%",
+        "limit": 3,
+        "data": {},
+        "action": "",
+        "placeholder": "上传"
+      },
+
+      "model": "uploadFile_PlanChange",
+      "key": "uploadFile_PlanChange",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    }
+  ],
+  "formConfig": {
+    "layout": "horizontal",
+    "labelCol": {
+      "span": 4
+    },
+    "wrapperCol": {
+      "span": 18
+    },
+    "hideRequiredMark": false,
+    "customStyle": ""
+  }
+}

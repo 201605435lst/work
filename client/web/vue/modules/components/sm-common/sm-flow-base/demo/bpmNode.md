@@ -1,0 +1,225 @@
+<cn>
+#### 工作流流程节点
+</cn>
+
+<us>
+#### 工作流流程节点
+</us>
+
+```tpl
+<template>
+  <div>
+    <sm-flow-base :nodes="data" :width="1000" :height="200" :bpmNode="true" :showDetail="true" :grid='false'>
+    </sm-flow-base>
+    <sm-flow-base :nodes="data1"  :width="1000" :height="200" :bpmNode="true" :showDetail="false" :grid='false'>
+    </sm-flow-base>
+    <sm-flow-base :nodes="data2"  :width="1000" :height="200" :bpmNode="true" :showDetail="true" :grid='false'>
+    </sm-flow-base>
+  </div>
+</template>
+<script>
+import axios from '@/utils/axios.js'
+export default {
+  data(){
+    return {
+      data:[
+        {
+          id:1,
+          name:'开始节点',
+          active:false,
+          type:'bpmStart',
+          date:'2020-12-01',
+          creator:'张三',
+          children:[
+            {
+                id:2,
+                name:'审批节点1',
+                active:true,
+                type:'bpmApprove',
+                date:'2020-12-01',
+                approvers:[
+                {
+                  name:'张三'
+                }
+                ],
+                children:[
+                  {
+                    id:3,
+                    name:'审批节点2',
+                    active:false,
+                    type:'bpmApprove',
+                    date:'',
+                    approvers:[
+                      {name:'李四'},
+                      {name:'赵六'},
+                    ],
+                    children:[
+                      {
+                        id:4,
+                        name:'结束节点',
+                        type:'bpmEnd',
+                        date:'',
+                      }
+                    ]
+                  }
+                ],
+            },
+            {
+                id:5,
+                name:'审批节点3',
+                active:true,
+                type:'bpmApprove',
+                date:'2020-12-01',
+                approvers:[
+                {
+                  name:'薛⑦'
+                }
+                ],
+                children:[
+                  {
+                    id:3,
+                    name:'审批节点2',
+                    active:false,
+                    type:'bpmApprove',
+                    date:'',
+                    approvers:[
+                      {name:'李四'},
+                      {name:'赵六'},
+                    ],
+                    children:[]
+                  }
+                ],
+            },
+          ]
+        }
+      ],
+      data1:[
+        {
+          id:1,
+          name:'开始节点',
+          active:false,
+          type:'bpmStart',
+          date:'2020-12-01',
+          creator:'张三',
+          children:[
+            {
+                id:2,
+                name:'审批节点1',
+                active:false,
+                type:'bpmApprove',
+                date:'2020-12-01',
+                approvers:[
+                {
+                  name:'张三'
+                },
+                ], 
+                comments:[
+                  {
+                    approveTime:'2020-01-01',
+                    content:'你很牛逼！',
+                  },
+                  {
+                    approveTime:'2020-01-02',
+                    content:'同意',
+                  }
+                ],
+                children:[
+                  {
+                    id:3,
+                    name:'审批节点2',
+                    active:true,
+                    type:'bpmApprove',
+                    date:'',
+                    approvers:[
+                      {name:'李四'},
+                      {name:'赵六'},
+                    ],
+                    children:[
+                      {
+                        id:4,
+                        name:'结束节点',
+                        type:'bpmEnd',
+                        date:'',
+                      }
+                    ]
+                  }
+                ],
+            },
+          ]
+        }
+      ],
+      data2:[
+        {
+          id:1,
+          name:'开始节点',
+          active:false,
+          type:'bpmStart',
+          date:'2020-12-01',
+          creator:'张三',
+          children:[
+            {
+                id:2,
+                name:'审批节点1',
+                active:false,
+                type:'bpmApprove',
+                date:'2020-12-01',
+                approvers:[{ name:'张三'}],
+                comments:[
+                  {
+                    approveTime:'2020-01-01',
+                    content:'同意',
+                  },
+                  {
+                    approveTime:'2020-01-02',
+                    content:'同意666',
+                  }
+                ],
+                children:[
+                  {
+                    id:3,
+                    name:'审批节点2',
+                    active:false,
+                    type:'bpmApprove',
+                    date:'2020-12-02',
+                    approvers:[
+                      {name:'李四'},
+                      {name:'赵六'},
+                     ],
+                     comments:[
+                      {
+                       approveTime:'2020-01-01',
+                       content:'同意',
+                      },
+                      {
+                        approveTime:'2020-01-02',
+                        content:[
+                          '你愁啥',
+                          '瞅你咋地'
+                        ]
+                       }
+                      ],
+                     children:[
+                      {
+                        id:4,
+                        name:'结束节点',
+                        type:'bpmEnd',
+                        date:'2020-12-02',
+                      }
+                    ]
+
+                  }
+
+                ],
+            },
+          ]
+        }
+      ]
+    }
+  },
+  created(){
+  },
+  methods: {
+  }
+}
+</script>
+```

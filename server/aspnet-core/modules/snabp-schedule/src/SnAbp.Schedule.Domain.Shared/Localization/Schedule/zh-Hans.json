@@ -1,0 +1,27 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "ManageYourProfile": "管理个人资料",
+    "Schedule": "进度管理",
+    "Permission:Schedule": "施工计划",
+    "Permission:Approval": "任务审批",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Detail": "查看",
+    "Permission:Import": "导入",
+    "Permission:Export": "导出",
+    "Permission:SetFlow": "设置流程",
+
+
+    "Permission:Diary": "施工日志管理",
+    "Permission:Fill": "填报",
+    "Permission:View": "查看",
+    "Permission:PdfExport": "PDF导出",
+    "Permission:ExcelExport": "Excel导出",
+    "Permission:LogStatistics": "日志统计",
+    "Permission:Examination": "审批单"
+
+  }
+}
+     

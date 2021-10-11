@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.Construction</RootNamespace>
+	</PropertyGroup>
+
+  <ItemGroup>
+     <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.EntityFrameworkCore\SnAbp.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\SnAbp.Construction.Domain\SnAbp.Construction.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+    <ProjectReference Include="..\..\..\snabp-construction-base\src\SnAbp.ConstructionBase.EntityFrameworkCore\SnAbp.ConstructionBase.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-bpm\src\SnAbp.Bpm.EntityFrameworkCore\SnAbp.Bpm.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.EntityFrameworkCore\SnAbp.Identity.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.EntityFrameworkCore\SnAbp.File.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-project\src\SnAbp.Project.EntityFrameworkCore\SnAbp.Project.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.EntityFrameworkCore\SnAbp.Resource.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-technology\src\SnAbp.Technology.EntityFrameworkCore\SnAbp.Technology.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-safe\src\SnAbp.Safe.EntityFrameworkCore\SnAbp.Safe.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-quality\src\SnAbp.Quality.EntityFrameworkCore\SnAbp.Quality.EntityFrameworkCore.csproj" />
+
+  </ItemGroup>
+
+</Project>

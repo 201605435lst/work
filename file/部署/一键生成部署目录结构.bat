@@ -1,0 +1,1 @@
+mkdir api, data\imagery\World, data\common\images, data\model, data\project\sn_earth_project, data\terrain\World, file, web

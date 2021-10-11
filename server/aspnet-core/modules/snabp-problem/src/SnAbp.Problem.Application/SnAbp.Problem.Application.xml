@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.Problem.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemAppService.Get(System.Guid)">
+            <summary>
+            获取实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemAppService.GetList(SnAbp.Problem.Dtos.ProblemSearchDto)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemAppService.Create(SnAbp.Problem.Dtos.ProblemCreateDto)">
+            <summary>
+            添加
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemAppService.Update(SnAbp.Problem.Dtos.ProblemUpdateDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemAppService.Delete(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemAppService.CheckSameName(System.String,System.Nullable{System.Guid})">
+            <summary>
+            私有方法
+            </summary>
+            <param name="name"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemCategoryAppService.Get(System.Guid)">
+            <summary>
+            获取实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemCategoryAppService.GetList(SnAbp.Problem.Dtos.ProblemCategorySearchDto)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemCategoryAppService.Create(SnAbp.Problem.Dtos.ProblemCategoryCreateDto)">
+            <summary>
+            添加
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemCategoryAppService.Update(SnAbp.Problem.Dtos.ProblemCategoryUpdateDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Problem.Services.ProblemProblemCategoryAppService.Delete(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,91 @@
+.sm-node {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  box-shadow: 0px 0px 9px 2px #f1f1f1;
+  border: 1px solid #c3c3c3;
+
+}
+
+.node-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 10px 0px 0px 10px;
+}
+
+.node-title {
+  flex: 2.5;
+  border-right: 2px solid #ccc6c6;
+  text-align: left;
+}
+
+.node-title .main-title {
+  padding: 0px;
+  margin: 0px;
+}
+
+.node-title .sub-title {
+  padding: 0px;
+  margin: 5px 0px 0px 0px;
+  font-size: 10px;
+}
+
+.node-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.node-right .process {
+  height: 20px;
+  width: 20px;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.node-right .number {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.node-root {
+  height: 10px;
+  background: #edf1ef;
+  border-radius: 0 0 5px 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex: 1 1 auto;
+}
+
+
+.task-type-processing{
+  background-color: #1890FF;
+}
+.task-type-receive{
+  background-color: rgb(187, 8, 178);
+}
+.task-type-finshed{
+  background-color: #3AE367;
+}
+.task-type-refused{
+  background-color: rgb(233, 202, 30);
+}
+.task-type-noStart{
+  background-color: #EBB00C;
+}
+.task-type-stop{
+  background-color: red;
+}

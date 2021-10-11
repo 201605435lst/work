@@ -1,0 +1,51 @@
+.sm-d3 {
+  flex: 1;
+  background: rgb(90, 90, 90);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .cesium-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    .cesium-performanceDisplay {
+      display: none;
+    }
+  }
+  .panel-layer {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .sn-entity-tips {
+    position: absolute;
+    background: rgb(47, 50, 51);
+    border-radius: 4px;
+    padding: 2px 5px;
+    color: white;
+    margin-left: -20px;
+    margin-bottom: 6px;
+  }
+}
+
+.btn-more-overlay {
+  // transition: none !important;
+  animation: none !important;
+  animation-play-state: unset;
+  animation-duration: initial;
+  // margin-top: 16px !important;
+  // * {
+  //   transition: none !important;
+  //   animation-name: none;
+  // }
+}
+
+.ant-tabs-ink-bar-animated {
+  transition: none !important;
+}

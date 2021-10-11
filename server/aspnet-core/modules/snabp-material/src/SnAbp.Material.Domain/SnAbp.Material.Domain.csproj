@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.Material</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Entities\PurchaseListRltPurchasePlan\**" />
+	  <EmbeddedResource Remove="Entities\PurchaseListRltPurchasePlan\**" />
+	  <None Remove="Entities\PurchaseListRltPurchasePlan\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+		<ProjectReference Include="..\SnAbp.Material.Domain.Shared\SnAbp.Material.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.Domain\SnAbp.File.Domain.csproj" />
+		<ProjectReference Include="..\..\..\snabp-bpm\src\SnAbp.Bpm.Domain\SnAbp.Bpm.Domain.csproj" />
+		<ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Domain\SnAbp.Resource.Domain.csproj" />
+		<ProjectReference Include="..\..\..\snabp-project\src\SnAbp.Project.Domain\SnAbp.Project.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-technology\src\SnAbp.Technology.Domain\SnAbp.Technology.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-construction-base\src\SnAbp.ConstructionBase.Domain\SnAbp.ConstructionBase.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.MultiProject\SnAbp.MultiProject.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,70 @@
+@backgroud: #f5f5f5f0;
+@lineColor: #d0d0d0;
+@activeColor: #1794fb;
+
+.sm-d3-equipment-camera {
+  & > .sc-panel-body {
+    padding: 0;
+    .sc-panel {
+      background: none;
+      border-right: 1px solid @lineColor;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .header-btn {
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    // color: @activeColor;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      opacity: 0.8;
+    }
+    .anticon {
+      margin-right: 4px;
+    }
+  }
+
+  .equipment-item {
+    display: flex;
+    padding: 4px;
+    border-radius: 4px;
+
+    &.actived {
+      color: red;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      background-color: #dadada;
+    }
+    .index {
+      width: 30px;
+    }
+    .name {
+      flex: 1;
+    }
+    .btns {
+      display: flex;
+      cursor: pointer;
+      .btn {
+        margin-left: 5px;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          opacity: 0.8;
+          background-color: #cacaca;
+        }
+      }
+    }
+  }
+}

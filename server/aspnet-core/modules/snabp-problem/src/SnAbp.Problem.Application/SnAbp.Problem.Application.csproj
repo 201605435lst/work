@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Problem</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\SnAbp.Problem.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>.\SnAbp.Problem.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\OrganizationAppService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="SnAbp.Problem.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SnAbp.Problem.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Problem.Application.Contracts\SnAbp.Problem.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.Problem.Domain\SnAbp.Problem.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SnAbp.Bpm</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="OrganizationAppServiceTest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SnAbp.Bpm.Application\SnAbp.Bpm.Application.csproj" />
+    <ProjectReference Include="..\SnAbp.Bpm.Domain.Tests\SnAbp.Bpm.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+  </ItemGroup>
+
+</Project>

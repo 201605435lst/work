@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.ConstructionBase</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.ConstructionBase.Domain.Shared\SnAbp.ConstructionBase.Domain.Shared.csproj" />
+    <ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+    <ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.Domain\SnAbp.File.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-project\src\SnAbp.Project.Domain\SnAbp.Project.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-common\Snabp.Common.CodeGenerate\Snabp.Common.CodeGenerate.csproj" />
+	<ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.MultiProject\SnAbp.MultiProject.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+
+</Project>

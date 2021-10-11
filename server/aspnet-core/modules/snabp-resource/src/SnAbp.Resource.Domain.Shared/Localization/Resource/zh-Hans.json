@@ -1,0 +1,30 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpResource": "资源管理模块",
+    "Permission:CableExtens": "电缆特性",
+    "Permission:CableLocations": "电缆埋深",
+    "Permission:Equipments": "设备管理",
+    "Permission:StandardEquipments": "产品管理",
+    "Permission:EquipmentGroups": "设备分组",
+    "Permission:EquipmentProperties": "设备属性管理",
+    "Permission:StoreEquipments": "库存设备管理",
+    "Permission:StoreEquipmentTest": "库存设备检测",
+    "Permission:StoreEquipmentTransfer": "库存出入库记录",
+    "Permission:StoreHouse": "仓库管理",
+    "Permission:Terminal": "设备端子",
+    "Permission:TerminalLink": "设备端子链接",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:UpdateEnable": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Detail": "查看",
+    "Permission:Import": "导入",
+    "Permission:Export": "导出",
+    "Permission:ExportCode": "下载二维码",
+    "Permission:GenerateCode": "生成二维码",
+    "Permission:CodeDetail": "跟踪详情",
+    "Permission:GenerateQuality": "生成工程量",
+    "Permission:WaitingStorage": "待入库设备"
+  }
+} 

@@ -1,0 +1,374 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/user/help",
+			"style": {
+				"navigationBarTitleText": "帮助与反馈"
+			}
+		},
+		{
+			"path": "pages/user/concerning",
+			"style": {
+				"navigationBarTitleText": "关于app"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/memberSelect/memberSelect",
+			"style": {
+				"navigationBarTitleText": "请选择"
+			}
+		},
+		{
+			"path": "pages/constructionDispatch/constructionDispatchs",
+			"style": {}
+		},
+		{
+			"path": "pages/constructionDispatch/constructionDispatch",
+			"style": {
+				"navigationBarTitleText": "派工单审批"
+			}
+		},
+		{
+			"path": "pages/constructionDaily/constructionDailyApprove",
+			"style": {
+				"navigationBarTitleText": "施工日志审批"
+			}
+		},
+		{
+			"path": "pages/constructionDaily/constructionDailies",
+			"style": {
+				"navigationBarTitleText": "施工日志管理"
+			}
+		},
+		{
+			"path": "pages/constructionDaily/constructionDaily",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/constructionDaily/constructionDailySubmit",
+			"style": {
+				"navigationBarTitleText": "施工日志提交审批"
+			}
+		},
+		{
+			"path": "pages/uniappWebView/uniappWebView",
+			"style": {
+				"navigationBarTitleText": "web页面"
+			}
+		},
+		{
+			"path": "pages/infoDisplay/userInfo",
+			"style": {
+				"navigationBarTitleText": "用户信息"
+			}
+		},
+		{
+			"path": "pages/infoDisplay/materialInfo",
+			"style": {
+				"navigationBarTitleText": "材料信息"
+			}
+		},
+		{
+			"path": "pages/equipmentInfo/equipmentInfo",
+			"style": {
+				"navigationBarTitleText": "设备信息展示"
+			}
+		},
+		{
+			"path": "pages/cost/contracts/contracts",
+			"style": {
+				"navigationBarTitleText": "合同管理"
+			}
+		},
+		{
+			"path": "pages/cost/contracts/contract",
+			"style": {
+				"navigationBarTitleText": "合同信息录入"
+			}
+		},
+		{
+			"path": "pages/cost/otherCost/otherCosts",
+			"style": {
+				"navigationBarTitleText": "其他成本"
+			}
+		},
+		{
+			"path": "pages/cost/otherCost/otherCost",
+			"style": {
+				"navigationBarTitleText": "其他成本信息录入"
+			}
+		},
+		{
+			"path": "pages/cost/moneyManagement/moneyManagement",
+			"style": {
+				"navigationBarTitleText": "资金管理"
+			}
+		},
+		{
+			"path": "pages/cost/moneyManagement/money",
+			"style": {
+				"navigationBarTitleText": "资金信息录入"
+			}
+		},
+		{
+			"path": "pages/cost/laborCost/laborCosts",
+			"style": {
+				"navigationBarTitleText": "人工成本"
+			}
+		},
+		{
+			"path": "pages/cost/laborCost/laborCost",
+			"style": {
+				"navigationBarTitleText": "人工成本信息录入"
+			}
+		},
+		{
+			"path": "pages/material/materialOfBill/materialOfBills",
+			"style": {
+				"navigationBarTitleText": "领料单管理"
+			}
+		},
+		{
+			"path": "pages/material/materialOfBill/materialOfBill",
+			"style": {
+				"navigationBarTitleText": "领料单录入"
+			}
+		},
+		{
+			"path": "pages/material/materialAcceptance/materialAcceptances",
+			"style": {
+				"navigationBarTitleText": "物料验收"
+			}
+		},
+		{
+			"path": "pages/material/materialAcceptance/materialAcceptanceOfUpdate",
+			"style": {
+				"navigationBarTitleText": "跟踪信息录入"
+			}
+		},
+		{
+			"path": "pages/material/materialInventory/materialInventories",
+			"style": {
+				"navigationBarTitleText": "库存管理"
+			}
+		},
+		{
+			"path": "pages/material/materialInventory/materialInventory",
+			"style": {
+				"navigationBarTitleText": "库存信息"
+			}
+		},
+		{
+			"path": "pages/material/materialEntryRecords/materialEntryRecords",
+			"style": {
+				"navigationBarTitleText": "入库管理"
+			}
+		},
+		{
+			"path": "pages/material/materialEntryRecords/materialEntryRecord",
+			"style": {
+				"navigationBarTitleText": "入库信息录入"
+			}
+		},
+		{
+			"path": "pages/material/materialEntryRecords/materialEntryRecordMaterial",
+			"style": {
+				"navigationBarTitleText": "入库材料信息录入"
+			}
+		},
+		{
+			"path": "pages/material/materialOutRecords/materialOutRecords",
+			"style": {
+				"navigationBarTitleText": "出库管理"
+			}
+		},
+		{
+			"path": "pages/material/materialOutRecords/materialOutRecord",
+			"style": {
+				"navigationBarTitleText": "出库信息录入"
+			}
+		},
+		{
+			"path": "pages/material/materialOutRecords/materialOutRecordMaterial",
+			"style": {
+				"navigationBarTitleText": "出库材料信息录入"
+			}
+		},
+		{
+			"path": "pages/video/video",
+			"style": {
+				"navigationBarTitleText": "视频预览",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/quality/interface/interfaceListings",
+			"style": {
+				"navigationBarTitleText": "接口清单"
+			}
+		},
+		{
+			"path": "pages/quality/interface/interfaceSign",
+			"style": {
+				"navigationBarTitleText": "接口标记"
+			}
+		},
+		{
+			"path": "pages/quality/interface/interfaceDetails",
+			"style": {
+				"navigationBarTitleText": "接口详情"
+			}
+		},
+		{
+			"path": "pages/quality/interface/interfaceModify",
+			"style": {
+				"navigationBarTitleText": "接口整改"
+			}
+		},
+		{
+			"path": "pages/quality/qualityOfAll",
+			"style": {
+				"navigationBarTitleText": "质量问题"
+			}
+		},
+		{
+			"path": "pages/quality/qualityOfDetails",
+			"style": {
+				"navigationBarTitleText": "质量问题报告"
+			}
+		},
+		{
+			"path": "pages/quality/qualityOfMark",
+			"style": {
+				"navigationBarTitleText": "问题标记"
+			}
+		},
+		{
+			"path": "pages/quality/qualityOfImprove",
+			"style": {
+				"navigationBarTitleText": "问题整改"
+			}
+		},
+		{
+			"path": "pages/quality/qualityOfVerify",
+			"style": {
+				"navigationBarTitleText": "问题验证"
+			}
+		},
+		{
+			"path": "pages/security/securityOfAll",
+			"style": {
+				"navigationBarTitleText": "安全问题"
+			}
+		},
+		{
+			"path": "pages/security/securityOfMark",
+			"style": {
+				"navigationBarTitleText": "问题标记"
+			}
+		},
+		{
+			"path": "pages/security/securityOfImprove",
+			"style": {
+				"navigationBarTitleText": "问题整改"
+			}
+		},
+		{
+			"path": "pages/security/securityOfVerify",
+			"style": {
+				"navigationBarTitleText": "问题验证"
+			}
+		},
+		{
+			"path": "pages/security/securityOfDetails",
+			"style": {
+				"navigationBarTitleText": "安全问题报告"
+			}
+		},
+		{
+			"path": "pages/test/index",
+			"style": {}
+		},
+		{
+			"path": "pages/matter/matter",
+			"style": {
+				"navigationBarTitleText": "待办事项"
+			}
+		},
+		{
+			"path": "pages/user/userInfo",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/cost/cost",
+			"style": {
+				"navigationBarTitleText": "盈亏分析"
+			}
+		},
+		{
+			"path": "pages/material/materialOfBill/materialOfBillMaterial",
+			"style": {
+				"navigationBarTitleText": "物资信息"
+			}
+		},
+		{
+			"path": "pages/fileManage/file/file",
+			"style": {
+				"navigationBarTitleText": "文件"
+			}
+		},
+		{
+			"path": "pages/fileManage/file/fileTransfer",
+			"style": {
+				"navigationBarTitleText": "文件传输"
+			}
+		},
+		{
+			"path": "pages/fileManage/sharingCenter/sharingCenter",
+			"style": {
+				"navigationBarTitleText": "共享中心"
+			}
+		},
+		{
+			"path": "pages/fileManage/recycleBin/recycleBin",
+			"style": {
+				"navigationBarTitleText": "回收站"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#0e2a58",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4",
+			"scrollIndicator": "none",
+			"bounce": "none"
+		}
+	}
+}

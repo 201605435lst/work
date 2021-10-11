@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyCompanyName.MyProjectName.Application.Contracts\MyCompanyName.MyProjectName.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-account\src\SnAbp.Account.HttpApi\SnAbp.Account.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-identity\src\SnAbp.Identity.HttpApi\SnAbp.Identity.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-permission-management\src\SnAbp.PermissionManagement.HttpApi\SnAbp.PermissionManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-tenant-management\src\SnAbp.TenantManagement.HttpApi\SnAbp.TenantManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-feature-management\src\SnAbp.FeatureManagement.HttpApi\SnAbp.FeatureManagement.HttpApi.csproj" />
+
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-file\src\SnAbp.File.HttpApi\SnAbp.File.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-bpm\src\SnAbp.Bpm.HttpApi\SnAbp.Bpm.HttpApi.csproj" />
+    <!--<ProjectReference Include="..\..\..\..\..\modules\snabp-exam\src\SnAbp.Exam.HttpApi\SnAbp.Exam.HttpApi.csproj" />-->
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-cms\src\SnAbp.Cms.HttpApi\SnAbp.Cms.HttpApi.csproj" />
+
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-std-basic\src\SnAbp.StdBasic.HttpApi\SnAbp.StdBasic.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-basic\src\SnAbp.Basic.HttpApi\SnAbp.Basic.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-resource\src\SnAbp.Resource.HttpApi\SnAbp.Resource.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-emerg\src\SnAbp.Emerg.HttpApi\SnAbp.Emerg.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-problem\src\SnAbp.Problem.HttpApi\SnAbp.Problem.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-cr-plan\src\SnAbp.CrPlan.HttpApi\SnAbp.CrPlan.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-common\src\SnAbp.Common.HttpApi\SnAbp.Common.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-oa\src\SnAbp.Oa.HttpApi\SnAbp.Oa.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-message-notice\src\SnAbp.Message.Notice.HttpApi\SnAbp.Message.Notice.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-project\src\SnAbp.Project.HttpApi\SnAbp.Project.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-message-notice\src\SnAbp.Message.Notice.HttpApi\SnAbp.Message.Notice.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-message-bpm\src\SnAbp.Message.Bpm.HttpApi\SnAbp.Message.Bpm.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-project\src\SnAbp.Project.HttpApi\SnAbp.Project.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-alarm\src\SnAbp.Alarm.HttpApi\SnAbp.Alarm.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-task\src\SnAbp.Tasks.HttpApi\SnAbp.Tasks.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-report\src\SnAbp.Report.HttpApi\SnAbp.Report.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-regulation\src\SnAbp.Regulation.HttpApi\SnAbp.Regulation.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-schedule\src\SnAbp.Schedule.HttpApi\SnAbp.Schedule.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-material\src\SnAbp.Material.HttpApi\SnAbp.Material.HttpApi.csproj" />
+  </ItemGroup>
+
+</Project>

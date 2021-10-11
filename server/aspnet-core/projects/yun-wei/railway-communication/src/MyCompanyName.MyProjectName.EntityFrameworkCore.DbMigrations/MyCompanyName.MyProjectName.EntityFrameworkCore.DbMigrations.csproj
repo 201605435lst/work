@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200921030816_add_std_basic_product_category_terminal_symbol.cs" />
+    <Compile Remove="Migrations\20200921030816_add_std_basic_product_category_terminal_symbol.Designer.cs" />
+    <Compile Remove="Migrations\20200924054653_test.cs" />
+    <Compile Remove="Migrations\20200924054653_test.Designer.cs" />
+    <Compile Remove="Migrations\20201116013453_crplan_add_repair_tag.cs" />
+    <Compile Remove="Migrations\20201116013453_crplan_add_repair_tag.Designer.cs" />
+    <Compile Remove="Migrations\20201222083935_Test00001.cs" />
+    <Compile Remove="Migrations\20201222083935_Test00001.Designer.cs" />
+    <Compile Remove="Migrations\20210112013048_update_installation_site02.cs" />
+    <Compile Remove="Migrations\20210112013048_update_installation_site02.Designer.cs" />
+    <Compile Remove="Migrations\20210112015509_update_installation_site02.cs" />
+    <Compile Remove="Migrations\20210112015509_update_installation_site02.Designer.cs" />
+    <Compile Remove="Migrations\20210112015754_update_installation_site02.cs" />
+    <Compile Remove="Migrations\20210112015754_update_installation_site02.Designer.cs" />
+    <Compile Remove="Migrations\20210112083720_update_data.cs" />
+    <Compile Remove="Migrations\20210112083720_update_data.Designer.cs" />
+    <Compile Remove="Migrations\20210118095319_add_skylight_type.cs" />
+    <Compile Remove="Migrations\20210118095319_add_skylight_type.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyCompanyName.MyProjectName.EntityFrameworkCore\MyCompanyName.MyProjectName.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.File.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.File.EntityMapExtensions.ToMapperList``2(System.Linq.IQueryable{``1})">
+            <summary>
+            将<see cref="T:System.Linq.IQueryable" /> 对象转换成指定的泛型集合
+            </summary>
+            <typeparam name="T1">目标实体</typeparam>
+            <typeparam name="T2">IQueryable对象</typeparam>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.EntityMapExtensions.ToGuidArray``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Guid集合对象转换成<example>Guid?[]</example>数组格式
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileAppService.GetPresignUrl(System.String)">
+            <summary>
+                获取文件上传的签名信息，需要文件的类型生成对应的上传签名地址
+            </summary>
+            <param name="fileType">文件的类型</param>
+            <returns>文件上传后的文件对象</returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileAppService.GetVersionList(System.Guid)">
+            <summary>
+            根据文件id获取文件的版本列表
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileAppService.Create(SnAbp.File.Dtos.FileCreateDto)">
+            <summary>
+                新增文件信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileAppService.CreateFileVersion(SnAbp.File.Dtos.FileVersionCreateDto)">
+            <summary>
+                新增一条文件的版本信息
+            </summary>
+            <param name="input">需要输入的全部参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileAppService.SelectNewVersion(SnAbp.File.Dtos.FileVersionInputDto)">
+            <summary>
+            选择关联版本文件
+            </summary>
+            <param name="input">文件的id</param>
+            <returns>返回状态</returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileAppService.Update(SnAbp.File.Dtos.FileUpdateDto)">
+            <summary>
+                重命名文件名称
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileAppService.Delete(System.Guid)">
+            <summary>
+                删除指定id的文件
+            </summary>
+            <param name="id">需要删除的文件id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileAppService.DeleteFileVersion(System.Guid)">
+            <summary>
+                删除指定的版本文件
+            </summary>
+            <param name="id">需要删除的版本的id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.Get(SnAbp.File.Dtos.ResourceSearchInput)">
+            <summary>
+            文件查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetOrganizationId(SnAbp.File.Dtos.OrganizationInputDto)">
+            <summary>
+            获取组织结构id
+            </summary>
+            <param name="input">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetOrganizationTreeList">
+            <summary>
+            获取组织树结构
+            </summary>
+            <returns>组织结构树，包括组织和文件夹</returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetResourceList(SnAbp.File.Dtos.ResourceInputDto)">
+            <summary>
+            根据节点获取资源信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetShareCenterTreeList">
+            <summary>
+            获取共享中心目录树列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetMineTreeList">
+            <summary>
+            获取“我的”文件目录，只获取当前用户上传的文件信息，并且是未公开的
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetResourcePermission(SnAbp.File.Dtos.ResourcePermissionInputDto)">
+            <summary>
+            获取资源的具体权限，用于反向绑定
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetResourceShare(SnAbp.File.Dtos.ResourcePermissionInputDto)">
+            <summary>
+            获取共享资源的权限信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.CreateResourceTag(SnAbp.File.Dtos.ResourceTagCreateDto)">
+            <summary>
+            批量设置资源标签信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.CreateFileMove(SnAbp.File.Dtos.FileOperationDto)">
+            <summary>
+            文件移动
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.CreateFileCopy(SnAbp.File.Dtos.FileOperationDto)">
+            <summary>
+            文件复制
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.CopyToRoot(System.Guid,SnAbp.File.Entities.Folder)">
+            <summary>
+            将文件复制到根节点（组织结构）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.SaveMergeNewFolder(SnAbp.File.Entities.Folder,System.Nullable{System.Guid},System.Nullable{System.Guid})">
+            <summary>
+            保存合并新的文件及文件夹
+            </summary>
+            <param name="source"></param>
+            <param name="organizationId"></param>
+            <param name="tid"></param>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetNewFileName(System.String,System.String,SnAbp.File.ResourceNodeType,System.Guid)">
+            <summary>
+            获取新的文件的名称
+            </summary>
+            <param name="filename">文件名</param>
+            <param name="suffix">文件后缀</param>
+            <param name="type">目标路径类型</param>
+            <param name="tId">目标路径id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetFileName(System.Collections.Generic.IReadOnlyCollection{SnAbp.File.Entities.File})">
+             <summary>
+            根据条件获取文件名称
+             </summary>
+             <param name="list"></param>
+             <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.Restore(SnAbp.File.Dtos.ResourceRestoreDto)">
+            <summary>
+            资源还原
+            </summary>
+            <param name="input">输入的资源数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.SetResourcePermission(SnAbp.File.Dtos.ResourcePermissionCreateDto)">
+            <summary>
+            设置资源的权限
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.SetResourceShare(SnAbp.File.Dtos.ResourcePermissionCreateDto)">
+            <summary>
+            设置资源共享
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.Delete(SnAbp.File.Dtos.ResourceDeleteDto)">
+            <summary>
+            删除资源
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.BuildOrganizationTree(System.Collections.Generic.List{SnAbp.System.Entities.Organization},System.Collections.Generic.IReadOnlyCollection{SnAbp.File.Entities.Folder},System.Boolean)">
+            <summary>
+            构造组织树结构
+            </summary>
+            <param name="organizations">组织结构</param>
+            <param name="folders">隶属组织结构的文件夹</param>
+            <param name="shareUse">共享中心调用</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetOrganizationChildren(System.Collections.Generic.List{SnAbp.System.Entities.Organization},System.Collections.Generic.IReadOnlyCollection{SnAbp.File.Entities.Folder},SnAbp.File.Dtos.OrganizationTreeDto,System.String,System.Boolean)">
+            <summary>
+            获取组织结构的孩子节点
+            </summary>
+            <param name="organizations">组织结构集合</param>
+            <param name="folders">文件夹集合</param>
+            <param name="dto"></param>
+            <param name="nodeId"></param>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetFolder(System.Collections.Generic.IEnumerable{SnAbp.File.Entities.Folder},SnAbp.File.Dtos.OrganizationTreeDto)">
+            <summary>
+            获取组织节点下的文件夹
+            </summary>
+            <param name="folders">文件夹集合</param>
+            <param name="dto"></param>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetFolderChildren(System.Collections.Generic.IEnumerable{SnAbp.File.Entities.Folder},SnAbp.File.Dtos.OrganizationTreeDto)">
+            <summary>
+            获取文件夹子目录
+            </summary>
+            <param name="folders">文件夹集合</param>
+            <param name="dto">条件</param>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetResourceList(System.Collections.Generic.List{SnAbp.File.Entities.Folder},System.Collections.Generic.List{SnAbp.File.Entities.File},System.Collections.Generic.List{SnAbp.File.Entities.File})">
+            <summary>
+            绑定资源数据
+            </summary>
+            <param name="folders"></param>
+            <param name="files"></param>
+            <param name="allFiles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.CalculateFolderSize(System.Collections.Generic.List{SnAbp.File.Entities.File},System.Collections.Generic.List{SnAbp.File.Entities.Folder},System.Guid)">
+            <summary>
+            计算文件夹大小
+            </summary>
+            <param name="files"></param>
+            <param name="folders"></param>
+            <param name="folderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.CalculateSubfolders(System.Collections.Generic.IReadOnlyCollection{SnAbp.File.Entities.File},System.Collections.Generic.List{SnAbp.File.Entities.Folder},System.Guid,System.Decimal)">
+            <summary>
+            计算子文件大小
+            </summary>
+            <param name="files"></param>
+            <param name="folders"></param>
+            <param name="folderId"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.GetResource(System.Linq.IQueryable{SnAbp.File.Entities.File},System.Int32,System.Int32)">
+            <summary>
+            文件资源搜索
+            </summary>
+            <param name="query">查询条件</param>
+            <param name="page">分页数</param>
+            <param name="size">每页数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.CreateFolderRltPermissions(System.Guid,SnAbp.System.Entities.MemberType,System.Guid)">
+            <summary>
+            构造文件权限实体对象
+            </summary>
+            <param name="fileId"></param>
+            <param name="mType"></param>
+            <param name="mId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.BuildMineTree(System.Collections.Generic.IEnumerable{SnAbp.File.Entities.Folder},SnAbp.File.Dtos.MineTreeDto,System.Guid)">
+            <summary>
+            构造“我的目录下的文件夹”
+            </summary>
+            <param name="list"></param>
+            <param name="dto"></param>
+            <param name="id"></param>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFileManagerAppService.BuildFolderRlt(SnAbp.File.Dtos.ResourcePermissionCreateDto)">
+            <summary>
+            构造文件权限关联集
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFolderAppService.Get(System.Guid)">
+            <summary>
+            根据id获取文件夹详细信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFolderAppService.Create(SnAbp.File.Dtos.FolderInputDto)">
+            <summary>
+                新建文件夹
+            </summary>
+            <param name="input">需要输入的参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFolderAppService.Update(SnAbp.File.Dtos.FolderUpdateDto)">
+            <summary>
+                文件夹重命名
+            </summary>
+            <param name="input">重命名输入的参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileFolderAppService.Delete(System.Guid)">
+            <summary>
+                删除指定文件夹
+            </summary>
+            <param name="id">需要删除的文件夹id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileOssConfigAppService.GetList">
+            <summary>
+                获取oss 配置列表
+            </summary>
+            <returns>oss 配置集合</returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileOssConfigAppService.Create(SnAbp.File.Dtos.OssConfigInputDto)">
+            <summary>
+                新增一个OSS 服务对象
+            </summary>
+            <param name="input">输入的对象</param>
+            <returns>返回oss 对象</returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileOssConfigAppService.Enable(System.Guid)">
+            <summary>
+                启动指定的服务
+            </summary>
+            <param name="id">oss id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileOssConfigAppService.Clear(System.Guid)">
+            <summary>
+                清空指定oss 服务存储桶的所有数据
+            </summary>
+            <param name="id">oss 服务id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileOssConfigAppService.Check(System.Guid)">
+            <summary>
+            服务状态测试s
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileOssConfigAppService.Update(SnAbp.File.Dtos.OssConfigUpdateDto)">
+            <summary>
+                编辑oss 配置信息
+            </summary>
+            <param name="input">编辑的内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileTagAppService.GetList(System.Guid)">
+            <summary>
+                根据组织id获取该组织id下的标签列表
+            </summary>
+            <param name="id">指定的组织id</param>
+            <returns>标签集合</returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileTagAppService.Create(SnAbp.File.Dtos.TagCreateDto)">
+            <summary>
+                新增一个资源标签
+            </summary>
+            <param name="input">输入的内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileTagAppService.Update(SnAbp.File.Dtos.TagUpdateDto)">
+            <summary>
+                更新指定的标签
+            </summary>
+            <param name="input">需要更新的内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.File.Services.FileTagAppService.Delete(System.Guid)">
+            <summary>
+                删除指定的标签
+            </summary>
+            <param name="id">需要删除的标签的id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

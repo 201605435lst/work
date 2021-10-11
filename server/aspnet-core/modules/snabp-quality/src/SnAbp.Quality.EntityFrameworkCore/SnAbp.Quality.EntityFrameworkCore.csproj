@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Quality</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+     <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.EntityFrameworkCore\SnAbp.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\SnAbp.Quality.Domain\SnAbp.Quality.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.EntityFrameworkCore\SnAbp.File.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.EntityFrameworkCore\SnAbp.Identity.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.EntityFrameworkCore\SnAbp.Resource.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

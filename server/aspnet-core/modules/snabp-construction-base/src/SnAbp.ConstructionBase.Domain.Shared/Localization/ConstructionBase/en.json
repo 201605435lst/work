@@ -1,0 +1,24 @@
+{
+  "culture": "en",
+  "texts": {
+    "ManageYourProfile": "Manage your profile",
+    "ConstructionBase": "ConstructionBase",
+    "SamplePageMessage": "A sample page for the ConstructionBase module",
+
+		"Permission:Section": "Section",
+                            
+
+    "Permission:Standard": "Standard",
+            
+    "Permission:Worker": "Permission:Worker",
+    "Permission:EquipmentTeam": "Permission:EquipmentTeam",
+    "Permission:Material": "Permission:Material",
+    "Permission:Procedure": "Permission:Procedure",
+    "Permission:SubItem": "Permission:SubItem",
+    "Permission:SubItemContent": "Permission:SubItemContent",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Permission:Detail": "Detail"
+  }
+}

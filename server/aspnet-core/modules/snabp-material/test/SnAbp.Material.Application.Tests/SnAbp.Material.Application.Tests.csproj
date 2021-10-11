@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<RootNamespace>SnAbp.Material</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\SnAbp.Material.Application\SnAbp.Material.Application.csproj" />
+		<ProjectReference Include="..\SnAbp.Material.Domain.Tests\SnAbp.Material.Domain.Tests.csproj" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+		<ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+{
+  "culture": "sl",
+  "texts": {
+    "ManageYourProfile": "Upravljajte svojim profilom",
+    "Permission:Worker": "Permission:Worker",
+    "Permission:EquipmentTeam": "Permission:EquipmentTeam",
+    "Permission:Material": "Permission:Material",
+    "Permission:Procedure": "Permission:Procedure",
+    "Permission:SubItem": "Permission:SubItem",
+    "Permission:SubItemContent": "Permission:SubItemContent"
+  }
+}

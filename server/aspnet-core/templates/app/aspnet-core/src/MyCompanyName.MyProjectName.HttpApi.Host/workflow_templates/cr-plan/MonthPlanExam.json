@@ -1,0 +1,84 @@
+{
+  "name": "月表审核表单",
+  "webHookUrl": "/api/app/crPlanYearMonthPlan/finishForExam",
+  "version": 1,
+  "formItems": [
+    {
+      "type": "input",
+      "label": "车间",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "请输入",
+        "clearable": false,
+        "maxLength": null,
+        "disabled": false
+      },
+      "model": "input_orgName",
+      "key": "input_orgName",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "年度",
+      "options": {
+        "type": "text",
+        "width": "100%",
+        "defaultValue": "",
+        "placeholder": "请输入",
+        "clearable": false,
+        "maxLength": null,
+        "disabled": false
+      },
+      "model": "input_planTime",
+      "key": "input_planTime",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    },
+    {
+      "type": "uploadFile",
+      "label": "月表审核",
+      "options": {
+        "defaultValue": "",
+        "multiple": false,
+        "disabled": false,
+        "drag": false,
+        "width": "100%",
+        "limit": 3,
+        "data": {},
+        "action": "",
+        "placeholder": "上传"
+      },
+
+      "model": "uploadFile_MonthPlanExam",
+      "key": "uploadFile_MonthPlanExam",
+      "rules": [
+        {
+          "required": false,
+          "message": "必填项"
+        }
+      ]
+    }
+  ],
+  "formConfig": {
+    "layout": "horizontal",
+    "labelCol": {
+      "span": 4
+    },
+    "wrapperCol": {
+      "span": 18
+    },
+    "hideRequiredMark": false,
+    "customStyle": ""
+  }
+}

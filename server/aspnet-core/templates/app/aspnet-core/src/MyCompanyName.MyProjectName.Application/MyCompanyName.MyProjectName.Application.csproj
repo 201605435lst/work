@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  
+  <Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.Domain\MyCompanyName.MyProjectName.Domain.csproj" />
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.Application.Contracts\MyCompanyName.MyProjectName.Application.Contracts.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-utils\src\SnAbp.Utils.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-account\src\SnAbp.Account.Application\SnAbp.Account.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-identity\src\SnAbp.Identity.Application\SnAbp.Identity.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-permission-management\src\SnAbp.PermissionManagement.Application\SnAbp.PermissionManagement.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-tenant-management\src\SnAbp.TenantManagement.Application\SnAbp.TenantManagement.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-feature-management\src\SnAbp.FeatureManagement.Application\SnAbp.FeatureManagement.Application.csproj" />
+
+		<!--<ProjectReference Include="..\..\..\..\..\modules\snabp-exam\src\SnAbp.Exam.Application\SnAbp.Exam.Application.csproj" />-->
+		<!--<ProjectReference Include="..\..\..\..\..\modules\snabp-emerg\src\SnAbp.Emerg.Application\SnAbp.Emerg.Application.csproj" />-->
+		<!--<ProjectReference Include="..\..\..\..\..\modules\snabp-cr-plan\src\SnAbp.CrPlan.Application\SnAbp.CrPlan.Application.csproj" />-->
+		
+		
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-common\src\SnAbp.Common.Application\SnAbp.Common.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-std-basic\src\SnAbp.StdBasic.Application\SnAbp.StdBasic.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-file\src\SnAbp.File.Application\SnAbp.File.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-bpm\src\SnAbp.Bpm.Application\SnAbp.Bpm.Application.csproj" />
+    <!--<ProjectReference Include="..\..\..\..\..\modules\snabp-exam\src\SnAbp.Exam.Application\SnAbp.Exam.Application.csproj" />-->
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-cms\src\SnAbp.Cms.Application\SnAbp.Cms.Application.csproj" />
+
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-std-basic\src\SnAbp.StdBasic.Application\SnAbp.StdBasic.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-basic\src\SnAbp.Basic.Application\SnAbp.Basic.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-resource\src\SnAbp.Resource.Application\SnAbp.Resource.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-emerg\src\SnAbp.Emerg.Application\SnAbp.Emerg.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-problem\src\SnAbp.Problem.Application\SnAbp.Problem.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-cr-plan\src\SnAbp.CrPlan.Application\SnAbp.CrPlan.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-common\src\SnAbp.Common.Application\SnAbp.Common.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-oa\src\SnAbp.Oa.Application\SnAbp.Oa.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-project\src\SnAbp.Project.Application\SnAbp.Project.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-alarm\src\SnAbp.Alarm.Application\SnAbp.Alarm.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-task\src\SnAbp.Tasks.Application\SnAbp.Tasks.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-regulation\src\SnAbp.Regulation.Application\SnAbp.Regulation.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-report\src\SnAbp.Report.Application\SnAbp.Report.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-material\src\SnAbp.Material.Application\SnAbp.Material.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-technology\src\SnAbp.Technology.Application\SnAbp.Technology.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-costmanagement\src\SnAbp.CostManagement.Application\SnAbp.CostManagement.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-safe\src\SnAbp.Safe.Application\SnAbp.Safe.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-quality\src\SnAbp.Quality.Application\SnAbp.Quality.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-construction-base\src\SnAbp.ConstructionBase.Application\SnAbp.ConstructionBase.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-construction\src\SnAbp.Construction.Application\SnAbp.Construction.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\modules\snabp-file-approve\src\SnAbp.FileApprove.Application\SnAbp.FileApprove.Application.csproj" />
+  </ItemGroup>
+
+</Project>

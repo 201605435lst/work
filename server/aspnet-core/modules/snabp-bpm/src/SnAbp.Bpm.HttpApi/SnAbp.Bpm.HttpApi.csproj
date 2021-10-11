@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SnAbp.Bpm</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AspNetCore.Mvc\Volo.Abp.AspNetCore.Mvc.csproj" />-->
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="3.0.5" />
+
+    <ProjectReference Include="..\SnAbp.Bpm.Application.Contracts\SnAbp.Bpm.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

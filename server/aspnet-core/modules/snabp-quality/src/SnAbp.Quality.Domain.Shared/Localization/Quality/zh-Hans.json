@@ -1,0 +1,17 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpQuality": "质量管理",
+    "Permission:QualityProblems": "质量问题",
+    "Permission:QualityProblemLibraries": "质量问题库",
+    "Permission:Create": "新建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Improve": "整改",
+    "Permission:Verify": "验证",
+    "Permission:Detail": "详情",
+    "Permission:Export": "导出",
+    "Permission:Import": "导入",
+    "Permission:Position": "定位"
+  }
+}

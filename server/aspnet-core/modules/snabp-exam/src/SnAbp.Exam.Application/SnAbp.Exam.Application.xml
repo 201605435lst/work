@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.Exam.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.Exam.Services.ExamCategoryAppService.GetByParentId(System.Nullable{System.Guid})">
+            <summary>
+            根据父级Id获取试卷分类
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamCategoryAppService.GetParentsByIds(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            根据分类Id获取其兄弟及父级以上的元素...
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperAppService.Create(SnAbp.Exam.Dtos.ExamPaperCreateDto)">
+            <summary>
+            创建试卷
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperAppService.Delete(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            删除试卷
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperAppService.Update(SnAbp.Exam.Dtos.ExamPaperUpdateDto)">
+            <summary>
+            修改试卷
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperAppService.Get(System.Guid)">
+            <summary>
+            查找试卷
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperAppService.GetList(SnAbp.Exam.Dtos.ExamPaperSearchDto)">
+            <summary>
+            查找试卷
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperAppService.GetQuestionList(SnAbp.Exam.Dtos.ExamPaperRltQuestionSearchDto)">
+            <summary>
+            查找题库中的题目
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperTemplateAppService.Get(System.Guid)">
+            <summary>
+            获取试卷模板信息
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperTemplateAppService.GetList(SnAbp.Exam.Dtos.ExamPaperTemplateSearchDto)">
+            <summary>
+            查询试卷模板信息
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperTemplateAppService.Create(SnAbp.Exam.Dtos.ExamPaperTemplateCreateDto)">
+            <summary>
+            创建试卷模板
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperTemplateAppService.Update(SnAbp.Exam.Dtos.ExamPaperTemplateUpdateDto)">
+            <summary>
+            修改试卷模板
+            </summary>
+        </member>
+        <member name="M:SnAbp.Exam.Services.ExamExamPaperTemplateAppService.Delete(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            删除试卷模板
+            </summary>
+        </member>
+    </members>
+</doc>

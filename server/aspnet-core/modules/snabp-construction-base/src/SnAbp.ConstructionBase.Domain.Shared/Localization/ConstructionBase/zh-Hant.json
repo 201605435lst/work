@@ -1,0 +1,12 @@
+{
+  "culture": "zh-Hant",
+  "texts": {
+    "ManageYourProfile": "管理個人資料",
+    "Permission:Worker": "Permission:Worker",
+    "Permission:EquipmentTeam": "Permission:EquipmentTeam",
+    "Permission:Material": "Permission:Material",
+    "Permission:Procedure": "Permission:Procedure",
+    "Permission:SubItem": "Permission:SubItem",
+    "Permission:SubItemContent": "Permission:SubItemContent"
+  }
+}

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyCompanyName.MyProjectName.Domain\MyCompanyName.MyProjectName.Domain.csproj" />
+    <ProjectReference Include="..\MyCompanyName.MyProjectName.Application.Contracts\MyCompanyName.MyProjectName.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\modules\snabp-utils\src\SnAbp.Utils.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-account\src\SnAbp.Account.Application\SnAbp.Account.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-identity\src\SnAbp.Identity.Application\SnAbp.Identity.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-permission-management\src\SnAbp.PermissionManagement.Application\SnAbp.PermissionManagement.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-tenant-management\src\SnAbp.TenantManagement.Application\SnAbp.TenantManagement.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-feature-management\src\SnAbp.FeatureManagement.Application\SnAbp.FeatureManagement.Application.csproj" />
+
+    <ProjectReference Include="..\..\..\..\modules\snabp-file\src\SnAbp.File.Application\SnAbp.File.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-bpm\src\SnAbp.Bpm.Application\SnAbp.Bpm.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-cms\src\SnAbp.Cms.Application\SnAbp.Cms.Application.csproj" />
+
+    <ProjectReference Include="..\..\..\..\modules\snabp-common\src\SnAbp.Common.Application\SnAbp.Common.Application.csproj" />
+  </ItemGroup>
+
+</Project>

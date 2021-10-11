@@ -1,0 +1,54 @@
+
+.sm-oa-seal{
+.ant-upload  svg{
+  width: 36px;
+  height: 57px;
+}
+
+  .f-thum-content {
+    width: 100%;
+    display: flex;
+    border: 1px solid #ebedf0;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding: 26px;
+    .f-thum-item {
+      width: 20%;
+      //min-width: 25%; // 加入这两个后每个item的宽度就生效了
+      //max-width: 25%; // 加入这两个后每个item的宽度就生效了
+      position: relative;
+      .f-thum {
+        width:50%; 
+        height:50%;
+        margin:auto auto;
+        p {
+            width: 160%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;        
+        }
+      }
+      .f-thum-file {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px;
+        border: 1px solid #d9d9d9;
+      }
+    }
+  }
+}
+
+.middleCol{
+  .empty{
+    position: inherit !important;
+    margin-left: 6px;
+  }
+}
+.bottomCol{
+  .ant-card{
+    .ant-card-body{
+      padding: 0px;
+      height: 147px;
+    }
+  }
+}

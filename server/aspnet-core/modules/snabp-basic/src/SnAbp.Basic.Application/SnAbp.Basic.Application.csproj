@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Basic</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\SnAbp.Basic.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>.\SnAbp.Basic.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\OrganizationAppService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="SnAbp.Basic.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SnAbp.Basic.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Basic.Application.Contracts\SnAbp.Basic.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.Basic.Domain\SnAbp.Basic.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Application.Contracts\SnAbp.Identity.Application.Contracts.csproj" />
+	<ProjectReference Include="..\..\..\snabp-common\src\SnAbp.Common.Application.Contracts\SnAbp.Common.Application.Contracts.csproj" />
+	<ProjectReference Include="..\..\..\snabp-common\src\SnAbp.Common.Domain\SnAbp.Common.Domain.csproj" />
+  </ItemGroup>
+</Project>

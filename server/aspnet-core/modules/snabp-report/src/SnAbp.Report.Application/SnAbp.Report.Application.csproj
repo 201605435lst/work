@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Report</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Report.Application.Contracts\SnAbp.Report.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.Report.Domain\SnAbp.Report.Domain.csproj" />
+    
+    <ProjectReference Include="..\..\..\snabp-message-notice\src\SnAbp.Message.Notice\SnAbp.Message.Notice.csproj" />
+    
+
+  </ItemGroup>
+
+</Project>

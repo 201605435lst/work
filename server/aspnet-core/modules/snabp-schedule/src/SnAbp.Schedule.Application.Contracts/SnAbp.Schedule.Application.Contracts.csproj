@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Schedule</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Schedule.Domain.Shared\SnAbp.Schedule.Domain.Shared.csproj" />
+    <ProjectReference Include="..\SnAbp.Schedule.Domain\SnAbp.Schedule.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SnAbp.Bpm.Application.Contracts">
+      <HintPath>..\..\..\snabp-bpm\src\SnAbp.Bpm.Application.Contracts\bin\Debug\netstandard2.0\SnAbp.Bpm.Application.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

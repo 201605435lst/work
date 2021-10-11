@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Exam</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Validation" Version="3.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Exam\*.json" />
+    <Content Remove="Localization\Exam\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Localization\Exam\zh-Hans.json" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Schedule</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Schedule.Application.Contracts\SnAbp.Schedule.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.Schedule.Domain\SnAbp.Schedule.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-bpm\src\SnAbp.Bpm.Application\SnAbp.Bpm.Application.csproj" />
+	<ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain\SnAbp.StdBasic.Domain.csproj" />
+	<ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain.Shared\SnAbp.StdBasic.Domain.Shared.csproj" />
+	<ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Application.Contracts\SnAbp.StdBasic.Application.Contracts.csproj" />
+	<ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

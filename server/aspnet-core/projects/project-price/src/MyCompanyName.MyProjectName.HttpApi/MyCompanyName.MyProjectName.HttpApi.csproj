@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyCompanyName.MyProjectName.Application.Contracts\MyCompanyName.MyProjectName.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\modules\snabp-account\src\SnAbp.Account.HttpApi\SnAbp.Account.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-identity\src\SnAbp.Identity.HttpApi\SnAbp.Identity.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-permission-management\src\SnAbp.PermissionManagement.HttpApi\SnAbp.PermissionManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-tenant-management\src\SnAbp.TenantManagement.HttpApi\SnAbp.TenantManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-feature-management\src\SnAbp.FeatureManagement.HttpApi\SnAbp.FeatureManagement.HttpApi.csproj" />
+
+    <ProjectReference Include="..\..\..\..\modules\snabp-file\src\SnAbp.File.HttpApi\SnAbp.File.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-bpm\src\SnAbp.Bpm.HttpApi\SnAbp.Bpm.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-cms\src\SnAbp.Cms.HttpApi\SnAbp.Cms.HttpApi.csproj" />
+
+    <ProjectReference Include="..\..\..\..\modules\snabp-common\src\SnAbp.Common.HttpApi\SnAbp.Common.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-message-notice\src\SnAbp.Message.Notice.HttpApi\SnAbp.Message.Notice.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-message-notice\src\SnAbp.Message.Notice.HttpApi\SnAbp.Message.Notice.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-message-bpm\src\SnAbp.Message.Bpm.HttpApi\SnAbp.Message.Bpm.HttpApi.csproj" />
+  </ItemGroup>
+
+</Project>

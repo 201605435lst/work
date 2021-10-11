@@ -1,0 +1,186 @@
+/**
+ * auth: weilan
+ * github: https://github.com/hql7
+ * description: 一个数组操作函数库
+ * date：2019-01-22
+ */
+
+"use strict";
+import Vue from "vue";
+import dayjs from 'dayjs' // 导入日期js
+
+// 从树形数据中递归筛选目标值
+function valInDeep(arr = [], val, id, childs) {
+  return arr.reduce((flat, item) => {
+    return flat.concat(item[id] == val ? item : valInDeep(item[childs] || [], val, id, childs));
+  }, []);
+}
+
+/**
+ * 数组替换或者添加
+ * @param arr 传进来的数组
+ * @param modifyItem 要修改的数组元素
+ * @param func 委托,处理下item
+ */
+function arrItemReplace(arr,modifyItem,func=(item)=>item) {
+  modifyItem = func(modifyItem);
+  //先菜数组里面找到有没有对应item的index
+  let modifyIndex = arr.findIndex(x => x.id === modifyItem.id);
+  if (modifyIndex !==  -1) { // 不为-1 有重复值
+    arr.splice(modifyIndex,1,modifyItem ); //有重复就替换
+  }else{
+    arr.push(modifyItem); //没有重复就添加
+  }
+
+}
+
+// 将树形数据向上将此支线递归为一维数组
+function flattenDeepParents(arr, parent) {
+  return arr.reduce((flat, item) => {
+    return flat.concat(item[parent] || [], item[parent] ? flattenDeepParents([item[parent]], parent) : []);
+  }, []);
+}
+
+// 根据条件递归祖先元素
+function regDeepParents(row, parent, cb) {
+  if (row[parent]) {
+    cb && cb(row[parent]);
+    regDeepParents(row[parent], parent, cb);
+  }
+}
+
+/**
+ * 将树形数据向下递归为一维数组(展平) 添加 depth,parent,和index 等字段
+ * @param {*} arr 数据源
+ * @param {*} childs  子集key
+ * @param depth
+ * @param parent
+ */
+function flattenDeep(arr = [], childs = "children", depth = 0, parent = null) {
+  let index = 0;
+  return arr.reduce((flat, item) => {
+    item._depth = depth;
+    item._parent = parent;
+    item._index = index;
+    item._isSelected = false;
+    index++;
+
+    return flat.concat(
+      item,
+      item[childs] && !item.collapsed ? flattenDeep(item[childs], childs, depth + 1, item) : [],
+    );
+  }, []);
+}
+
+/**
+ * 深拷贝
+ * @param {*} source 要拷贝的数据
+ */
+function deepClone(source, traverse = (node, newNode) => ([node, newNode])) {
+  if (!source && typeof source !== "object") {
+    throw new Error("error arguments", "shallowClone");
+  }
+  const targetObj = source.constructor === Array ? [] : {};
+  Object.keys(source).forEach(keys => {
+    if (source[keys] && typeof source[keys] === "object") {
+      targetObj[keys] = source[keys].constructor === Array ? [] : {};
+      const clone = deepClone(source[keys]);
+      traverse(source[keys], clone);
+      targetObj[keys] = clone;
+    } else {
+      targetObj[keys] = source[keys];
+    }
+  });
+  return targetObj;
+}
+
+/**
+ * 筛选出数组中最大值
+ * @param {*} arr 数据
+ * @param {*} key 如果是复杂型数组，请指定字段key
+ * @param {*} stamp 如果是时间格式，请设置以转化时间戳
+ */
+function getMax(arr = [], key = null, stamp = false) {
+  let _o = !key ? arr : arr.map(i => i[key]);
+  let _t = !stamp ? _o : _o.map(i => dayjs(i).valueOf());
+  return Math.max(..._t);
+}
+
+/**
+ * 筛选出数组中最小值
+ * @param {*} arr 数据
+ * @param {*} key 如果是复杂型数组，请指定字段key
+ * @param {*} stamp 如果是时间格式，请设置以转化时间戳
+ */
+function getMin(arr = [], key = null, stamp = false) {
+  let _o = !key ? arr : arr.map(i => i[key]);
+  let _t = !stamp ? _o : _o.map(i => dayjs(i).valueOf());
+  return Math.min(..._t);
+}
+
+function deepChangeObject(data) {
+  let tmp = [];
+  Array.from(data).forEach(function (record) {
+    Vue.set(record, "_level", _level);
+    Vue.set(record, "_parents", _parents);
+
+    Vue.set(record, "_level", _level);
+    if (record.startDate && record.endDate) {
+      let days = dayjs(record.endDate).diff(dayjs(record.startDate), 'day');
+      Vue.set(record, "_duration", days);
+    }
+    if (record.startDate) {
+      Vue.set(record, "_old_startDate", record.startDate);
+    }
+    if (record.endDate) {
+      Vue.set(record, "_old_endDate", record.endDate);
+    }
+    // 如果有父元素
+    if (parent) {
+      Vue.set(record, "_parent", parent);
+    }
+    tmp.push(record);
+    if (record[children] && record[children].length > 0) {
+      deepChangeObject(record[children], children, record, _level);
+    }
+  });
+  return tmp;
+}
+
+/**
+ * 递归调用
+ * @return {number[]}
+ * @param nodeArr
+ * @param callback
+ */
+function dfsCloneNode(nodeArr, callback = () => {}) {
+  const traverse = (item) => {
+    if (!item) return;
+
+    let newNode = { ...item };
+    callback(item, newNode);
+    newNode.children = (newNode.children || []).map(node => traverse(node));
+
+    return newNode;
+  };
+
+
+  let map = nodeArr.map(item => {
+    return traverse(item);
+  });
+  // console.log('递归',map);
+  return map;
+}
+
+
+export {
+  dfsCloneNode,
+  flattenDeep, // 将树转化为一维数组
+  deepClone, // 深拷贝
+  getMax, // 获取最大值
+  getMin, // 获取最小值
+  valInDeep, // 递归查找
+  flattenDeepParents, // 向上将树转化为数组
+  regDeepParents, // 根据条件查找父级树
+  arrItemReplace,
+};

@@ -1,0 +1,33 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpMaterial": "物资管理",
+    "Permission:Suppliers": "供应商管理",
+    "Permission:Inventories": "仓库管理",
+    "Permission:MaterialPlans": "物资需求计划",
+    "Permission:EntryRecords": "入库管理",
+    "Permission:Materials": "物资管理",
+    "Permission:OutRecords": "出库管理",
+    "Permission:ConstructionSections": "施工区段管理",
+    "Permission:ConstructionTeams": "施工队管理",
+    "Permission:Inquires": "物资查询",
+    "Permission:UsePlans": "用料计划",
+    "Permission:PurchasePlans": "采购计划",
+    "Permission:PurchaseLists": "采购清单",
+    "Permission:ExportCode": "下载二维码",
+    "Permission:GenerateCode": "生成二维码",
+    "Permission:Create": "新建",
+    "Permission:Delete": "删除",
+    "Permission:Update": "编辑",
+    "Permission:Detail": "详情",
+    "Permission:Export": "导出",
+    "Permission:Import": "导入",
+    "Permission:Approval": "审批",
+    "Permission:Synchronize": "同步工程数据",
+    "Permission:GenerateMaterialPlan": "生成采购计划",
+    "Permission:Flow": "流程",
+    "Permission:SetFlow": "流程配置",
+    "Permission:MaterialAcceptances": "物资验收",
+    "Permission:MaterialOfBill": "领料单管理"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "culture": "en",
+  "texts": {
+    "CrPlan": "CrPlan Module",
+
+    "CrPlan.AlterRecord": "AlterRecord Manage",
+    "CrPlan.AlterRecord.Create": "Create",
+    "CrPlan.AlterRecord.Update": "Update",
+    "CrPlan.AlterRecord.Delete": "Delete",
+    "CrPlan.AlterRecord.Export": "Export",
+
+    "CrPlan.VerticalSkylightPlan": "VerticalSkylightPlan",
+    "CrPlan.VerticalSkylightPlan.Create": "Create",
+    "CrPlan.VerticalSkylightPlan.Update": "Update",
+    "CrPlan.VerticalSkylightPlan.Delete": "Delete",
+    "CrPlan.VerticalSkylightPlan.Release": "Release",
+
+    "CrPlan.ComprehensiveSkylightPlan": "ComprehensiveSkylightPlan",
+    "CrPlan.ComprehensiveSkylightPlan.Create": "Create",
+    "CrPlan.ComprehensiveSkylightPlan.Update": "Update",
+    "CrPlan.ComprehensiveSkylightPlan.Delete": "Delete",
+    "CrPlan.ComprehensiveSkylightPlan.Release": "Release",
+
+
+    "CrPlan.OutsidePlan": "OutsidePlan",
+    "CrPlan.OutsidePlan.Create": "Create",
+    "CrPlan.OutsidePlan.Update": "Update",
+    "CrPlan.OutsidePlan.Delete": "Delete",
+    "CrPlan.OutsidePlan.Release": "Release",
+
+    "CrPlan.OtherPlan": "OtherPlan",
+    "CrPlan.OtherPlan.Create": "Create",
+    "CrPlan.OtherPlan.Update": "Update",
+    "CrPlan.OtherPlan.Delete": "Delete",
+    "CrPlan.OtherPlan.Release": "Release",
+
+    "CrPlan.PlanTodo": "PlanTodo",
+    "CrPlan.PlanTodo.Delete": "Delete",
+
+    "CrPlan.HaveSentWorkers": "HaveSentWorkers",
+    "CrPlan.HaveSentWorkers.Delete": "Delete",
+
+    "CrPlan.WorkOrder": "WorkOrder",
+    "CrPlan.WorkOrder.Create": "Create",
+    "CrPlan.WorkOrder.Update": "Update",
+    "CrPlan.WorkOrder.Delete": "Delete",
+    "CrPlan.WorkOrder.Finish": "Finish",
+    "CrPlan.WorkOrder.Acceptance": "Acceptance",
+    "CrPlan.WorkOrder.Export": "Export",
+
+    "CrPlan.OtherAssignments": "OtherAssignments",
+    "CrPlan.OtherAssignments.Create": "Create",
+    "CrPlan.OtherAssignments.Delete": "Delete",
+    "CrPlan.OtherAssignments.Finish": "Finish",
+
+    "CrPlan.WorkOrderFinished": "WorkOrderFinished",
+    "CrPlan.WorkOrderFinished.Update": "Update",
+
+    "CrPlan.StatisticalCharts": "StatisticalCharts",
+    "CrPlan.PlanCompletion": "PlanCompletion",
+    "CrPlan.PlanStateTracking": "PlanStateTracking"
+  }
+}

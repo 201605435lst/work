@@ -1,0 +1,34 @@
+{
+  "culture": "en",
+  "texts": {
+    "ManageYourProfile":  "Manage your profile",
+    "SamplePageMessage": "A sample page for the Construction module",
+    "Construction": "Construction",
+
+		"Permission:PlanContent": "PlanContent",
+                            
+
+		"Permission:Plan": "Plan",
+                            
+
+		"Permission:MasterPlanContent": "MasterPlanContent",
+                            
+		"Permission:MasterPlan": "MasterPlan",
+    "Permission:Construction": "Permission:Construction",
+
+		"Permission:DispatchTemplate": "DispatchTemplate",
+                            
+
+		"Permission:PlanMaterial": "PlanMaterial",
+                            
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Permission:Detail": "Detail",
+    "Permission:View": "Permission:View",
+    "Permission:Draw": "Permission:Draw",
+    "Permission:Approve": "Permission:Approve"
+    
+                            
+  }
+}

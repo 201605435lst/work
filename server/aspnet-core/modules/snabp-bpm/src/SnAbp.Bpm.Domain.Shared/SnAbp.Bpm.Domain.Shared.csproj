@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Bpm</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Validation" Version="3.0.5" />
+
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Validation\Volo.Abp.Validation.csproj" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Bpm\*.json" />
+    <Content Remove="Localization\Bpm\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Localization\Bpm\zh-Hans.json" />
+  </ItemGroup>
+
+</Project>

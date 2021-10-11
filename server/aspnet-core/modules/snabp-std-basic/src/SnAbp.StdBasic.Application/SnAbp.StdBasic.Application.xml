@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.StdBasic.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicComponentCategoryAppService.Get(System.Guid)">
+            <summary>
+                获取构件分类实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicComponentCategoryAppService.GetByCode(System.String)">
+            <summary>
+            根据code获取构件分类信息
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicComponentCategoryAppService.GetList(SnAbp.StdBasic.Dtos.ComponentCategoryGetListByIdsDto)">
+            <summary>
+                根据输入条件按需加载数据接口
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicComponentCategoryAppService.GetListCode(System.Nullable{System.Guid})">
+            <summary>
+                根据id获得当前分类中的最大编码
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicComponentCategoryAppService.GetListComponent(SnAbp.StdBasic.Dtos.ComponentCategoryGetListByIdsDto)">
+            <summary>
+            根据ids获得当前对象
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.Get(System.Guid)">
+            <summary>
+            获取产品分类实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.GetList(SnAbp.StdBasic.Dtos.ProductCategoryGetListByIdsDto)">
+            <summary>
+            根据输入条件按需加载数据接口
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.GetListCode(System.Nullable{System.Guid})">
+            <summary>
+            根据id获得当前分类中的最大编码
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.GetListProduct(SnAbp.StdBasic.Dtos.ProductCategoryGetListByIdsDto)">
+            <summary>
+            根据ids获得当前对象
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.GetTerminalSymbolById(System.Guid)">
+            <summary>
+            根据产品分类 id 获取端子图符
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.GetTerminalSymbolByCode(System.String)">
+            <summary>
+            根据产品分类 code 获取端子图符
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.Create(SnAbp.StdBasic.Dtos.ProductCategoryCreateDto)">
+            <summary>
+            添加产品
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.Update(SnAbp.StdBasic.Dtos.ProductCategoryUpdateDto)">
+            <summary>
+            修改产品
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.Category.StdBasicProductCategoryAppService.Delete(System.Guid)">
+            <summary>
+            删除产品
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicManufactureAppService.GetListByProductId(System.Guid)">
+            <summary>
+            根据产品主键获得已关联的厂家列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicRevitConnectorAppService.Upload(SnAbp.StdBasic.Dtos.Import.ImportData,System.Guid)">
+            <summary>
+            Revit连接件导入
+            </summary>
+            <param name="input"></param>
+            <param name="modelFileId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.Get(System.Guid)">
+            <summary>
+            获得实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.GetList(SnAbp.StdBasic.Dtos.StandardEquipmentSearchInputDto)">
+            <summary>
+            获取列表数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.Create(SnAbp.StdBasic.Dtos.StandardEquipmentCreateDto)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.Upload(SnAbp.StdBasic.Dtos.Import.ImportData)">
+            <summary>
+            导入产品数据
+            </summary>
+        </member>
+        <member name="F:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService._partCode">
+            <summary>
+            构件树结构获取当前节点父级节点
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.DgInsertToStandProductCategory(System.Collections.Generic.List{SnAbp.StdBasic.Dtos.ProductTree},System.Nullable{System.Guid},System.Collections.Generic.Dictionary{System.Guid,System.Guid},SnAbp.StdBasic.Dtos.Import.ImportData)">
+            <summary>
+            递归写入标准库产品数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.GetProductCode(System.Nullable{System.Guid})">
+            <summary>
+            获得一个新产品编码
+            </summary>
+        </member>
+        <member name="F:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService._manufacturerList">
+            <summary>
+            根据厂家名称获得厂家主键
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.FormartErrMsg(System.String,System.String)">
+            <summary>
+            格式化导入存在的错误消息
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.Import(SnAbp.StdBasic.Dtos.Import.ImportData)">
+            <summary>
+            导入数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.CreateProductsAndModels(System.Collections.Generic.List{SnAbp.StdBasic.Services.ImportProductTemplate},System.Collections.Generic.List{SnAbp.StdBasic.Entities.Model},System.Collections.Generic.List{SnAbp.StdBasic.Entities.Model},System.Collections.Generic.List{System.Data.DataRow},System.Text.StringBuilder,System.Text.StringBuilder)">
+            <summary>
+            组织表格数据
+            </summary>
+            <param name="products"></param>
+            <param name="addModels"></param>
+            <param name="updateModels"></param>
+            <param name="allRows">行数据集合</param>
+            <param name="failMsg"></param>
+            <param name="modelFailMsg"></param>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.FindFullName(SnAbp.StdBasic.Dtos.ProductCategoryDto)">
+            <summary>
+            获取节点的全路径
+            </summary>
+            <param name="node"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.SetProduceCateFullName(System.Collections.Generic.List{SnAbp.StdBasic.Dtos.ProductCategoryDto})">
+            <summary>
+            设置节点的全路径
+            </summary>
+            <param name="allProductCate"></param>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.AddOrUpdateModel(System.Collections.Generic.List{SnAbp.StdBasic.Entities.Model},System.Collections.Generic.List{SnAbp.StdBasic.Entities.Model},System.Collections.Generic.List{SnAbp.StdBasic.Entities.Model},System.String,System.String,System.Nullable{System.Guid},System.Guid)">
+            <summary>
+            对model进行更新 或添加新的model至待添加的Models中
+            </summary>
+            <param name="allModels">所有的model</param>
+            <param name="AddModels">待添加的model集合</param>
+            <param name="csrgCode"></param>
+            <param name="spec"></param>
+            <param name="manufactureId"></param>
+            <param name="productCategoryId"></param>
+            <param name="UpdateModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.Update(SnAbp.StdBasic.Dtos.StandardEquipmentUpdateDto)">
+            <summary>
+            修改数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicStandardEquipmentAppService.Delete(System.Guid)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SnAbp.StdBasic.Services.ImportProductTemplate">
+            <summary>
+            产品分类导入模板
+            </summary>
+        </member>
+        <member name="T:SnAbp.StdBasic.Services.GroupImportData">
+            <summary>
+            分组导入数据模板
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicTerminalAppService.Get(System.Guid)">
+            <summary>
+            获得实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicTerminalAppService.GetList(SnAbp.StdBasic.Dtos.StandardEquipmentTerminalSearchInputDto)">
+            <summary>
+            根据条件获取分页数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicTerminalAppService.Create(SnAbp.StdBasic.Dtos.StandardEquipmentTerminalCreateDto)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicTerminalAppService.Update(SnAbp.StdBasic.Dtos.StandardEquipmentTerminalUpdateDto)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicTerminalAppService.Delete(System.Guid)">
+            <summary>
+            删除数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDCategoryAppService.Get(System.Guid)">
+            <summary>
+            获得实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDCategoryAppService.GetList(SnAbp.StdBasic.Dtos.Model.ModelMVD.MVDSearchDto)">
+            <summary>
+            获取列表数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDCategoryAppService.Create(SnAbp.StdBasic.Dtos.Model.ModelMVD.MVDCategoryCreateDto)">
+            <summary>
+            新建信息交换模板分类
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDCategoryAppService.Delete(System.Guid)">
+            <summary>
+            删除信息交换模板分类
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDCategoryAppService.Update(SnAbp.StdBasic.Dtos.Model.ModelMVD.MVDCategoryDto)">
+            <summary>
+            修改信息交换模板分类
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDPropertyAppService.Get(System.Guid)">
+            <summary>
+            获得实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDPropertyAppService.GetList(SnAbp.StdBasic.Dtos.Model.ModelMVD.MVDSearchDto)">
+            <summary>
+            获取列表数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDPropertyAppService.Create(SnAbp.StdBasic.Dtos.Model.ModelMVD.MVDPropertyCreateDto)">
+            <summary>
+            新建信息交换模板分类
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDPropertyAppService.Delete(System.Guid)">
+            <summary>
+            删除信息交换模板分类
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDPropertyAppService.Update(SnAbp.StdBasic.Dtos.Model.ModelMVD.MVDPropertyDto)">
+            <summary>
+            修改信息交换模板分类
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDPropertyAppService.Export(SnAbp.StdBasic.Dtos.Export.MVDData)">
+            <summary>
+            导出信息交换模板分类
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicMVDPropertyAppService.Import(SnAbp.StdBasic.Dtos.Import.ImportData,System.Guid)">
+            <summary>
+            导入信息交换模板分类
+            </summary>
+            <param name="input"></param>
+            <param name="mvdCategoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SnAbp.StdBasic.Services.StdBasicBasePriceAppService">
+            <summary>
+            基价管理
+            </summary>
+        </member>
+        <member name="T:SnAbp.StdBasic.Services.StdBasicComputerCodeAppService">
+            <summary>
+            电算代号管理
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicQuotaAppService.#ctor(Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.QuotaCategory,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.Quota,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.QuotaItem,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.BasePrice,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.ComputerCode,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.Identity.DataDictionary,System.Guid},Volo.Abp.Guids.IGuidGenerator,SnAbp.Common.IFileImportHandler,Volo.Abp.Data.IDataFilter,Volo.Abp.Domain.Repositories.IRepository{SnAbp.Common.Entities.Area})">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicQuotaAppService.Upload(SnAbp.StdBasic.Dtos.Import.ImportData)">
+            <summary>
+            导入未实现
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicQuotaCategoryAppService.#ctor(Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.QuotaCategory,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.Quota,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.Common.Entities.Area},Volo.Abp.Guids.IGuidGenerator,SnAbp.Common.IFileImportHandler,Volo.Abp.Uow.IUnitOfWorkManager,Volo.Abp.Domain.Repositories.IRepository{SnAbp.Identity.DataDictionary,System.Guid},Volo.Abp.Data.IDataFilter)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="repositoryQuotaCategory"></param>
+            <param name="guidGenerator"></param>
+            <param name="fileImport"></param>
+            <param name="dataFilter"></param>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicQuotaCategoryAppService.CheckSameCode(System.String,System.Nullable{System.Guid},System.Int32,System.Guid,System.Guid)">
+            <summary>
+            查看是否有重复编码
+            </summary>
+            <param name="code"></param>
+            <param name="areaId"></param>
+            <param name="specialtyId"></param>
+            <param name="standardCodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SnAbp.StdBasic.Services.StdBasicQuotaItemAppService">
+            <summary>
+            定额清单
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicRepairGroupAppService.saveCheckSameName(System.String,System.Nullable{System.Guid},System.Nullable{System.Guid})">
+            <summary>
+            查询相同名称
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicRepairItemAppService.GetMaxNumber(SnAbp.StdBasic.Dtos.GetMaxNumberDto)">
+            <summary>
+            获取最大编码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicRepairItemAppService.CreateTagMigration(SnAbp.StdBasic.Dtos.RepairItemTagMigratioDto)">
+            <summary>
+            标签迁移
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicRepairItemAppService.UpdateOrganizationType(SnAbp.StdBasic.Dtos.Repair.RepairItem.RepairItemUpdateSimpleDto)">
+            <summary>
+            批量更新执行单位
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckIP(System.String)">
+            <summary>
+            验证一个字符串是否是IP地址
+            </summary>
+            <param name="strValue">The string value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckNumber(System.String,System.Int32,System.Int32)">
+            <summary>
+            判断一个字符串 是否介于某个数值范围之间
+            </summary>
+            <param name="strValue"></param>
+            <param name="intMin"></param>
+            <param name="intMax"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.getLocalIP">
+            <summary>
+            获取本机IP
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.IsMatch(System.String,System.Text.RegularExpressions.Regex)">
+            <summary>
+            判断字符串与条件是否匹配
+            </summary>
+            <param name="input">The input.</param>
+            <param name="regx">The pattern.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckSignedNumericValidity(System.String)">
+            <summary>
+            判断是否数字 0～9，正数或负数
+            </summary>
+            <param name="strValue">要判断的字符串</param>
+            <returns>如果是数字返回 true 否则返回 false </returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckUnsignedNumericValidity(System.String)">
+            <summary>
+            判断是否数字 0～9
+            </summary>
+            <param name="strValue">要判断的字符串</param>
+            <returns>如果是数字返回 true 否则返回 false </returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckalphabetValidity(System.String)">
+            <summary>
+            判断是否大小写字母
+            </summary>
+            <param name="strValue">要判断的字符串</param>
+            <returns>如果是大小写字母返回 true 否则返回 false </returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckInt32Validity(System.String)">
+            <summary>
+            判断字符串是否为Int32整数
+            </summary>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckCustomerNameValidity(System.String)">
+            <summary>
+            判断是否为自定义名称（即包含 汉字、字母、数字、横线、下划线、中文括号、英文括号、点）
+            </summary>
+            <param name="strValue">要判断的字符串</param>
+            <returns>如果是数字返回 true 否则返回 false </returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckCodeValidity(System.String)">
+            <summary>
+            检查是否有汉字
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckNumberValidity(System.String)">
+            <summary>
+            检查是否只包含数字
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckGUIDValidity(System.String)">
+            <summary>
+            检查字符串是否为GUID格式
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckSpaceValidity(System.String)">
+            <summary>
+            检查字符串是否未含有空格
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckDateValidity(System.String)">
+            <summary>
+            判断一个字符串是否 是"yyyy-MM-dd"的日期格式
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckEMailValidity(System.String)">
+            <summary>
+            检查给定的字符串是否是有效的电子邮件地址
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckIDCardValidity(System.String)">
+            <summary>
+            检查给定的字符串是否是有效的身份证号
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckCellphoneValidity(System.String)">
+            <summary>
+            检查给定的字符串是否是有效的手机号码
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckTelephoneValidity(System.String)">
+            <summary>
+            检查给定的字符是否是有效的座机号码
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckCarNumberValidity(System.String)">
+            <summary>
+            检查给定的字符串是否是有效的车牌号
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckDirectoryNameValidity(System.String)">
+            <summary>
+            检查给定字符串是否是有效的文件夹名称
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.CheckFileNameValidity(System.String)">
+            <summary>
+            检查给定字符串是否是有效的文件名称
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.InterceptString(System.String,System.Int32)">
+            <summary>
+            按指定的长度截取字符串
+            </summary>
+            <param name="strValue"></param>
+            <param name="intLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.ContainCHS(System.String)">
+            <summary>
+            检查当前字符串中是否有中文字符
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.GetSpellCode(System.String)">
+            <summary>
+            获取汉字的拼音简码
+            </summary>
+            <param name="text">汉字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.ConvertSizeFromLong(System.String)">
+            <summary>
+            文件大小转换成KB和MB
+            </summary>
+            <param name="strSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StringUtil.GetMidValue(System.String,System.String,System.String)">
+            获取起始字符和终止字符中间的值
+            <summary>
+            获取起始字符和终止字符中间的值
+            </summary>
+            <param name="target">字符串</param>
+            <param name="start">开始</param>
+            <param name="end">结束</param>
+            <returns></returns> 
+        </member>
+        <member name="T:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService">
+            <summary>
+            单项工程管理
+            </summary>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.#ctor(Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.IndividualProject,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.Identity.DataDictionary,System.Guid},Volo.Abp.Domain.Repositories.IRepository{SnAbp.StdBasic.Entities.ProjectItemRltIndividualProject,System.Guid},Volo.Abp.Guids.IGuidGenerator,SnAbp.Common.IFileImportHandler,Volo.Abp.Data.IDataFilter,Volo.Abp.Uow.IUnitOfWorkManager)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="repositoryIndividualProject"></param>
+            <param name="repositorySpecialty"></param>
+            <param name="guidGenerator"></param>
+            <param name="fileImport"></param>
+            <param name="dataFilter"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.Create(SnAbp.StdBasic.Dtos.IndividualProjectCreateDto)">
+            <summary>
+            创建单项工程
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.Delete(System.Guid)">
+            <summary>
+            删除单项工程
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.Export(SnAbp.StdBasic.Dtos.Export.IndividualProjectData)">
+            <summary>
+            导出单项工程
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.Get(System.Guid)">
+            <summary>
+            根据Id获取单项工程
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.GetList(SnAbp.StdBasic.Dtos.IndividualProjectGetListByIdsDto)">
+            <summary>
+            获取单项工程树
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.GetListIndividualProject(SnAbp.StdBasic.Dtos.IndividualProjectGetListByIdsDto)">
+            <summary>
+            根据ids获得当前对象
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.GetListCode(System.Nullable{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.Update(SnAbp.StdBasic.Dtos.IndividualProjectUpdateDto)">
+            <summary>
+            修改单项工程
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicIndividualProjectAppService.Upload(SnAbp.StdBasic.Dtos.Import.ImportData)">
+            <summary>
+            导入单项工程
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicProjectItemRltComponentCategoryAppService.EditList(SnAbp.StdBasic.Dtos.ProjectItemRltComponentCategoryCreateDto)">
+            <summary>
+            编辑关联列表（清空关联关系，重新加）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicWorkAttentionAppService.Get(System.Guid)">
+            <summary>
+            获取单个事项
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicWorkAttentionAppService.GetList(SnAbp.StdBasic.Dtos.WorkAttentionSearchDto)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicWorkAttentionAppService.Create(SnAbp.StdBasic.Dtos.WorkAttentionCreateDto)">
+            <summary>
+            创建
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.StdBasic.Services.StdBasicWorkAttentionAppService.CheckSameType(System.String,System.Nullable{System.Guid},System.Boolean,System.Nullable{System.Guid},System.Nullable{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="content">类别或者注意事项</param>
+            <param name="Id"></param>
+            <param name="isType">是否类别</param>
+            <param name="RepairTagId">维修项类别</param>
+            <param name="TypeId">分类id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

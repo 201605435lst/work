@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Resource</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EntityFrameworkCore\EFCoreOrganizationRespository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+     <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.EntityFrameworkCore\SnAbp.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\SnAbp.Resource.Domain\SnAbp.Resource.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.EntityFrameworkCore\SnAbp.Identity.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.EntityFrameworkCore\SnAbp.Basic.EntityFrameworkCore.csproj" />
+	<ProjectReference Include="..\..\..\snabp-common\src\SnAbp.Common.EntityFrameworkCore\SnAbp.Common.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

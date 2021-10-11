@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\snabp-message\src\SnAbp.Message.Core\SnAbp.Message.Core.csproj" />
+    <ProjectReference Include="..\SnAbp.Message.Bpm.Domain.Shared\SnAbp.Message.Bpm.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,612 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.Resource.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.Resource.Services.ResourceCableCoreAppService.GetList(System.Guid)">
+            <summary>
+            获取列表
+            
+            </summary>
+            <param name="cableId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableCoreAppService.UpdateTerminalLink(SnAbp.Resource.Dtos.TerminalLinkUpdateDto)">
+            <summary>
+            更新业务类型
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableExtendAppService.Get(System.Guid)">
+            <summary>
+            查询
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableExtendAppService.Update(SnAbp.Resource.Dtos.CableExtendDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableLocationAppService.Get(System.Guid)">
+            <summary>
+            查询单个实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableLocationAppService.GetList(System.Guid)">
+            <summary>
+            查询
+            </summary>
+            <param name="cableId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableLocationAppService.Create(SnAbp.Resource.Dtos.CableLocationCreateDto)">
+            <summary>
+            添加
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableLocationAppService.Update(SnAbp.Resource.Dtos.CableLocationCreateDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableLocationAppService.Delete(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceCableLocationAppService.CheckSameTitle(System.String,System.Nullable{System.Guid})">
+            <summary>
+            私有方法
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceComponentRltQRCodeAppService.GenerateCode(SnAbp.Resource.Dtos.ComponentRltQRCodeCreateDto)">
+            <summary>
+            导出二维码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceComponentRltQRCodeAppService.ExportCode(SnAbp.Resource.Dtos.ComponentRltQRCodeCreateDto)">
+            <summary>
+            导出二维码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceComponentRltQRCodeAppService.GetList(SnAbp.Resource.Dtos.ComponentRltQRCodeSearchDto)">
+            <summary>
+            获取二维码信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceComponentRltQRCodeAppService.GetView(System.Guid)">
+            <summary>
+            二维码查看
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceComponentRltQRCodeAppService.GetByInstallationEquipmentId(System.Guid)">
+            <summary>
+            二维码查看
+            </summary>
+            <param name="installationEquipmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceComponentRltQRCodeAppService.GetEquipmentInfo(SnAbp.Resource.Dtos.ComponentRltQRCodeCreateDto)">
+            <summary>
+            获取设备id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceComponentTrackRecordAppService.Create(SnAbp.Resource.Dtos.ComponentTrackRecordCreateDto)">
+            <summary>
+            创建跟踪记录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceComponentTrackRecordAppService.GetInstallationEquipmentId(System.String)">
+            <summary>
+            通过二维码id 查询安装设备id
+            </summary>
+            <param name="QRCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.Get(System.Guid)">
+            <summary>
+            查询
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetByGroupNameAndName(System.String,System.String)">
+            <summary>
+            获得实体对象
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetFileList(System.Guid)">
+            <summary>
+            获得设备关联文件列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetList(SnAbp.Resource.Dtos.EquipmentSearchDto)">
+            <summary>
+            查询列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetSimpleList(SnAbp.Resource.Dtos.EquipmentSimpleSearchDto)">
+            <summary>
+            查询待选计划关联设备
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetEquipmentGroupsByScopeCode(System.String)">
+            <summary>
+            获取一个范围的设备分组列表
+            </summary>
+            <param name="scopeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetScopesByGroupAndName(SnAbp.Resource.Dtos.GetScopesByGroupAndNameInput)">
+            <summary>
+            获取一组设备所属范围
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.Create(SnAbp.Resource.Dtos.EquipmentCreateDto)">
+            <summary>
+            添加
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.CreateFile(SnAbp.Resource.Dtos.EquipmentRltFileCreateDto)">
+            <summary>
+            添加关联文件
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetEquipment(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            04-02 更改，将标准库接口移至此
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.Update(SnAbp.Resource.Dtos.EquipmentUpdateDto)">
+            <summary>
+            更新
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.UpdateGisData(SnAbp.Resource.Dtos.UpdateGisDataInput)">
+            <summary>
+            更新 Gis 数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.Upload(SnAbp.StdBasic.Dtos.Import.ImportData)">
+            <summary>
+            导入
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.EngineeringDataImport(SnAbp.Resource.Dtos.DataImportDto)">
+            <summary>
+            工程数据导入
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.Export(SnAbp.Resource.Dtos.Export.EquipmentData)">
+            <summary>
+            设备导出
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.Delete(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.DeleteFile(System.Guid)">
+            <summary>
+            删除关联文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.EngineeringEquipmentImport(SnAbp.Utils.DataImport.FileUploadDto,System.String)">
+            <summary>
+            工程数据导入
+            </summary>
+            <param name="fileData"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.EngineCableImport(SnAbp.Utils.DataImport.FileUploadDto,System.String)">
+            <summary>
+            工程电缆导入
+            </summary>
+            <param name="fileData"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.CableWiringImport(SnAbp.Utils.DataImport.FileUploadDto,System.String)">
+            <summary>
+            电缆配线导入
+            </summary>
+            <param name="fileData">文件信息</param>
+            <param name="key">导入标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.CabinetWiringImport(SnAbp.Utils.DataImport.FileUploadDto,System.String)">
+            <summary>
+            机柜配线导入
+            </summary>
+            <param name="fileData">文件信息</param>
+            <param name="key">数据导入标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetManufacturerIdAsync(System.String,System.String)">
+            <summary>
+            根据厂家名称获得厂家主键
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetNodesParentNode(System.Collections.Generic.List{SnAbp.Resource.Dtos.TreeNode},SnAbp.Resource.Dtos.PartItem)">
+            <summary>
+            获得当前节点的父级节点
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.SetRunningStates(SnAbp.Resource.Dtos.PartImport,System.String)">
+            <summary>
+            设置运行状态
+            </summary>
+            <param name="item"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetStandardEquipmentIdAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            获取标准设备
+            </summary>
+            <param name="manufacturer"></param>
+            <param name="standardEquipment"></param>
+            <param name="importKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.FormartErrMsg(System.String,System.String,System.String,System.String)">
+            <summary>
+            格式化导入存在的错误消息
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetProductCategory(System.Collections.Generic.IEnumerable{SnAbp.StdBasic.Entities.Model},System.String,System.String,System.String)">
+            <summary>
+            获取唯一产品分类
+            </summary>
+        </member>
+        <member name="F:SnAbp.Resource.Services.ResourceEquipmentAppService._partCode">
+            <summary>
+            构件数据写入标准库构件表中
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.DgInsertToStandComponentCategory(System.Collections.Generic.List{SnAbp.Resource.Dtos.TreeNode},System.Guid,System.Collections.Generic.Dictionary{System.Guid,System.Guid})">
+            <summary>
+            递归写入标准库构件数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.GetStandCode(System.Nullable{System.Guid})">
+            <summary>
+            获得新增构件数据节点的编号
+            </summary>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.CheckSameName(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)">
+            <summary>
+            同一级别下设备名称不能重复
+            </summary>
+            <param name="parentId"></param>
+            <param name="id"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.CheckSameCode(System.Nullable{System.Guid},System.String)">
+            <summary>
+            验证设备编码唯一性
+            </summary>
+            <param name="code"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentAppService.OneTouchInStorage">
+            <summary>
+            一键入库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentGroupAppService.Get(System.Guid)">
+            <summary>
+            获取设备分组信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentGroupAppService.GetList(SnAbp.Resource.Dtos.EquipmentGroupGetListDto)">
+            <summary>
+            根据条件获取设备分组
+            </summary>
+            <param name="input">产品Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentGroupAppService.Create(SnAbp.Resource.Dtos.EquipmentGroupCreateDto)">
+            <summary>
+            添加设备分组
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentGroupAppService.Update(SnAbp.Resource.Dtos.EquipmentGroupUpdateDto)">
+            <summary>
+            修改设备分组信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentGroupAppService.Delete(System.Guid)">
+            <summary>
+            删除设备
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentGroupAppService.upload(SnAbp.Resource.Dtos.DataImportDto)">
+            <summary>
+            导入设备分组
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentPropertyAppService.GetList(System.Guid)">
+            <summary>
+            查询
+            </summary>
+            <param name="equipmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentPropertyAppService.Create(SnAbp.Resource.Dtos.EquipmentPropertyCreateDto)">
+            <summary>
+            添加
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentPropertyAppService.Update(SnAbp.Resource.Dtos.EquipmentPropertyUpdateDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceEquipmentPropertyAppService.Delete(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceOrganizationRltLayerService.GetLayerIdsByOrganizationId(System.Guid)">
+            <summary>
+            根据组织机构id获取图层id
+            </summary>
+            <param name="organizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceOrganizationRltLayerService.Create(SnAbp.Resource.Dtos.OrganizationRltLayerCreateDto)">
+            <summary>
+            组织机构关联图层
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentAppService.Create(System.Collections.Generic.List{SnAbp.Resource.Dtos.StoreEquipmentCreateDto})">
+            <summary>
+            批量添加库存设备
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentAppService.ExportStoreEquipments(System.Collections.Generic.List{SnAbp.Resource.Dtos.StoreEquipmentDto})">
+            <summary>
+            将数据导出到excel表格中
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentAppService.GetList(SnAbp.Resource.Dtos.StoreEquipmentSearchDto)">
+            <summary>
+            根据条件获取库存设备集合
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentAppService.GetListByCode(SnAbp.Resource.Dtos.StoreEquipmentSearchSimpleDto)">
+            <summary>
+            通过code集合来获取对应的库存设备信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentAppService.GetListByIds(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            通过ids数组来获取相应的库存设备信息
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTestAppService.Create(SnAbp.Resource.Dtos.StoreEquipmentTestCreateDto)">
+            <summary>
+            创建检测单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTestAppService.Get(System.Guid)">
+            <summary>
+            根据id获取单个检测单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTestAppService.GetList(SnAbp.Resource.Dtos.StoreEquipmentTestSearchDto)">
+            <summary>
+            获取检测单的数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTransferAppService.Get(System.Guid)">
+            <summary>
+            获取单个记录信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTransferAppService.GetList(SnAbp.Resource.Dtos.StoreEquipmentTransferSearchDto)">
+            <summary>
+            获取出入库信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTransferAppService.GetEquipmentImport(SnAbp.Resource.Dtos.StoreEquipmentSimpleSearchDto)">
+            <summary>
+            获取要入库的设备
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTransferAppService.GetEquipmentExport(SnAbp.Resource.Dtos.StoreEquipmentExportDto)">
+            <summary>
+            获取要出库的设备
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTransferAppService.Import(SnAbp.Resource.Dtos.StoreEquipmentTransferSimpleDto)">
+            <summary>
+            入库
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceStoreEquipmentTransferAppService.Export(SnAbp.Resource.Dtos.StoreEquipmentTransferSimpleDto)">
+            <summary>
+            出库
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceTerminalAppService.GetListByEquipmentId(System.Guid)">
+            <summary>
+            根据设备 Id 获取端子列表
+            </summary>
+            <param name="equipmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceTerminalBusinessAppService.Get(System.Guid)">
+            <summary>
+            详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceTerminalBusinessAppService.create(SnAbp.Resource.Dtos.TerminalBusinessPathDto)">
+            <summary>
+            添加
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceTerminalBusinessAppService.update(SnAbp.Resource.Dtos.TerminalBusinessPathDto)">
+            <summary>
+            更新
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceTerminalLinkAppService.GetListByTerminalId(System.Guid)">
+            <summary>
+            根据端子 Id 获取连接关系列表
+            </summary>
+            <param name="terminalId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Resource.Services.ResourceTerminalLinkAppService.GetListByEquipmentId(System.Guid)">
+            <summary>
+            根据设备 Id 获取连接关系列表
+            </summary>
+            <param name="equipmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Store.Services.ResourceStoreHouseAppService.Get(System.Guid)">
+            <summary>
+            获取仓库实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Store.Services.ResourceStoreHouseAppService.GetList(SnAbp.Resource.Dtos.StoreHouseSearchDto)">
+            <summary>
+            获取仓库列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Store.Services.ResourceStoreHouseAppService.Create(SnAbp.Resource.Dtos.StoreHouseCreateDto)">
+            <summary>
+            创建仓库实体
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Store.Services.ResourceStoreHouseAppService.Update(SnAbp.Resource.Dtos.StoreHouseUpdateDto)">
+            <summary>
+            修改仓库实体
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Store.Services.ResourceStoreHouseAppService.UpdateEnable(SnAbp.Resource.Dtos.StoreHouseUpdateEnableDto)">
+            <summary>
+            修改是否启用
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Store.Services.ResourceStoreHouseAppService.Delete(System.Guid)">
+            <summary>
+            删除仓库实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

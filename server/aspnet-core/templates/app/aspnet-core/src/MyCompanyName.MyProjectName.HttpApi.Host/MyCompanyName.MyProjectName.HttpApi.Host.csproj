@@ -1,0 +1,181 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	<Import Project="..\..\common.props" />
+	<PropertyGroup>
+
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+		<PreserveCompilationReferences>true</PreserveCompilationReferences>
+		<UserSecretsId>MyCompanyName.MyProjectName-4681b4fd-151f-4221-84a4-929d86723e4c</UserSecretsId>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.6" />
+		<PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+		<PackageReference Include="Serilog.Sinks.Async" Version="1.4.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+		<PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5" />
+		<PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.Autofac" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic" Version="3.0.5" />
+		<!--<ProjectReference Include="..\..\..\..\..\framework\src\Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy\Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Volo.Abp.Autofac\Volo.Abp.Autofac.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Volo.Abp.Caching.StackExchangeRedis\Volo.Abp.Caching.StackExchangeRedis.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Volo.Abp.AspNetCore.Serilog\Volo.Abp.AspNetCore.Serilog.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Volo.Abp.AspNetCore.Authentication.JwtBearer\Volo.Abp.AspNetCore.Authentication.JwtBearer.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic\Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.csproj" />-->
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-account\src\SnAbp.Account.Web.IdentityServer\SnAbp.Account.Web.IdentityServer.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-file\src\SnAbp.File.Application\SnAbp.File.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-bpm\src\SnAbp.Bpm.Application\SnAbp.Bpm.Application.csproj" />
+		<!--<ProjectReference Include="..\..\..\..\..\modules\snabp-exam\src\SnAbp.Exam.Application\SnAbp.Exam.Application.csproj" />-->
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-cms\src\SnAbp.Cms.Application\SnAbp.Cms.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-std-basic\src\SnAbp.StdBasic.Application\SnAbp.StdBasic.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-basic\src\SnAbp.Basic.Application\SnAbp.Basic.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-resource\src\SnAbp.Resource.Application\SnAbp.Resource.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-emerg\src\SnAbp.Emerg.Application\SnAbp.Emerg.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-problem\src\SnAbp.Problem.Application\SnAbp.Problem.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-cr-plan\src\SnAbp.CrPlan.Application\SnAbp.CrPlan.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-common\src\SnAbp.Common.Application\SnAbp.Common.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-oa\src\SnAbp.Oa.Application\SnAbp.Oa.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-project\src\SnAbp.Project.Application\SnAbp.Project.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-project\src\SnAbp.Project.Application\SnAbp.Project.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-alarm\src\SnAbp.Alarm.Application\SnAbp.Alarm.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-task\src\SnAbp.Tasks.Application\SnAbp.Tasks.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-regulation\src\SnAbp.Regulation.Application\SnAbp.Regulation.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-report\src\SnAbp.Report.Application\SnAbp.Report.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-material\src\SnAbp.Material.Application\SnAbp.Material.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-technology\src\SnAbp.Technology.Application\SnAbp.Technology.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-costmanagement\src\SnAbp.CostManagement.Application\SnAbp.CostManagement.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-safe\src\SnAbp.Safe.Application\SnAbp.Safe.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-quality\src\SnAbp.Quality.Application\SnAbp.Quality.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-construction-base\src\SnAbp.ConstructionBase.Application\SnAbp.ConstructionBase.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-construction\src\SnAbp.Construction.Application\SnAbp.Construction.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-file-approve\src\SnAbp.FileApprove.Application\SnAbp.FileApprove.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\snabp-framework\src\SnAbp.AspNetCore.MultiProject\SnAbp.AspNetCore.MultiProject.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.Application\MyCompanyName.MyProjectName.Application.csproj" />
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.EntityFrameworkCore.DbMigrations\MyCompanyName.MyProjectName.EntityFrameworkCore.DbMigrations.csproj" />
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.HttpApi\MyCompanyName.MyProjectName.HttpApi.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Logs\**" />
+		<Content Remove="Logs\**" />
+		<EmbeddedResource Remove="Logs\**" />
+		<None Remove="Logs\**" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Remove="appsettings.json" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="import_templates\import_templates_users.xls" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="appsettings.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="import_templates\import_templates_cabinetWiring.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_cabinetWiring.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_cableWiring.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_cableWiring.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_componentCategory.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_componentCategory.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_engineeringCable.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_engineeringCable.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_engineeringEquipments.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_engineeringEquipments.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_equipmentGroups.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_equipments.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_equipments.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_installationSites.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_installationSites.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_manufacturers.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_manufacturers.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_organizations.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_organizations.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_productCategory.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_productCategory.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_railways.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_railways.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_standardEquipments.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_standardEquipments.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_Stations.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_Stations.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_Stations_old.xls">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="import_templates\import_templates_users.xlsx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="message_templates\notice_template.xml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="message_templates\default_template.xml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ProjectExtensions>
+		<VisualStudio><UserProperties workflow_3templates_4cr-plan_4monthplanexam_1json__JsonSchema="https://json-schema.org/draft-04/schema" properties_4launchsettings_1json__JsonSchema="" appsettings_1json__JsonSchema="" package_1json__JsonSchema="" /></VisualStudio>
+	</ProjectExtensions>
+</Project>

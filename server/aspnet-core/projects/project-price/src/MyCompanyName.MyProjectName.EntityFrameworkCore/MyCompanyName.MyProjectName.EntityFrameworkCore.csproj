@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.Domain\MyCompanyName.MyProjectName.Domain.csproj" />
+		<PackageReference Include="Volo.Abp.BackgroundJobs.EntityFrameworkCore" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.AuditLogging.EntityFrameworkCore" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.EntityFrameworkCore.PostgreSql" Version="3.0.5" />
+
+		<ProjectReference Include="..\..\..\..\modules\snabp-common\src\SnAbp.Common.EntityFrameworkCore\SnAbp.Common.EntityFrameworkCore.csproj" />
+
+		<ProjectReference Include="..\..\..\..\modules\snabp-permission-management\src\SnAbp.PermissionManagement.EntityFrameworkCore\SnAbp.PermissionManagement.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\..\modules\snabp-setting-management\src\SnAbp.SettingManagement.EntityFrameworkCore\SnAbp.SettingManagement.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\..\modules\snabp-identity\src\SnAbp.Identity.EntityFrameworkCore\SnAbp.Identity.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\..\modules\snabp-identityserver\src\SnAbp.IdentityServer.EntityFrameworkCore\SnAbp.IdentityServer.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\..\modules\snabp-tenant-management\src\SnAbp.TenantManagement.EntityFrameworkCore\SnAbp.TenantManagement.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\..\modules\snabp-feature-management\src\SnAbp.FeatureManagement.EntityFrameworkCore\SnAbp.FeatureManagement.EntityFrameworkCore.csproj" />
+
+		<ProjectReference Include="..\..\..\..\modules\snabp-file\src\SnAbp.File.EntityFrameworkCore\SnAbp.File.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\..\modules\snabp-bpm\src\SnAbp.Bpm.EntityFrameworkCore\SnAbp.Bpm.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\..\modules\snabp-cms\src\SnAbp.Cms.EntityFrameworkCore\SnAbp.Cms.EntityFrameworkCore.csproj" />
+
+		<ProjectReference Include="..\..\..\..\modules\snabp-message-notice\src\SnAbp.Message.Notice.EntityFrameworkCore\SnAbp.Message.Notice.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\..\modules\snabp-message-bpm\src\SnAbp.Message.Bpm.EntityFrameworkCore\SnAbp.Message.Bpm.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+
+</Project>

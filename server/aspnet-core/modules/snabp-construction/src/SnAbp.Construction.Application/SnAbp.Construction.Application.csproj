@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Construction</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Construction.Application.Contracts\SnAbp.Construction.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.Construction.Domain\SnAbp.Construction.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+    <ProjectReference Include="..\..\..\snabp-construction-base\src\SnAbp.ConstructionBase.Application\SnAbp.ConstructionBase.Application.csproj" />
+    <ProjectReference Include="..\..\..\snabp-bpm\src\SnAbp.Bpm.Application\SnAbp.Bpm.Application.csproj" />
+    <ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Application\SnAbp.Resource.Application.csproj" />
+    <ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.Domain\SnAbp.File.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-project\src\SnAbp.Project.Domain\SnAbp.Project.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-technology\src\SnAbp.Technology.Application\SnAbp.Technology.Application.csproj" />
+	  <ProjectReference Include="..\..\..\snabp-project\src\SnAbp.Project.Domain\SnAbp.Project.Domain.csproj" />
+	  <ProjectReference Include="..\..\..\snabp-technology\src\SnAbp.Technology.Domain\SnAbp.Technology.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain\SnAbp.StdBasic.Domain.csproj" />
+    <ProjectReference Include="..\SnAbp.Construction.Domain\SnAbp.Construction.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

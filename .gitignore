@@ -1,0 +1,11 @@
+server/aspnet-core/templates/app/aspnet-core/src/MyCompanyName.MyProjectName.HttpApi.Host/appsettings.json
+server/aspnet-core/templates/app/aspnet-core/src/MyCompanyName.MyProjectName.DbMigrator/appsettings.json  
+client/web/vue/modules/yarn.lock  
+client/web/vue/modules/node_modules  
+client/web/vue/templates/yarn.lock
+client/web/vue/templates/tools/web_config.js
+client/app/templates/uniapp_snabp/unpackage
+node_modules
+server/aspnet-core/templates/app/aspnet-core/src/MyCompanyName.MyProjectName.HttpApi.Host/appsettings.json
+server/aspnet-core/templates/app/aspnet-core/src/MyCompanyName.MyProjectName.HttpApi.Host/Properties/launchSettings.json
+client/web/vue/modules/config.js

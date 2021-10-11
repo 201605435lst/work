@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Resource</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\SnAbp.Resource.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>.\SnAbp.Resource.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\OrganizationAppService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="SnAbp.Resource.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SnAbp.Resource.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Resource.Application.Contracts\SnAbp.Resource.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.Resource.Domain\SnAbp.Resource.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\snabp-utils\src\SnAbp.Utils.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+    <ProjectReference Include="..\..\..\SnAbp-identity\src\SnAbp.Identity.Application.Contracts\SnAbp.Identity.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.Application.Contracts\SnAbp.Basic.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.Domain\SnAbp.Basic.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Application.Contracts\SnAbp.StdBasic.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-std-basic\src\SnAbp.StdBasic.Domain\SnAbp.StdBasic.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-common\src\SnAbp.Common.Application.Contracts\SnAbp.Common.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-common\src\SnAbp.Common.Domain\SnAbp.Common.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

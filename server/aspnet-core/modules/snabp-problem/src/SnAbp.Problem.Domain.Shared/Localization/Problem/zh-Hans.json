@@ -1,0 +1,14 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpProblem": "问题库模块",
+    "Permission:Problems": "问题管理",
+    "Permission:ProblemCategories": "问题分类",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Detail": "查看",
+    "Permission:Import": "导入",
+    "Permission:Export": "导出"
+  }
+}

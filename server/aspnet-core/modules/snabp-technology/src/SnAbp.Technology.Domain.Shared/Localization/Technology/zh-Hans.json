@@ -1,0 +1,31 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpTechnology": "技术管理",
+    "Permissions": "权限",
+    "ManageYourProfile": "管理个人资料",
+    "Permission:ConstructInterfaces": "接口标记管理",
+    "Permission:MaterialPlans": "用料计划",
+    "Permission:Quanitys": "工程量清单",
+    "Permission:ComponentRltQRCodes": "构件跟踪",
+    "Permission:Discloses": "技术交底",
+    "Permission:ExportCode": "下载二维码",
+    "Permission:GenerateCode": "生成二维码",
+    "Permission:CodeDetail": "跟踪详情",
+    "Permission:Reform": "整改",
+    "Permission:Sign": "标记",
+    "Permission:Create": "新建",
+    "Permission:Delete": "删除",
+    "Permission:Update": "编辑",
+    "Permission:Detail": "详情",
+    "Permission:Approval": "审批",
+    "Permission:Export": "导出",
+    "Permission:Upload": "上传",
+    "Permission:Submit": "提交",
+    "Permission:Statistic": "统计",
+    "Permission:GenerateMaterialPlan": "生成用料计划",
+
+    "Permission:Import": "导入"
+  }
+}
+

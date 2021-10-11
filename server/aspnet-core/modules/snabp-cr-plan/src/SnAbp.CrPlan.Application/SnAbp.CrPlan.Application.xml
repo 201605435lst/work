@@ -1,0 +1,1078 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.CrPlan.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.CrPlan.AutoSaveStatisticWorker.InsertOrganizationStatistic(System.Int32,SnAbp.CrPlan.Dtos.YearPlanFinishProgressDto,System.DateTime)">
+            <summary>
+            插入车间数据统计
+            </summary>
+            <param name="dto"></param>
+            <param name="type"></param>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.AutoSaveStatisticWorker.InsertEquipmentStatistic(System.Int32,SnAbp.CrPlan.Dtos.YearPlanFinishProgressDto,System.DateTime)">
+            <summary>
+            插入设备数据
+            </summary>
+            <param name="type"></param>
+            <param name="dto"></param>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SnAbp.CrPlan.Commons.ExcelHepler">
+            <summary>
+            Excel操作类
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Commons.ExcelHepler.ExcelToDataTable(System.IO.Stream,System.String,System.Int32,System.String)">
+            <summary>
+            Excel数据导出DataTable
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Commons.ExcelHepler.ReparAndCheckToExcel(System.Data.DataTable,System.Data.DataTable,System.String,System.String,System.String)">
+            <summary>
+            检修、验收表导出专用（有线）
+            </summary>
+            <param name="dt">检修表数据</param>
+            <param name="dt2">验收表数据</param>
+            <param name="strFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Commons.ExcelHepler.RepairWithCheckToExcel(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            导出检修表（检修人与验收人不分表）高铁
+            </summary>
+            <param name="dt"></param>
+            <param name="strFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Commons.ExcelHepler.WorkOrderToExcel(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderExportDto,System.String)">
+            <summary>
+            派工单导出专用
+            </summary>
+            <param name="strFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanAlterRecordAppService.GetSelectablePlans(SnAbp.CrPlan.Dto.AlterRecord.SelectablePlansSearchDto)">
+            <summary>
+            获取待选计划
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanAlterRecordAppService.GetSelectablePlan(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            获取单条待选计划
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanAlterRecordAppService.ForSelectablePlanByIds(SnAbp.CrPlan.Dtos.AlterRecordGetListDto)">
+            <summary>
+            获取多条待选计划
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanAlterRecordAppService.Export(SnAbp.CrPlan.Dto.AlterRecord.AlterRecordExportInputDto)">
+            <summary>
+            导出
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanAlterRecordAppService.SubmitForExam(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            提交审批
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanAlterRecordAppService.ApprovePlanAlter(System.Guid,SnAbp.Bpm.WorkflowState)">
+            <summary>
+            变更计划审批
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanAlterRecordAppService.ExporAlterRecord(SnAbp.CrPlan.Dto.AlterRecord.AlterRecordDetailDto,System.Object,System.String)">
+            <summary>
+            计划变更导出
+            </summary>
+            <param name="dto">计划变更实体</param>
+            <param name="seal">盖章审批</param>
+            <param name="signatureName">"签章名称"</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanAlterRecordAppService.CreateAlterListTemplete(System.Int32,System.Boolean)">
+            <summary>
+            创建变更单表格结构
+            </summary>
+            <param name="listCount"></param>
+            <param name="isNewVersion">新版本后缀名xlsx 默认版本未xls</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceRecordAppService.GetListFore(SnAbp.CrPlan.Dto.MaintenanceRecord.MaintenanceRecordEquipSearchDto)">
+            <summary>
+            获取检修计划设备列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceRecordAppService.MaintenanceRecord(SnAbp.CrPlan.Dto.MaintenanceRecord.MaintenanceRecordSearchDto)">
+            <summary>
+            获取检修记录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.Create(SnAbp.CrPlan.Dto.MaintenanceWorkCreateDto)">
+            <summary>
+            生成维修计划
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.FormatTime(System.DateTime,System.Int32)">
+            <summary>
+            时间转换
+            </summary>
+            <param name="time"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.GetRepaireLoaction(SnAbp.CrPlan.Dto.SkylightPlan.SkylightPlanDto)">
+            <summary>
+            获取维修地点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.ChecStation(SnAbp.CrPlan.Dto.SkylightPlan.SkylightPlanDto)">
+            <summary>
+            查找车站、区间
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.GetList(SnAbp.CrPlan.Dto.MaintenanceWorkSearchDto)">
+            <summary>
+            获取第一级审批维修计划
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.GetListForSecondStep(SnAbp.CrPlan.Dto.MaintenanceWorkSearchDto)">
+            <summary>
+            获取第二阶段审批的维修作业
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.SumbitSecondFlow(System.Guid)">
+            <summary>
+            提交维修计划的第二级审批
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.Delete(System.Guid)">
+            <summary>
+            维修计划第二级审批 审批通过
+            </summary>
+            <param name="id">审批流id</param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.SumbitFirsrFlow(System.Guid,System.Collections.Generic.List{SnAbp.File.FileDomainDto})">
+            <summary>
+            提交审批
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.SubmitProcessAsync(System.Guid,System.String,System.Collections.Generic.List{SnAbp.File.FileDomainDto},System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="RepaireId">维修计划Id</param>
+            <param name="key">工作流Key</param>
+            <param name="files"></param>
+            <param name="skylightId"></param>
+            <param name="isFirst">是否为第一次提交</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.FirstFinshProcrss(System.Guid,SnAbp.Bpm.WorkflowState)">
+            <summary>
+            第一级审批完成
+            </summary>
+            <param name="id"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.RemoveMaintenanceWorkRltSkylightPlan(SnAbp.CrPlan.Dtos.MaintenanceWork.RemoveMaintenanceWorkRltSkylightPlanDto)">
+            <summary>
+            删除垂直天窗与维修计划的关联关系
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.ExportMaintenanceWorkPlan(System.Guid)">
+            <summary>
+            导出维修计划
+            </summary>
+            <param name="workflowId">工作流Id</param>
+            <returns></returns>
+            
+        </member>
+        <member name="T:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.MaintenanceWorkPlanBootom">
+            <summary>
+            维修计划表底部数据
+            </summary>
+        </member>
+        <member name="P:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.MaintenanceWorkPlanBootom.CreateMember">
+            <summary>
+            编制人
+            </summary>
+        </member>
+        <member name="P:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.MaintenanceWorkPlanBootom.SafeMember">
+            <summary>
+            安全科负责人
+            </summary>
+        </member>
+        <member name="P:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.MaintenanceWorkPlanBootom.TechnicalMember">
+             <summary>
+            技术科负责人
+             </summary>
+        </member>
+        <member name="P:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.MaintenanceWorkPlanBootom.ChiefMember">
+             <summary>
+            主管段长
+             </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.ExportWorkTicket(System.Guid,System.Boolean)">
+            <summary>
+            导出工作票
+            </summary>
+            <param name="workflowId"></param>
+            <param name="isWorkflowId">True:工作流id False:天窗id</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.ExportPlan(System.Guid)">
+            <summary>
+            导出计划方案
+            </summary>
+            <param name="worlflowId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.GetMaintenanceWorkByARKey(System.Guid)">
+            <summary>
+            通过工作流Id 获取维修计划
+            </summary>
+            <param name="workflowId">工作流Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanMaintenanceWorkAppService.GetFile(System.IO.Stream,System.String)">
+            <summary>
+            返回文件流
+            </summary>
+            <param name="buffer"></param>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanPlanTodoAppService.GetWorkOrderByPlanId(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            根据天窗计划组织派工单详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService">
+            <summary>
+            天窗、其他计划
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetList(SnAbp.CrPlan.Dto.SkylightPlan.SkylightPlanSearchInputDto)">
+            <summary>
+            获取天窗计划列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetLastPlan(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            根据时间获取最后一次添加的数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetOtherPlanList(SnAbp.CrPlan.Dto.SkylightPlan.OtherPlanSearchInputDto)">
+            <summary>
+            获取其他计划列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.PublishOtherPlan(SnAbp.CrPlan.Dto.SkylightPlan.OtherPlanSearchInputDto)">
+            <summary>
+            下发其他计划
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.Get(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            获取详情（天窗、其他计划）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetInWork(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            获取详情（派工作业专用）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.BackoutPlan(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            发布天窗计划
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.Create(SnAbp.CrPlan.Dto.SkylightPlan.SkylightPlanCreateDto,System.Boolean)">
+            <summary>
+            添加
+            </summary>
+            <param name="input"></param>
+            <param name="isOther">True:其他计划 False:天窗计划</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.Remove(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            删除
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.Update(SnAbp.CrPlan.Dto.SkylightPlan.SkylightPlanUpdateDto,System.Boolean)">
+            <summary>
+            修改
+            </summary>
+            <param name="input"></param>
+            <param name="isOther">True:其他计划 False:天窗计划</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.SimpleUpdate(SnAbp.CrPlan.Dtos.SkylightPlanSimpleUpdateDto)">
+            <summary>
+            天窗简单编辑 目前用于高铁科维修作业二次审批编辑计划时
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.CreateWorkTicket(SnAbp.CrPlan.Dtos.WorkTicketCreateDto)">
+            <summary>
+            创建工作票
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetWorkTickets(System.Guid)">
+            <summary>
+            获取工作票
+            </summary>
+            <param name="id">垂直天窗id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetWorkTicketFinishInfo(System.Guid)">
+            <summary>
+            获取工作票完成数量情况
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.UpdateWorkTicket(SnAbp.CrPlan.Dtos.WorkTicketUpdateDto)">
+            <summary>
+            编辑工作票
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.FinishWorkTicket(SnAbp.CrPlan.Dtos.WorkTicketFinishDto)">
+            <summary>
+            完成工作票
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.DeleteWorkTicket(SnAbp.CrPlan.Dtos.WorkTicketDeleteDto)">
+            <summary>
+            删除工作票
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.ConfirmTodoMessage(System.Guid)">
+            <summary>
+            配合单位收到消息通知进行确认回复
+            </summary>
+            <param name="MessageId">代办消息Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetWorkTicketList(SnAbp.CrPlan.Dtos.WorkTicketSearchDto)">
+            <summary>
+            根据待办消息查询配合作业
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.FinishCooperationWork(SnAbp.CrPlan.Dtos.FinsCooperationWorkDto)">
+            <summary>
+            完成配合作业
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.SaveFileRltMaintenanceWork(System.Collections.Generic.List{System.Guid},System.Guid,System.String)">
+            <summary>
+            保存工作方案
+            </summary>
+            <param name="fileIds"></param>
+            <param name="skylightPlanId"></param>
+            <param name="schemeCoverName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.CancelPlan(System.Guid,System.String,System.String,System.Boolean)">
+            <summary>
+            取消计划
+            </summary>
+            <param name="id"></param>
+            <param name="skylightId"></param>
+            <param name="type"></param>
+            <param name="cancelReason"></param>
+            <param name="isWorkOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.CrossMonthChange(System.Nullable{System.Guid})">
+            <summary>
+            跨月变更计划
+            </summary>
+            <param name="skylightPlanId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.OneTouchMonthPlan(System.Guid,System.DateTime)">
+            <summary>
+            一键生成月计划
+            </summary>
+            <param name="workUnitId"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetSkylightDataStatistic(SnAbp.CrPlan.Dto.SkylightPlan.SkylightPlanSearchInputDto)">
+            <summary>
+            天窗计划数据统计
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetSkylightSpecificData(SnAbp.CrPlan.Dto.SkylightPlan.SkylightPlanSearchInputDto)">
+            <summary>
+            获取垂直天窗具体数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.DownLoadPlanCover(System.Guid)">
+            <summary>
+            下载计划方案封面
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetWorkContent(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.Guid,System.Decimal}})">
+            <summary>
+            拼接工作内容
+            </summary>
+            <param name="planDetails">key:日计划ID value:作业数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.AddRelEquipTest(System.Guid,System.Guid,System.Nullable{System.Guid})">
+            <summary>
+            添加关联设备测试项
+            </summary>
+            <param name="dailyPlanId">关联的日计划ID</param>
+            <param name="planRelEquipId">关联设备表ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.DelPlanDetail(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            单独删除计划详情及关联表
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.DelRelEquip(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            单独删除关联设备及关联表
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetTicketsBySkylightPlanId(System.Guid)">
+            <summary>
+            根据垂直天窗id获取工作票
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanSkylightPlanAppService.GetCompletionRate(SnAbp.CrPlan.Dto.SkylightPlan.SkylightPlanSearchInputDto,System.Collections.Generic.List{System.Guid},SnAbp.CrPlan.Enums.PlanType)">
+            <summary>
+            计算天窗统计率
+            </summary>
+            <param name="input"></param>
+            <param name="orgIds"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SnAbp.CrPlan.Services.CrPlanStatisticalAppService">
+            <summary>
+            智能报表接口实现
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetYearStatistical(System.Guid,System.String)">
+            <summary>
+            根据用户组织机构Id获取整个段的年计划完成情况统计列表
+            </summary>
+            <param name="id">当前用户组织机构ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetMonthStatistical(SnAbp.CrPlan.Dto.Statistical.StatisticalChartsSearchInputDto)">
+            <summary>
+            根据查询条件获取整个段的月计划完成情况统计列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetEquipmentStatistical(SnAbp.CrPlan.Dto.Statistical.StatisticalChartsSearchInputDto)">
+            <summary>
+            根据查询条件获取设备类型的完成情况统计列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetPlanStateTracking(SnAbp.CrPlan.Dto.Statistical.PlanStateTrackingSearchInputDto)">
+            <summary>
+            根据查询条件获取计划状态追踪数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetMonthCompletion(SnAbp.CrPlan.Dto.Statistical.MonthFinishSearchInputDto)">
+            <summary>
+            根据查询条件获取月计划完成情况
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetSingleStatistical(SnAbp.CrPlan.Dto.Statistical.SingleCompleteSearchInputDto)">
+            <summary>
+            根据查询条件获取单项统计数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetMonthCompletionRates(SnAbp.CrPlan.Dto.Statistical.MonthFinishSearchInputDto)">
+            <summary>
+            根据查询条件获取月计划完成率列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetYearCompletionRates(SnAbp.CrPlan.Dto.Statistical.YearFinishSearchInputDto)">
+            <summary>
+            根据查询条件获取年完成率列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetWorkShopByUserOrgId(System.Guid)">
+            <summary>
+            根据用户组织机构获取所有车间
+            </summary>
+            <param name="id">车间或段组织机构ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.GetColVal``1(``0,System.Int32)">
+            <summary>
+            获取数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticalAppService.ExportMonthCompletion(SnAbp.CrPlan.Dto.Statistical.MonthFinishSearchInputDto)">
+            <summary>
+            月完成情况统计
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticsAppService.GetYearPlanProgress(SnAbp.CrPlan.Dtos.YearMonthPlanInputSearchDto)">
+            <summary>
+            获取年表完成进度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticsAppService.GetRepairGroupFinishData(SnAbp.CrPlan.Dtos.RepairGroupInputSearchDto)">
+            <summary>
+            获取指定组织机构，指定设备类型下的完成进度
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanStatisticsAppService.FieldSum``1(``0,System.String,System.DateTime)">
+            <summary>
+            统计月表中的总数量
+            </summary>
+            <typeparam name="YearMonthPlan"></typeparam>
+            <param name="plan"></param>
+            <param name="prefix"></param>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService">
+            <summary>
+            派工单相关接口实现
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetListSentedWorkOrders(SnAbp.CrPlan.Dto.WorkOrder.SkylightSearchInputDto)">
+            <summary>
+            根据查询条件，获取已派工模块的主页显示数据列表
+            使用范围：车间及以上组织机构人员
+            </summary>
+            <param name="input">查询条件实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetList(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderSearchInputDto)">
+            <summary>
+            根据查询条件，获取派工作业、已完成模块的主页显示数据列表
+            </summary>
+            <param name="input">查询条件实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetOtherHomeworkList(SnAbp.CrPlan.Dto.SkylightPlan.OtherPlanSearchInputDto)">
+            <summary>
+            根据查询条件获取其他作业列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.Get(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            根据派工单ID获取派工单实体（无设备测试项）
+            根据天窗id 获取PlanDetailDto列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetDetail(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+             <summary>
+             根据派工单ID获取派工单实体（有设备测试项）
+            根据天窗id 获取PlanDetailDto列表
+             </summary>
+             <param name="input"></param>
+             <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.Create(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderCreateDto,System.Boolean)">
+            <summary>
+            添加派工单（状态默认未完成）
+            </summary>
+            <param name="input">派工单实体</param>
+            <param name="isOtherPlan">是否其他计划</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.Update(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderUpdateDto)">
+            <summary>
+            修改派工单（无天窗相关）
+            </summary>
+            <param name="input">派工单实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.Finish(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderFinishDto,System.Boolean,System.Boolean)">
+            <summary>
+            完成派工单
+            </summary>
+            <param name="input">派工单实体</param>
+            <param name="issave">是否只保存数据</param>
+            <param name="isOtherPlan">是否其他作业</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.Acceptance(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderAcceptanceDto,System.Boolean)">
+            <summary>
+            验收派工单
+            </summary>
+            <param name="input">派工单实体</param>
+            <param name="issave">是否只保存数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.UpdateDetail(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderFinishDto)">
+            <summary>
+            编辑派工单（已完成模块使用）
+            </summary>
+            <param name="input">派工单实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.Delete(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderDeleteDto)">
+            <summary>
+            撤销派工单
+            删除派工单数据
+            对应天窗计划状态改为已发布
+            设备测试项清理检修结果、验收结果数据
+            相关设备检修人员数据删除
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.Export(System.Guid,System.Boolean,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="id">派工单Id</param>
+            <param name="ismaintenance">True:导出检修表  False:导出派工单</param>
+            <param name="repairTag">维修项标签key</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.ConvertWorkOrderToExportDto(SnAbp.CrPlan.Dto.WorkOrder.WorkOrderDetailDto)">
+            <summary>
+            派工单详情转导出Dto
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.ExporToRepairAndCheck(System.Guid,System.String,System.String,System.DateTime)">
+            <summary>
+            导出检修、验收表有线
+            </summary>
+            <param name="id">天窗计划ID</param>
+            <param name="fileName"></param>
+            <param name="repairTagKey"></param>
+            <param name="realEndTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.ExporToRepairWithCheck(System.Guid,System.String,System.String)">
+            <summary>
+            导出检修表，检修人与验收人不分两表高铁
+            </summary>
+            <param name="id"></param>
+            <param name="fileName"></param>
+            <param name="repairTagKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetRepairExportDto(System.Collections.Generic.List{SnAbp.CrPlan.Dto.SkylightPlan.PlanDetailDto},System.Boolean)">
+            <summary>
+            组织检修导出内容
+            </summary>
+            <param name="dtos">天窗的计划内容（日计划）</param>
+            <param name="isMaintain">是否维修表</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetEquipTestOrUserId(System.Guid,System.Collections.Generic.List{System.Guid}@,System.Collections.Generic.List{System.Guid}@)">
+            <summary>
+            获取要修改的设备测试表Id或检修人员Id列表(从数据库获取)
+            </summary>
+            <param name="skylightPlanId"></param>
+            <param name="testIdList"></param>
+            <param name="userIdList"></param>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.SkylightToConversionAsync(System.Collections.Generic.List{SnAbp.CrPlan.Dto.SkylightPlan.PlanDetailDto},System.Collections.Generic.List{SnAbp.CrPlan.Entities.RepairUser},System.Collections.Generic.List{SnAbp.CrPlan.Dto.EquipmentTestResult.EquipmentTestResultDto},System.String)">
+            <summary>
+            将天窗计划的工作内容，转化为派工单界面使用工作内容
+            获取数据使用
+            </summary>
+            <param name="planList">天窗计划详细内容Dto列表</param>
+            <param name="userList">检修、验收人员列表</param>
+            <param name="testResultList">设备测试项列表</param>
+            <param name="workContent">其他计划内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetSubsetOrganizationIdList(System.Guid)">
+            <summary>
+            根据组织机构ID获取组织机构及所有子集组织机构Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetWorkShopByUserOrgId(System.Guid)">
+            <summary>
+            根据用户组织机构获取所有车间
+            </summary>
+            <param name="id">车间或段组织机构ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.CheckPlatformLiaisonOfficer(System.Guid)">
+            <summary>
+            根据天窗id查询复验人员信息
+            </summary>
+            <param name="skylightPlanId">天窗计划id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.GetWorkOrderTestAdditional(SnAbp.CrPlan.Dtos.WorkOrderTestAdditionalDto)">
+            <summary>
+            获取派工单测试项的其他附加测试项
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.ToJson(System.Data.DataTable)">
+            <summary>   
+            Datatable转换为目标格式
+            </summary>      
+            <param name="table">Datatable对象</param>
+            <returns>Json字符串</returns>    
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.StringFormat(System.String,System.Type)">
+            <summary>     
+            格式化字符型、日期型、布尔型 
+            </summary>     
+            <param name="str"></param>   
+            <param name="type"></param> 
+            <returns></returns>     
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanWorkOrderAppService.String2Json(System.String)">
+            <summary>     
+            过滤特殊字符    
+            </summary>    
+            <param name="s">字符串</param> 
+            <returns>json字符串</returns> 
+        </member>
+        <member name="T:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService">
+            <summary>
+            年月表计划
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetSkyligetTypeList">
+            <summary>
+            获得天窗类型列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetListYear(SnAbp.CrPlan.Dto.YearMonthSearchDto)">
+            <summary>
+            获得年计划列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetSubmitedListYear(SnAbp.CrPlan.Dto.YearMonthSearchDto)">
+            <summary>
+            获得已提交的数量大于0的年计划列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetListMonth(SnAbp.CrPlan.Dto.YearMonthSearchDto)">
+            <summary>
+            获得月计划列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetSubmitedListMonth(SnAbp.CrPlan.Dto.YearMonthSearchDto)">
+            <summary>
+            获得已提交的数量大于0的月计划列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetYearStatisticData(SnAbp.CrPlan.Dto.YearMonthSearchDto)">
+            <summary>
+            获取统计后的年表数据 组织机构汇总
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetMonthStatisticData(SnAbp.CrPlan.Dto.YearMonthSearchDto)">
+            <summary>
+            获取统计后的月表数据 组织机构汇总
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetCanChangePlanList(SnAbp.CrPlan.Dto.YearMonthGetChangeDto)">
+            <summary>
+            获得可以变更的年月计划表
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetOwnsChangPlan(SnAbp.CrPlan.Dto.YearMonthGetChangeDto)">
+            <summary>
+            获得当前年月表变更列表(点击变更按钮后看到的列表)
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.CreateChangePlan(SnAbp.CrPlan.Dtos.CommonGuidListGetDto)">
+            <summary>
+            保存年月表计划要变更数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.Create(SnAbp.CrPlan.Dto.YearMonthCreateDto)">
+            <summary>
+            添加数据(年表、月表、年度月表)
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetPlanEquipmentsCount(SnAbp.StdBasic.Dtos.RepairItemDto,System.Nullable{System.Guid}[])">
+            <summary>
+            获得生成设备数量
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.CreateYearOfMonthPlan(System.Collections.Generic.List{SnAbp.CrPlan.Dto.YearMonthPlanDto},System.Int32)">
+            <summary>
+            生成年度月表计划
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.UpdateSkyligetType(SnAbp.CrPlan.Dto.YearMonthPlanUpdateDto)">
+            <summary>
+            编辑天窗类型
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.UpdateYearMonthPlan(SnAbp.CrPlan.Dto.YearMonthPlanMonthUpdateDto)">
+            <summary>
+            编辑年月计划
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.DeletePlanAtler(SnAbp.CrPlan.Dtos.CommonGuidGetDto)">
+            <summary>
+            删除年月表变更数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.DownLoadAsync(SnAbp.CrPlan.Dto.YearMonthExportDto)">
+            <summary>
+            导出Excel文件
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.UploadAsync(SnAbp.CrPlan.Dtos.Import.ImportData)">
+            <summary>
+            上传Excel文件
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ImportToYearPlanData(System.Data.DataTable,System.Int32,System.Guid,System.String,System.Nullable{System.Guid},System.String)">
+            <summary>
+            导入年表数据
+            </summary>
+            <param name="dt"></param>
+            <param name="year"></param>
+            <param name="orgId"></param>
+            <param name="importKey"></param>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.DownLoadChange(SnAbp.CrPlan.Dto.YearMonthExportDto)">
+            <summary>
+            年月表变更导出EXCEL
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.UploadChange(SnAbp.CrPlan.Dtos.Import.ImportData)">
+            <summary>
+            年月表变更导入EXCEL
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ImportToYearChangeAsync(System.Data.DataTable,System.Guid,System.String,System.Nullable{System.Guid},System.String)">
+            <summary>
+            年表变更导入
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ImportToMonthChangeAsync(System.Data.DataTable,System.Guid,System.String,System.Nullable{System.Guid},System.String)">
+            <summary>
+            月表变更导入
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.SubmitForExam(SnAbp.CrPlan.Dto.YearMonthExamDto)">
+            <summary>
+            年月表提交审核
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ExamToYearPlan(SnAbp.CrPlan.Dto.YearMonthExamDto)">
+            <summary>
+            年表提交审核业务操作
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ExamToMonthPlan(SnAbp.CrPlan.Dto.YearMonthExamDto)">
+            <summary>
+            月表提交审核业务操作
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ExamToMonthYearPlan(SnAbp.CrPlan.Dto.YearMonthExamDto)">
+            <summary>
+            年度月表提交审核业务操作
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.FinishForExam(System.Guid,SnAbp.Bpm.WorkflowState)">
+            <summary>
+            年月表审核完成
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.FinishToMonthPlan(System.Collections.Generic.List{SnAbp.CrPlan.Entities.YearMonthPlan})">
+            <summary>
+            月表完成审核业务操作
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.RejectForExam(System.Guid)">
+            <summary>
+            年月表(变更)计划审核驳回
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.SubmitChangeForExam(SnAbp.CrPlan.Dto.YearMonthChangeExamDto)">
+            <summary>
+            年月表变更提交审核
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.FinishChangeForExam(System.Guid,SnAbp.Bpm.WorkflowState)">
+            <summary>
+            年月表变更完成审核
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.SetColVal``1(``0,System.Int32,System.Decimal)">
+            <summary>
+            设置数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetColVal``1(``0,System.Int32)">
+            <summary>
+            获取数据
+            </summary>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ExamCreateYearMonthChangeExam(SnAbp.CrPlan.Dto.YearMonthChangeExamDto)">
+            <summary>
+            年月表变更提交审核至工作流
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ExamCreateYearMonthExam(System.Guid,System.Int32,System.Int32,System.Int32,System.Nullable{System.Guid},System.String)">
+            <summary>
+            年月表提交审核至工作流
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.UpgradeTestItems(SnAbp.CrPlan.Dtos.RepairTestItemUpgradeDto)">
+            <summary>
+            更新测试项
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ClearFilled(SnAbp.CrPlan.Dto.YearMonthCreateDto)">
+            <summary>
+            清空已填报项
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ExportMonthStatisticData(SnAbp.CrPlan.Dto.YearMonthSearchDto)">
+            <summary>
+            月表记录导出
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.ExporYearStatisticData(SnAbp.CrPlan.Dto.YearMonthSearchDto)">
+            <summary>
+            年表记录导出
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.CrPlan.Services.CrPlanYearMonthPlanAppService.GetTotal(SnAbp.CrPlan.Dtos.GetTotalSearchDto)">
+            <summary>
+            提报车间数据统计
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

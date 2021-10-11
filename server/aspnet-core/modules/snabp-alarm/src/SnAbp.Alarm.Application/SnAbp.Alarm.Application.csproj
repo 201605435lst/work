@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.Alarm</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+		<ProjectReference Include="..\SnAbp.Alarm.Application.Contracts\SnAbp.Alarm.Application.Contracts.csproj" />
+		<ProjectReference Include="..\SnAbp.Alarm.Domain\SnAbp.Alarm.Domain.csproj" />
+		<ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Domain\SnAbp.Resource.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.Cms.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.Cms.Services.CmsArticleAppService.Get(System.Guid)">
+            <summary>
+            获取文章实体
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsArticleAppService.GetList(SnAbp.Cms.Dtos.ArticleSearchDto)">
+            <summary>
+            获取文章列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsArticleAppService.GetOutofCategoryList(SnAbp.Cms.Dtos.ArticleSearchOutofCategoryDto)">
+            <summary>
+            获取不属于当前栏目的所有文章
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsArticleAppService.Create(SnAbp.Cms.Dtos.ArticleCreateDto)">
+            <summary>
+            创建文章
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsArticleAppService.Update(SnAbp.Cms.Dtos.ArticleUpdateDto)">
+            <summary>
+            更新文章
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsArticleAppService.Delete(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            删除文章
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsArticleAppService.CheckSameTitle(System.String,System.Nullable{System.Guid})">
+            <summary>
+            私有方法
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryAppService.Get(System.Guid)">
+            <summary>
+            获取栏目实体
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryAppService.GetByCode(System.String)">
+            <summary>
+            通过code获取栏目实体
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryAppService.GetList(SnAbp.Cms.Dtos.CategorySearchDto)">
+            <summary>
+            获取栏目列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryAppService.Create(SnAbp.Cms.Dtos.CategoryCreateDto)">
+            <summary>
+            添加栏目
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryAppService.Update(SnAbp.Cms.Dtos.CategoryUpdateDto)">
+            <summary>
+            修改栏目
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryAppService.UpdateEnable(SnAbp.Cms.Dtos.CategoryUpdateEnableDto)">
+            <summary>
+            修改栏目状态
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryAppService.Delete(System.Guid)">
+            <summary>
+            删除栏目
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryAppService.CheckSameCode(System.String,System.Nullable{System.Guid})">
+            <summary>
+            私有方法
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryRltArticleAppService.Get(System.Guid)">
+            <summary>
+            获取栏目文章实体
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryRltArticleAppService.GetList(SnAbp.Cms.Dto.CategoryRltArticle.CategoryRltArticleSearchDto)">
+            <summary>
+            获取栏目文章列表
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryRltArticleAppService.Create(SnAbp.Cms.Dtos.CategoryRltArticleCreateDto)">
+            <summary>
+            添加栏目文章排序
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryRltArticleAppService.Update(SnAbp.Cms.Dto.CategoryRltArticle.CategoryRltArticleUpdateDto)">
+            <summary>
+            修改栏目文章
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryRltArticleAppService.UpdateEnable(SnAbp.Cms.Dto.CategoryRltArticle.CategoryRltArticleUpdateEnableDto)">
+            <summary>
+            修改栏目文章启用状态
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryRltArticleAppService.UpdateOrder(SnAbp.Cms.Dto.CategoryRltArticle.CategoryRltArticleUpdateOrderDto)">
+            <summary>
+            修改栏目文章排序
+            </summary>
+        </member>
+        <member name="M:SnAbp.Cms.Services.CmsCategoryRltArticleAppService.Delete(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            删除栏目文章
+            </summary>
+        </member>
+    </members>
+</doc>

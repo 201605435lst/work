@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SnAbp.PermissionManagement.Domain.Identity</AssemblyName>
+    <PackageId>SnAbp.PermissionManagement.Domain.Identity</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnAbp.Identity.Domain.Shared\SnAbp.Identity.Domain.Shared.csproj" />
+    <ProjectReference Include="..\..\..\snabp-permission-management\src\SnAbp.PermissionManagement.Domain\SnAbp.PermissionManagement.Domain.csproj" />
+    <ProjectReference Include="..\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

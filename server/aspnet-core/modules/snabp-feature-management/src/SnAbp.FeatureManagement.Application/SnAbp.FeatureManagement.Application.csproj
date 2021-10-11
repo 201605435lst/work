@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AutoMapper\Volo.Abp.AutoMapper.csproj" />-->
+
+    <ProjectReference Include="..\SnAbp.FeatureManagement.Application.Contracts\SnAbp.FeatureManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.FeatureManagement.Domain\SnAbp.FeatureManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

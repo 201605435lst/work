@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyCompanyName.MyProjectName.Application.Contracts\MyCompanyName.MyProjectName.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<PackageReference Include="Volo.Abp.Account.HttpApi.Client" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi.Client" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi.Client" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi.Client" Version="3.0.5" />-->
+
+    <ProjectReference Include="..\..\..\..\modules\snabp-account\src\SnAbp.Account.HttpApi.Client\SnAbp.Account.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-identity\src\SnAbp.Identity.HttpApi.Client\SnAbp.Identity.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-permission-management\src\SnAbp.PermissionManagement.HttpApi.Client\SnAbp.PermissionManagement.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-tenant-management\src\SnAbp.TenantManagement.HttpApi.Client\SnAbp.TenantManagement.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\snabp-feature-management\src\SnAbp.FeatureManagement.HttpApi.Client\SnAbp.FeatureManagement.HttpApi.Client.csproj" />
+  </ItemGroup>
+
+</Project>

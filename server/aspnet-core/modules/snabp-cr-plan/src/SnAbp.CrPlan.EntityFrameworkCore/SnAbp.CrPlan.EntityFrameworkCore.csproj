@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.CrPlan</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="EntityFrameworkCore\EFCoreOrganizationRespository.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+		 <ProjectReference Include="..\..\..\snabp-framework\src\SnAbp.EntityFrameworkCore\SnAbp.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\SnAbp.CrPlan.Domain\SnAbp.CrPlan.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.EntityFrameworkCore\SnAbp.Identity.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.EntityFrameworkCore\SnAbp.Resource.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\..\snabp-basic\src\SnAbp.Basic.EntityFrameworkCore\SnAbp.Basic.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+
+</Project>

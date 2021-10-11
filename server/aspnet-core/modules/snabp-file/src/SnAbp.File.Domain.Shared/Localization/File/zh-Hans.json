@@ -1,0 +1,18 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpFile": "文件管理",
+    "FileManager": "文件管理",
+    "Permission:FileManager": "文件管理",
+    "Permission:OssConfig": "OSS服务配置",
+    "OssConfig": "OSS服务配置",
+    "Permission:Create": "创建",
+    "Permission:Edit": "编辑",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Import": "导入",
+    "Permission:Export": "导出",
+    "Permission:Enable": "启用"
+
+  }
+}

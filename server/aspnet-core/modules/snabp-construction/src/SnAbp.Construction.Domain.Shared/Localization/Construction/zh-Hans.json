@@ -1,0 +1,36 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "ManageYourProfile": "管理个人资料",
+    "Construction": "施工计划模块",
+
+    "Permission:PlanContent": "施工计划详情",
+
+    "Permission:Plan": "施工计划",
+
+    "Permission:MasterPlanContent": "总体计划详情",
+
+    "Permission:Construction": "施工计划模块",
+
+    "Permission:DispatchTemplate": "派工单模板管理",
+
+    "Permission:Dispatch": "派工单管理",
+    "Permission:UpdateDefault": "设为默认",
+    "Permission:PlanMaterial": "施工计划工程量",
+    "Permission:Dailys": "施工日志管理",
+    "Permission:DailyTemplates": "施工日志模板管理",
+    "Permission:MasterPlan": "总体计划",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Detail": "查看",
+    "Permission:View": "查看(台账)",
+    "Permission:Draw": "编制(台账)",
+    "Permission:Submit": "提交审批",
+    "Permission:Approve": "审批",
+    "Permission:Approval": "审批",
+    "Permission:ApproveFlow": "审批流程",
+    "Permission:Export": "导出"
+
+  }
+}

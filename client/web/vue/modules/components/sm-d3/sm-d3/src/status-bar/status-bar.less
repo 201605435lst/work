@@ -1,0 +1,81 @@
+@transition: all 0.1s ease;
+@color: #dadada;
+
+.status-bar {
+  // position: absolute;
+  // bottom: 0;
+
+  width: 100%;
+  background: #0000008f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: @color;
+  z-index: 10;
+  & > * {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &.center {
+      flex: 1;
+      margin: 0 10px;
+    }
+    &.right {
+      justify-content: flex-end;
+    }
+  }
+
+  .item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    height: 24px;
+    &:last-child {
+      // margin-right: 0;
+    }
+    &:first-child {
+      // margin-left: 0;
+    }
+  }
+
+  .extra {
+    justify-content: flex-end;
+  }
+
+  .distance {
+    .value {
+      transition: @transition;
+      max-width: 100px;
+      min-width: 30px;
+      height: 16px;
+      border: 1px solid #ddd;
+      border-top: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+  .ant-divider {
+    top: 0;
+  }
+
+  .progress {
+    flex: 1;
+    white-space: nowrap;
+    max-width: 300px;
+
+    .ant-progress {
+      height: 100%;
+      min-width: 100px;
+      .ant-progress-inner {
+        vertical-align: unset;
+      }
+      .ant-progress-text {
+        color: @color;
+      }
+    }
+  }
+}

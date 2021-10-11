@@ -1,0 +1,110 @@
+.sm-d3-equipment-info-properties-panel {
+  .sc-panel {
+    background-color: #e7e7e7;
+
+    .sc-panel-header {
+      color: #1890ff;
+    }
+
+    .addButton {
+      & > * {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        &:hover {
+          opacity: 0.8;
+          background-color: rgb(202, 202, 202);
+        }
+      }
+    }
+    .sc-panel-body {
+      padding: 5px 2px;
+      .basic-property {
+        display: flex;
+        padding: 2px 0;
+        .label {
+          flex: 1;
+        }
+
+        .text {
+          flex: 2;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .item {
+        display: flex;
+        padding: 0 8px;
+        height: 20px;
+        margin: 2px 0;
+
+        .label {
+          width: 64px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .text {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          padding-left: 8px;
+          flex: 1;
+          background: #e6e6e6;
+        }
+
+        .edit {
+          display: none;
+          margin-left: 10px;
+        }
+
+        &:hover {
+          .edit {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 14px;
+            width: 25%;
+            cursor: pointer;
+            & > * {
+              width: 20px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:hover {
+                opacity: 0.8;
+                background-color: rgb(202, 202, 202);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .plus {
+    cursor: pointer;
+    text-align: end;
+    font-size: 14px;
+  }
+
+  .addInfo {
+    display: flex;
+    align-items: center;
+    .ant-form {
+      display: flex;
+    }
+    .save {
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
+}

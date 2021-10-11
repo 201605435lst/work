@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SnAbp.Message.Notice</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\**" />
+    <EmbeddedResource Remove="Dtos\**" />
+    <None Remove="Dtos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="3.0.5" />
+    <ProjectReference Include="..\..\..\snabp-message\src\SnAbp.Message.HttpApi\SnAbp.Message.HttpApi.csproj" />
+    <ProjectReference Include="..\SnAbp.Message.Notice.Domain.Shared\SnAbp.Message.Notice.Domain.Shared.csproj" />
+    <ProjectReference Include="..\SnAbp.Message.Notice.Domain\SnAbp.Message.Notice.Domain.csproj" />
+
+  </ItemGroup>
+
+</Project>

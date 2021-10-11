@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.FileApprove</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.FileApprove.Application.Contracts\SnAbp.FileApprove.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.FileApprove.Domain\SnAbp.FileApprove.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-bpm\src\SnAbp.Bpm.Application.Contracts\SnAbp.Bpm.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-bpm\src\SnAbp.Bpm.Application\SnAbp.Bpm.Application.csproj" />
+    <ProjectReference Include="..\..\..\snabp-file\src\SnAbp.File.Application\SnAbp.File.Application.csproj" />
+
+  </ItemGroup>
+
+</Project>

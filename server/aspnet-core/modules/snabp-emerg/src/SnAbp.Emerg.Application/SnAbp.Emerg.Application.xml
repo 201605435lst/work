@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnAbp.Emerg.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SnAbp.Emerg.Services.EmergPlanAppService.Create(SnAbp.Emerg.Dtos.EmergPlanCreateDto)">
+            <summary>
+            创建应急预案
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Emerg.Services.EmergPlanAppService.Delete(System.Guid)">
+            <summary>
+            删除应急预案
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Emerg.Services.EmergPlanAppService.Get(System.Guid)">
+            <summary>
+            查询应急预案
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Emerg.Services.EmergPlanAppService.GetList(SnAbp.Emerg.Dtos.EmergPlanSearchDto)">
+            <summary>
+            查询列表
+            </summary>
+            <param name="input"></param>*
+            <returns></returns>
+        </member>
+        <member name="M:SnAbp.Emerg.Services.EmergPlanAppService.Update(SnAbp.Emerg.Dtos.EmergPlanUpdateDto)">
+            <summary>
+            更新预案
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

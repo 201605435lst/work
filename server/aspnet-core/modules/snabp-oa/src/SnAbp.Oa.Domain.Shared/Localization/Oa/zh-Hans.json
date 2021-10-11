@@ -1,0 +1,22 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpOa": "OA办公",
+    "ManageYourProfile": "管理个人资料",
+    "DutySchedule": "值班表",
+    "Permissions": "权限",
+    "Permission:DutyScheduleManagement": "值班表管理",
+    "Permission:Contracts": "合同管理",
+    "Permission:Seals": "签章管理",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Import": "导入",
+    "Permission:Export": "导出",
+    "Permission:Apply": "引用",
+    "Permission:Detail": "查看详情",
+    "Permission:Lock": "解密和加密",
+    "Permission:Efficiency": "有效和无效",
+    "Permission:RestPSW": "重置密码"
+  }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.6" />
+		<title>盈亏分析表</title>
+		<script src="./echarts.min.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.nonePage {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				font-size: 30px;
+			}
+			.nonePage > img {
+				min-width: 100px;
+				min-height: 100px;
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+		<div id="main" style="width: 100vw; height: 800px"></div>
+		<div id="main2" style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; display: none">
+			<div class="nonePage">
+				<img src="../BIMAppUI/other/noData.png" />
+				<div>暂无数据</div>
+			</div>
+		</div>
+		<!-- <script src="./utils.js"></script> -->
+		<script type="module">
+			//1.plus方法使用
+			document.addEventListener(
+				'plusready',
+				function () {
+					let foo = plus.storage.getItem('remoteServiceBaseUrl');
+					XMLHttp(foo);
+				},
+				false,
+			);
+			//2.请求数据
+			function XMLHttp(foo) {
+				let main2 = document.getElementById('main2');
+				main2.style.display = 'none';
+				var xhr = new XMLHttpRequest();
+				xhr.onreadystatechange = function () {
+					if (xhr.readyState === 4) {
+						if (xhr.status === 200) {
+							//响应完成且成功
+							let dataSource = JSON.parse(xhr.responseText);
+							option(dataSource);
+						} else {
+							//响应完成但不成功
+							main2.style.display = 'block';
+						}
+					}
+				};
+				xhr.open('GET', `${foo}/api/app/costManagementContract/getStatistics?code=undefined`, true);
+				xhr.send(null);
+			}
+			//3.渲染图表
+			function option(dataSource) {
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('main'));
+				var option;
+				option = {
+					title: {
+						left: 'center',
+						top: '10%',
+						text: '南京地铁\n成本盈亏分析图',
+						textStyle: {fontSize: 24, lineHeight: 30},
+					},
+					grid: {
+						left: '2%',
+						top: '30%',
+						bottom: '7%',
+						containLabel: true,
+					},
+					tooltip: {
+						trigger: 'axis',
+						position: function (pos, params, dom, rect, size) {
+							// 鼠标在左侧时 tooltip 显示到右侧，鼠标在右侧时 tooltip 显示到左侧。
+							var obj = {top: 60};
+							obj[['left', 'right'][+(pos[0] < size.viewSize[0] / 2)]] = 5;
+							return obj;
+						},
+					},
+					legend: {
+						top: '21%',
+						data: ['总支出', '合同额'],
+					},
+					toolbox: {
+						itemSize: 30,
+						itemGap: 15,
+						right: 30,
+						top: '18%',
+						feature: {
+							dataView: {
+								show: true,
+								readOnly: false,
+								readOnly: true,
+								lang: ['成本盈亏分析数据视图', '关闭'],
+								optionToContent: function (opt) {
+									var axisData = opt.xAxis[0].data;
+									var series = opt.series;
+									var table =
+										'<table style="width:100%;text-align:center"><tbody><tr>' +
+										'<td>日期</td>' +
+										'<td>' +
+										series[0].name +
+										'(万元)</td>' +
+										'<td>' +
+										series[1].name +
+										'(万元)</td>' +
+										'</tr>';
+									for (var i = 0, l = axisData.length; i < l; i++) {
+										table +=
+											'<tr>' +
+											'<td>' +
+											axisData[i] +
+											'</td>' +
+											'<td>' +
+											series[0].data[i] +
+											'</td>' +
+											'<td>' +
+											series[1].data[i] +
+											'</td>' +
+											'</tr>';
+									}
+									table += '</tbody></table>';
+									return table;
+								},
+							},
+							magicType: {show: true, type: ['line', 'bar']},
+							restore: {show: true},
+							saveAsImage: {show: false},
+						},
+					},
+					xAxis: {
+						type: 'category',
+						name: '日期',
+						data: dataSource.dates,
+						axisPointer: {
+							type: 'shadow',
+						},
+						axisTick: {
+							alignWithLabel: true,
+						},
+					},
+					yAxis: {
+						type: 'value',
+						name: '万元',
+					},
+					dataZoom: [
+						{
+							type: 'inside',
+							start: 0,
+							end: 100,
+						},
+						{
+							start: 0,
+							end: 100,
+						},
+					],
+					series: [
+						{
+							name: '总支出',
+							type: 'line',
+							data: dataSource.totalExpenditure,
+						},
+						{
+							name: '合同额',
+							type: 'line',
+							data: dataSource.contractAmount,
+						},
+					],
+				};
+				// 使用刚指定的配置项和数据显示图表。
+				option && myChart.setOption(option);
+			}
+		</script>
+	</body>
+</html>

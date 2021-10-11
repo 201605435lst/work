@@ -1,0 +1,6 @@
+## API
+
+| 参数          | 说明                         | 类型     | 默认值 |
+| ------------- | ---------------------------- | -------- | ------ |
+| axios         | 项目 axios.create 创建的实例 | function |
+| institutionId | 需要审核的制度 Id            | string   | null   |

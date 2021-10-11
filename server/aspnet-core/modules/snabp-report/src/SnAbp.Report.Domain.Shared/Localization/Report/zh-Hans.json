@@ -1,0 +1,15 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpReport": "工作报告",
+    "Reports": "工作汇报",
+    "Report": "工作汇报",
+    "Permissions": "权限",
+    "Permission:Reports": "工作汇报",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除",
+    "Permission:Export": "导出",
+    "Permission:Detail": "查看详情"
+  }
+}

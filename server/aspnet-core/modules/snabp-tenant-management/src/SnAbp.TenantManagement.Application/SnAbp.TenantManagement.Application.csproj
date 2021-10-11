@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\configureawait.props" />
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SnAbp.TenantManagement.Application</AssemblyName>
+    <PackageId>SnAbp.TenantManagement.Application</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnAbp.TenantManagement.Application.Contracts\SnAbp.TenantManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.TenantManagement.Domain\SnAbp.TenantManagement.Domain.csproj" />
+    <PackageReference Include="Volo.Abp.UI" Version="3.0.5" />
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.UI\Volo.Abp.UI.csproj" />-->
+
+  </ItemGroup>
+
+</Project>

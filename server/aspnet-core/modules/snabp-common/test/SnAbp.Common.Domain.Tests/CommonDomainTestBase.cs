@@ -1,0 +1,10 @@
+namespace SnAbp.Common
+{
+    /* Inherit from this class for your domain layer tests.
+     * See SampleManager_Tests for example.
+     */
+    public abstract class CommonDomainTestBase : CommonTestBase<CommonDomainTestModule>
+    {
+
+    }
+}

@@ -1,0 +1,141 @@
+.hsm-message-notice {
+  top: 50px !important;
+
+  .ant-list-item {
+    padding: 6px 0;
+  }
+
+  .a-avatar-custom {
+    height: 25px;
+    width: 25px;
+  }
+
+  .ant-list-item-meta-avatar {
+    margin-right: 10px;
+  }
+
+  .ant-list-item-meta-description {
+    font-size: 10px;
+  }
+}
+
+.header-notice {
+  display: inline-block;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    vertical-align: initial;
+  }
+}
+
+.sm-message-list {
+  width: 100%;
+  max-height: 400px;
+  overflow: auto;
+  padding-right: 10px; 
+
+  .message-item {
+    height: 100%;
+    display: flex;
+    border-bottom: 1px solid #e2dbdb;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    .message-avatar {
+      height: 30px;
+      width: 30px;
+      font-size: 27px;
+      margin: 5px 15px 0px 0px;
+      text-align: center;
+    }
+
+    .message-content {
+      display: flex;
+      flex-direction: column;
+
+      .message-title {
+        font-size: 13px;
+        .state-d{
+          color: #1890ff;
+        }
+        .state-j{
+          color: #dc6613;
+        }
+        .state-z{
+          color: red;
+        }
+      }
+
+      .message-sub {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          font-size: 8px;
+
+          .ant-btn-sm {
+            padding: 0px;
+            height: 19px;
+            text-align: center;
+            line-height: 10px;
+          }
+        }
+      }
+      p{
+        margin:0px;
+      }
+    }
+  }
+}
+
+.ant-tabs-tabpane {
+  .message-badge {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: red;
+    top: 12px;
+    left: 46px;
+    border-radius: 15px;
+  }
+}
+
+/*-------滚动条整体样式----*/
+.sm-message-list::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+/*滚动条里面小方块样式*/
+.sm-message-list::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #a29898;
+}
+
+/*滚动条里面轨道样式*/
+.sm-message-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+
+
+}
+//代办消息通知
+.sm-todo-list{
+  display: flex;
+  .mark{
+    margin-left: 2px;
+  }
+  .content{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}

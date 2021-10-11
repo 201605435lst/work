@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SnAbp.Bpm</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\SnAbp.Bpm.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\OrganizationAppService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="SnAbp.Bpm.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SnAbp.Bpm.Application.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+   <!--<PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="3.0.5" />-->
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AutoMapper\Volo.Abp.AutoMapper.csproj" />
+    <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Ddd.Application\Volo.Abp.Ddd.Application.csproj" />-->
+    <ProjectReference Include="..\SnAbp.Bpm.Application.Contracts\SnAbp.Bpm.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SnAbp.Bpm.Domain\SnAbp.Bpm.Domain.csproj" />
+    <ProjectReference Include="..\SnAbp.Bpm.EntityFrameworkCore\SnAbp.Bpm.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Application.Contracts\SnAbp.Identity.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Domain\SnAbp.Identity.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpCostManagement": "项目成本",
+    "Permissions": "权限",
+    "Permission:CostOthers": "其他成本",
+    "Permission:PeopleCosts": "人工成本",
+    "Permission:MoneyLists": "资金管理",
+    "Permission:Contracts": "合同管理",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除"
+
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "AbpCms": "栏目文章",
+    "Permission:Categories": "栏目管理",
+    "Permission:Articles": "文章管理",
+    "Permission:CategoriesRltArticles": "栏目文章管理",
+    "Permission:Create": "新建",
+    "Permission:Delete": "删除",
+    "Permission:Update": "修改",
+    "Permission:Detail": "详情",
+    "Permission:UpdateEnable": "启用",
+    "Permission:UpdateOrder": "排序"
+  }
+}

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.Construction</RootNamespace>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="3.0.5" />
+    <ProjectReference Include="..\SnAbp.Construction.Domain.Shared\SnAbp.Construction.Domain.Shared.csproj" />
+    <ProjectReference Include="..\SnAbp.Construction.Domain\SnAbp.Construction.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-construction-base\src\SnAbp.ConstructionBase.Application.Contracts\SnAbp.ConstructionBase.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-bpm\src\SnAbp.Bpm.Application.Contracts\SnAbp.Bpm.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-project\src\SnAbp.Project.Application.Contracts\SnAbp.Project.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-identity\src\SnAbp.Identity.Application.Contracts\SnAbp.Identity.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-resource\src\SnAbp.Resource.Application.Contracts\SnAbp.Resource.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\..\snabp-technology\src\SnAbp.Technology.Application.Contracts\SnAbp.Technology.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\snabp-safe\src\SnAbp.Safe.Domain\SnAbp.Safe.Domain.csproj" />
+    <ProjectReference Include="..\..\..\snabp-quality\src\SnAbp.Quality.Domain\SnAbp.Quality.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

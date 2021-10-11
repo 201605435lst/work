@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SnAbp.Regulation</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+		<ProjectReference Include="..\SnAbp.Regulation.Application.Contracts\SnAbp.Regulation.Application.Contracts.csproj" />
+		<ProjectReference Include="..\SnAbp.Regulation.Domain\SnAbp.Regulation.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

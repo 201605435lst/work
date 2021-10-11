@@ -1,0 +1,10 @@
+{
+  "culture": "en",
+  "texts": {
+    "Orgs": "Organization Module",
+    "Orgs.Organization": "Organization Manage",
+    "Orgs.Organization.Create": "Create",
+    "Orgs.Organization.Update": "Update",
+    "Orgs.Organization.Delete": "Delete"
+  }
+}
